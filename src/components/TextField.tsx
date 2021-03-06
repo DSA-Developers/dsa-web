@@ -11,4 +11,4 @@ export const TextField: React.FC<Props> = ({ text, handleChange }) => {
       <input value={text} onChange={handleChange} />
     </div>
   );
-}
+};
