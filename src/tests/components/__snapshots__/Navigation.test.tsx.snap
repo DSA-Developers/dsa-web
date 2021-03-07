@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation bar renders 1`] = `
+<nav
+  className="justify-content-end navbar navbar-expand navbar-light"
+>
+  <div
+    className="navbar-nav"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/home"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/gallery"
+        onClick={[Function]}
+      >
+        Gallery
+      </a>
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+</nav>
+`;

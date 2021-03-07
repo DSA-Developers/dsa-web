@@ -1,11 +1,15 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import { CenterRow } from '../components/CenterRow';
 
 interface Props {}
 
 export const ContactPage: React.FC<Props> = ({}) => {
   return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
+    <Container>
+      <CenterRow>
+        <h1>Contact Us Page</h1>
+      </CenterRow>
+    </Container>
   );
 };
