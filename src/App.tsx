@@ -1,21 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import { TextField } from './components/TextField';
+import { HomePage } from './pages/HomePage';
 
 const App: React.FC = () => {
-  const [title, setTitle] = React.useState(document.title);
   return (
-    <div className="App">
-      <p>{title === '' ? 'no title :(' : title}</p>
-      <TextField
-        text={title}
-        handleChange={(e) => {
-          const newTitle = e.target.value;
-          document.title = newTitle;
-          setTitle(newTitle);
-        }}
-      />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route exact path="/home">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
