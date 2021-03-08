@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navigation bar renders 1`] = `
+exports[`Navigation Navigation bar renders 1`] = `
 <nav
   className="justify-content-end navbar navbar-expand navbar-light"
 >
