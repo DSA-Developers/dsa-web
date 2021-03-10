@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
-import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 interface Props {}
@@ -26,9 +25,6 @@ export const HomePage: React.FC<Props> = ({}) => {
         Id non rem reprehenderit dolor similique et. Et ut laborum velit incidunt. Ea excepturi et repudiandae. Rem culpa rerum dolores accusantium sed magnam facilis officia.
         Quaerat exercitationem minima dolor amet rerum nesciunt est occaecati. Labore quidem quae excepturi. Et praesentium quidem nihil quos.
         </h2>
-      </CenterRow>
-      <CenterRow>
-        <Button variant="primary" as={Link} to="/about">Click to learn more</Button>
       </CenterRow>
     </Container>
   );

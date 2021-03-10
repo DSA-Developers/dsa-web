@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../placeholder.svg'; //imports the image for the logo
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -11,7 +12,7 @@ export const Navigation: React.FC<Props> = ({}) => {
     <Navbar className="bg-light justify-content-between sticky-top">
       <Navbar.Brand href="/home">
         <img
-        src="placeholder.svg" //NOT WORKING
+        src={ Logo }  //NOT WORKING
         width="30"
         height="30"
         className="d-inline-block align-top"
