@@ -7,7 +7,17 @@ interface Props {}
 
 export const Navigation: React.FC<Props> = ({}) => {
   return (
-    <Navbar className="justify-content-end">
+    //use for logo
+    <Navbar className="bg-light justify-content-between sticky-top">
+      <Navbar.Brand href="/home">
+        <img
+        src="placeholder.svg" //NOT WORKING
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="DSA Logo"
+        />
+        </Navbar.Brand>
       <Nav>
         <Nav.Item>
           <Nav.Link as={Link} to="/home">Home</Nav.Link>
