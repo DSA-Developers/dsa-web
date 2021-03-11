@@ -2,8 +2,20 @@
 
 exports[`Navigation Navigation bar renders 1`] = `
 <nav
-  className="justify-content-end navbar navbar-expand navbar-light"
+  className="bg-light justify-content-between sticky-top navbar navbar-expand navbar-light"
 >
+  <a
+    className="navbar-brand"
+    href="/home"
+  >
+    <img
+      alt="DSA Logo"
+      className="d-inline-block align-top"
+      height="30"
+      src="placeholder.svg"
+      width="30"
+    />
+  </a>
   <div
     className="navbar-nav"
     onKeyDown={[Function]}
