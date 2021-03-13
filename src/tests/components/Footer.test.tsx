@@ -1,8 +1,15 @@
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Footer } from '../../components/Footer';
 
 describe('Navigation', () => {
-  const wrapper = shallow(<Footer />);
-
+  test('Footer renders', () => {
+    const component = renderer.create(
+      <Router>
+        <Footer />
+      </Router>,
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

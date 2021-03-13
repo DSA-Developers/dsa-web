@@ -1,23 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation Navigation bar renders 1`] = `
+.c0 {
+  font-size: 1.5rem;
+}
+
 <nav
-  className="bg-light justify-content-between sticky-top navbar navbar-expand navbar-light"
+  className="navbar border-bottom navbar navbar-expand navbar-light bg-light"
 >
   <a
-    className="navbar-brand"
+    className="align-items-center navbar-brand"
     href="/home"
   >
     <img
       alt="DSA Logo"
-      className="d-inline-block align-top"
-      height="30"
-      src="placeholder.svg"
-      width="30"
+      className="d-inline-block"
+      height="60"
+      src="logo.png"
+      width="60"
     />
+    <span
+      className="c0 navbar-text"
+    >
+      Dominican Student Association
+    </span>
   </a>
   <div
-    className="navbar-nav"
+    className="ml-auto navbar-nav"
     onKeyDown={[Function]}
   >
     <div

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
 import { CenterRow } from '../components/CenterRow';
 
@@ -10,15 +12,18 @@ import logoGroup from '../assets/groupme.svg';
 interface Props {}
 
 const StyledRow = styled(CenterRow)`
-  height: 30vh;
-  align-items: center;
-  padding: 0 20px 0 20px;
+  height: fit-content;
+  align-items: start;
+  padding: 10vh 20% 10vh 20%;
 `;
 
 const StyledCol = styled(Col)`
+  font-size: 1.5rem;
   flex-grow: 1;
   flex-shrink: 2;
   margin: 0 20px 0 20px;
+  padding: 0;
+  height: fit-content;
 `;
 
 const FullWidth = styled.div`
@@ -27,36 +32,72 @@ const FullWidth = styled.div`
   height: fit-content;
 `;
 
-const SocialMedia = styled(StyledCol)`
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 20px 0 20px;
+const SocialMedia = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 20px;
 `;
 
 const Logo = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+`;
+
+const Header = styled.h1`
+  font-size: 2.5rem;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+`;
+
+const SiteLink = styled(Nav.Link)`
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  :hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  padding: 0 0 0.5em 0;
 `;
 
 export const Footer: React.FC<Props> = ({}) => {
   return (
-    <FullWidth className="bg-light border-top">
+    <FullWidth className="bg-light border-top text-secondary">
       <StyledRow>
         <StyledCol>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius facilisis eros. Sed ac venenatis
-          dolor. Maecenas condimentum hendrerit lectus a euismod. Aenean lacinia volutpat mauris, eget posuere velit
-          aliquam vel. Praesent consequat, mauris sit amet cursus auctor, nibh quam pulvinar lorem, non posuere velit
-          orci quis metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-          Fusce eget gravida lacus.
+          <Header>Site Map</Header>
+          <Nav className="flex-column">
+            <SiteLink as={Link} to="/home">
+              Home
+            </SiteLink>
+            <SiteLink as={Link} to="/about">
+              About
+            </SiteLink>
+            <SiteLink as={Link} to="/gallery">
+              Gallery
+            </SiteLink>
+            <SiteLink as={Link} to="/contact">
+              Contact
+            </SiteLink>
+          </Nav>
         </StyledCol>
-        <SocialMedia>
-          <Logo src={logoFb}></Logo>
-          <Logo src={logoInst}></Logo>
-          <Logo src={logoGroup}></Logo>
-        </SocialMedia>
         <StyledCol>
-          <p>Contact Us</p>
-          <p>Email: dsaatuf@gmail.com</p>
+          <Header>Connect</Header>
+          <SocialMedia>
+            <a href="https://www.facebook.com/DSAatUF">
+              <Logo src={logoFb}></Logo>
+            </a>
+            <a href="https://www.instagram.com/uf.dsa/">
+              <Logo src={logoInst}></Logo>
+            </a>
+            <a href="https://groupme.com/join_group/53205471/hXrFzndj">
+              <Logo src={logoGroup}></Logo>
+            </a>
+          </SocialMedia>
+        </StyledCol>
+        <StyledCol>
+          <Header>Contact Us</Header>
+          <p>
+            <b>Email</b>: dsaatuf@gmail.com
+          </p>
         </StyledCol>
       </StyledRow>
     </FullWidth>

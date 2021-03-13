@@ -13,7 +13,7 @@ const StyledTitle = styled(Navbar.Text)`
 
 export const Navigation: React.FC<Props> = ({}) => {
   return (
-    <Navbar bg="light" variant="light" className="navbar border-bottom sticky-top">
+    <Navbar bg="light" variant="light" className="navbar border-bottom">
       <Navbar.Brand className="align-items-center" href="/home">
         <img
           src={Logo} //NOT WORKING
