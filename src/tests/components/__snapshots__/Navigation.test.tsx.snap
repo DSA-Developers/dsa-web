@@ -2,11 +2,21 @@
 
 exports[`Navigation Navigation bar renders 1`] = `
 .c0 {
-  font-size: 1.5rem;
+  margin: 0 0 0 0.5em;
+  font-size: 3rem;
+}
+
+.c1 {
+  font-size: 2rem;
+}
+
+.c2 {
+  margin: 0 1em 0 0;
+  text-transform: uppercase;
 }
 
 <nav
-  className="navbar border-bottom navbar navbar-expand navbar-light bg-light"
+  className="navbar border-bottom pl-5 pr-5 navbar navbar-expand navbar-light bg-light"
 >
   <a
     className="align-items-center navbar-brand"
@@ -14,23 +24,26 @@ exports[`Navigation Navigation bar renders 1`] = `
   >
     <img
       alt="DSA Logo"
-      className="d-inline-block"
-      height="60"
+      className="d-inline-block align-top"
+      height="80"
       src="logo.png"
-      width="60"
+      width="80"
     />
     <span
       className="c0 navbar-text"
     >
-      Dominican Student Association
+      <b>
+        DSA
+      </b>
+       @ UF
     </span>
   </a>
   <div
-    className="ml-auto navbar-nav"
+    className="c1 ml-auto navbar-nav"
     onKeyDown={[Function]}
   >
     <div
-      className="nav-item"
+      className="c2 nav-item"
     >
       <a
         className="nav-link"
@@ -43,7 +56,7 @@ exports[`Navigation Navigation bar renders 1`] = `
       </a>
     </div>
     <div
-      className="nav-item"
+      className="c2 nav-item"
     >
       <a
         className="nav-link"
@@ -56,7 +69,7 @@ exports[`Navigation Navigation bar renders 1`] = `
       </a>
     </div>
     <div
-      className="nav-item"
+      className="c2 nav-item"
     >
       <a
         className="nav-link"
@@ -69,7 +82,7 @@ exports[`Navigation Navigation bar renders 1`] = `
       </a>
     </div>
     <div
-      className="nav-item"
+      className="c2 nav-item"
     >
       <a
         className="nav-link"

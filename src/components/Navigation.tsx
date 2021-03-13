@@ -8,44 +8,54 @@ import Nav from 'react-bootstrap/Nav';
 interface Props {}
 
 const StyledTitle = styled(Navbar.Text)`
-  font-size: 1.5rem;
+  margin: 0 0 0 0.5em;
+  font-size: 3rem;
+`;
+
+const StyledNav = styled(Nav)`
+  font-size: 2rem;
+`;
+
+const StyledLink = styled(Nav.Item)`
+  margin: 0 1em 0 0;
+  text-transform: uppercase;
 `;
 
 export const Navigation: React.FC<Props> = ({}) => {
   return (
-    <Navbar bg="light" variant="light" className="navbar border-bottom">
+    <Navbar bg="light" variant="light" className="navbar border-bottom pl-5 pr-5">
       <Navbar.Brand className="align-items-center" href="/home">
         <img
           src={Logo} //NOT WORKING
-          width="60"
-          height="60"
-          className="d-inline-block"
+          width="80"
+          height="80"
+          className="d-inline-block align-top"
           alt="DSA Logo"
         />
-        <StyledTitle>Dominican Student Association</StyledTitle>
+        <StyledTitle><b>DSA</b> @ UF</StyledTitle>
       </Navbar.Brand>
-      <Nav className="ml-auto">
-        <Nav.Item>
+      <StyledNav className="ml-auto">
+        <StyledLink>
           <Nav.Link as={Link} to="/home">
             Home
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
+        </StyledLink>
+        <StyledLink>
           <Nav.Link as={Link} to="/about">
             About
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
+        </StyledLink>
+        <StyledLink>
           <Nav.Link as={Link} to="/gallery">
             Gallery
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
+        </StyledLink>
+        <StyledLink>
           <Nav.Link as={Link} to="/contact">
             Contact
           </Nav.Link>
-        </Nav.Item>
-      </Nav>
+        </StyledLink>
+      </StyledNav>
     </Navbar>
   );
 };
