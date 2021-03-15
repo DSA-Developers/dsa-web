@@ -35,11 +35,6 @@ const Icon = styled.img`
   height: 100px;
 `;
 
-const CaptionText = styled.h1`
-  background-color: rgba(0,0,0,0.7);
-  width: 100%;
-`;
-
 const SocialMediaContainer = styled.div`
   padding: 20px 0px 20px 0px;
   background-color: #eee;
@@ -74,31 +69,16 @@ export const HomePage: React.FC<Props> = ({}) => {
           <CarouselImage
             src={DSAMemberPhoto}
           />
-          <Carousel.Caption>
-            <CaptionText>
-              Some members of the DSA!
-            </CaptionText>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <CarouselImage
             src={CarouselImg2}
           />
-          <Carousel.Caption>
-            <CaptionText>
-            This is the caption for the second image
-            </CaptionText>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <CarouselImage
             src={CarouselImg3}
           />
-          <Carousel.Caption>
-            <CaptionText>
-            This is the caption for the third image
-            </CaptionText>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       </CarouselContainer>
