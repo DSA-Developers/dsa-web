@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
 import { CenterRow } from '../components/CenterRow';
-
 import logoFb from '../assets/facebook.svg';
 import logoInst from '../assets/instagram.svg';
 import logoGroup from '../assets/groupme.svg';

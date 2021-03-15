@@ -2,81 +2,140 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg1 from '../placeholderCarousel1.jpg';
-import CarouselImg2 from '../placeholderCarousel2.jpg';
-import CarouselImg3 from '../placeholderCarousel3.jpg';
+import CarouselImg1 from '../assets/placeholderCarousel1.jpg';
+import CarouselImg2 from '../assets/placeholderCarousel2.jpg';
+import CarouselImg3 from '../assets/placeholderCarousel3.jpg';
+import DSAMemberPhoto from '../assets/DSA Members.png';
+import FacebookLogo from '../assets/facebook.svg';
+import GroupMeLogo from '../assets/groupme.svg';
+import InstagramLogo from '../assets/instagram.svg';
 import { readBuilderProgram } from 'typescript';
 
 interface Props {}
 
 const Title = styled.h1`
   font-family: Roboto;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px 0px 0px;
+`;
+
+const Body = styled.p`
+  justify-content: center;
+  display:flex;
+  padding: 20px 0px 20px 0px;
+`;
+
+const Icon = styled.img`
+  width: 100px;
+  height: 100px;
+`;
+
+const CaptionText = styled.h1`
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+`;
+
+const SocialMediaContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  background-color: #eee;
+  justify-content: center;
+  display: flex;
+`;
+
+const CarouselContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  display: flex;
+`;
+
+const SocialMedia = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 0px;
+`;
+
+const CarouselImage = styled.img`
+  width: 1100px;
+  height: 600px;
 `;
 
 export const HomePage: React.FC<Props> = ({}) => {
   return (
     <Container>
-      <CenterRow>
-        <Title>Home Page</Title>
-      </CenterRow>
+      <Title>Welcome to the DSA at UF!</Title>
+      <CarouselContainer>
       <Carousel>
         <Carousel.Item interval={5000}>
-          <img
-            className='d-block w-100 h-100'
-            src={CarouselImg1}
-            alt="Image not found! - Slide 1"
-            
+          <CarouselImage
+            src={DSAMemberPhoto}
           />
           <Carousel.Caption>
-            <p>
-            This is the caption for the first image
-            </p>
+            <CaptionText>
+              Some members of the DSA!
+            </CaptionText>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <img
-            className='d-block w-100 h-100'
+          <CarouselImage
             src={CarouselImg2}
-            alt="Image not found! - Slide 2"
           />
           <Carousel.Caption>
-            <p>
+            <CaptionText>
             This is the caption for the second image
-            </p>
+            </CaptionText>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <img
-            className='d-block w-100 h-100'
+          <CarouselImage
             src={CarouselImg3}
-            alt="Image not found! - Slide 3"
           />
           <Carousel.Caption>
-            <p>
+            <CaptionText>
             This is the caption for the third image
-            </p>
+            </CaptionText>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <CenterRow>
-        <h1>
-        About us:
-        </h1>
-        <h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum elementum lorem. Quisque ac dapibus lacus, in sagittis leo. Praesent fermentum nec massa et imperdiet. Fusce sapien nisl, lacinia ut ante eu, laoreet elementum ex. Duis eget purus a dui pellentesque maximus. Aenean vel ultricies velit. Mauris scelerisque sapien dolor, a laoreet magna aliquet ut. Vestibulum nec dignissim tellus.
-        Recusandae autem et ipsam. Saepe qui et repellat. Maxime distinctio non occaecati cum voluptates voluptatibus quo minima. Inventore facilis a accusantium quaerat ut quam quos. Enim qui porro nobis in qui ratione.
-        Porro non maxime et porro veniam ut laudantium. Magni quidem non officiis eaque nobis quidem. Laboriosam doloremque quos eius. Maiores quia est explicabo nisi consectetur. Consectetur velit ducimus maiores iusto quia natus aliquid. Odio libero magnam praesentium accusantium pariatur quia perspiciatis incidunt.
-        Provident consectetur quo nostrum veniam. Nam inventore ullam repellat soluta corrupti quam. Dolor quis aliquam exercitationem rerum iure placeat voluptatem.
-        Id non rem reprehenderit dolor similique et. Et ut laborum velit incidunt. Ea excepturi et repudiandae. Rem culpa rerum dolores accusantium sed magnam facilis officia.
-        Quaerat exercitationem minima dolor amet rerum nesciunt est occaecati. Labore quidem quae excepturi. Et praesentium quidem nihil quos.
-        </h3>
+      </CarouselContainer>
+      <Body>
+        <h2>
+        ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join
+        our GroupMe or follow us on Instagram or Facebook for event information, memes, and
+        friendship!
+        </h2>
+        </Body>
+        <SocialMediaContainer>
+          <h1>
+          Find us here as well:
+          </h1>
+        </SocialMediaContainer>
+        <SocialMediaContainer>
+        <SocialMedia>
+          <Col>
+            <a href='https://www.facebook.com/DSAatUF'>
+              <Icon src={FacebookLogo}></Icon>
+            </a>
+          </Col>
+          <Col>
+            <a href='https://www.instagram.com/uf.dsa/'>
+              <Icon src={InstagramLogo}></Icon>
+            </a>
+          </Col>
+          <Col>
+            <a href='https://groupme.com/join_group/53205471/hXrFzndj'>
+              <Icon src={GroupMeLogo}></Icon>
+            </a>
+          </Col>
+        </SocialMedia></SocialMediaContainer>
+        <Body>
+          <h1>Highlights from our pages:</h1>
+        </Body>
 
-        <h1>
-        Follow us on these sites!
-        </h1>
-
-      </CenterRow>
     </Container>
   );
 };
