@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
-import { CenterRow } from '../components/CenterRow';
+import { CenterRow } from './CenterRow';
+import { FullWidth } from './FullWidth';
 import logoFb from '../assets/facebook.svg';
 import logoInst from '../assets/instagram.svg';
 import logoGroup from '../assets/groupme.svg';
@@ -22,12 +23,6 @@ const StyledCol = styled(Col)`
   flex-shrink: 2;
   margin: 0 20px 0 20px;
   padding: 0;
-  height: fit-content;
-`;
-
-const FullWidth = styled.div`
-  bottom: 0;
-  width: 100%;
   height: fit-content;
 `;
 

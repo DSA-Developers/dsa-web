@@ -2,25 +2,50 @@
 
 exports[`Contact Page renders 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c2 {
+  font-size: 4rem;
+}
+
+.c1 {
+  padding: 20vh 0 20vh 0;
+  font-size: 2rem;
+  color: #343a40;
+  margin: 0;
 }
 
 <div
-  className="container"
+  className="c0"
 >
   <div
-    className="c0 row"
+    className="c1 jumbotron jumbotron-fluid"
   >
-    <h1>
-      Contact Us Page
-    </h1>
+    <div
+      className="container"
+    >
+      <h1
+        className="c2"
+      >
+        Mailing List
+      </h1>
+      <p>
+        Join our mailing list to stay up to date!
+      </p>
+      <a
+        className="btn btn-dark btn-lg"
+        href="http://eepurl.com/gRikBb"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Subscribe
+      </a>
+    </div>
   </div>
 </div>
 `;
