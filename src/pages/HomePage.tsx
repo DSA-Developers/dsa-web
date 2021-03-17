@@ -13,12 +13,26 @@ import DSAMemberPhoto from '../assets/DSA Members.png';
 import FacebookLogo from '../assets/facebook.svg';
 import GroupMeLogo from '../assets/groupme.svg';
 import InstagramLogo from '../assets/instagram.svg';
+import DSALogo from '../assets/logo.png';
+import HSALogo from '../assets/HispanicStudentLogo.png';
+import ArSALogo from '../assets/ArgentineStudentsLogo.png';
+import ATCLogo from '../assets/ArgentineTango.png';
+import CASALogo from '../assets/CubanAmericanLogo.png';
+import CALORLogo from '../assets/CentralAmericanLogo.png';
+import GSCLogo from '../assets/GatorSalsaLogo.png';
+import HCALogo from '../assets/HispanicCommunicatorsLogo.png';
+import MASALogo from '../assets/MexicanStudentLogo.png';
+import PASSLogo from '../assets/PeruvianAmericanLogo.png';
+import PCLogo from '../assets/PorColombiaLogo.png';
+import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
+import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { readBuilderProgram } from 'typescript';
 
 interface Props {}
 
 const Title = styled.h1`
   font-family: Roboto;
+  font-size: 80px;
   justify-content: center;
   display: flex;
   padding: 20px 0px 0px 0px;
@@ -33,6 +47,7 @@ const Body = styled.p`
 const Icon = styled.img`
   width: 100px;
   height: 100px;
+  border-radius: 25px;
 `;
 
 const SocialMediaContainer = styled.div`
@@ -52,6 +67,20 @@ const SocialMedia = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 150px);
   grid-gap: 0px;
+`;
+
+const ParentAffiliation = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+`;
+
+const Affiliations = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+`;
+
+const AffiliationsText = styled.p`
+  justify-content: center;
 `;
 
 const CarouselImage = styled.img`
@@ -88,13 +117,11 @@ export const HomePage: React.FC<Props> = ({}) => {
         our GroupMe or follow us on Instagram or Facebook for event information, memes, and
         friendship!
         </h2>
-        </Body>
-        <SocialMediaContainer>
-          <h1>
-          Find us here as well:
-          </h1>
-        </SocialMediaContainer>
-        <SocialMediaContainer>
+      </Body>
+      <SocialMediaContainer>
+          <h1>Find us here as well:</h1>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
         <SocialMedia>
           <Col>
             <a href='https://www.facebook.com/DSAatUF'>
@@ -111,11 +138,132 @@ export const HomePage: React.FC<Props> = ({}) => {
               <Icon src={GroupMeLogo}></Icon>
             </a>
           </Col>
-        </SocialMedia></SocialMediaContainer>
-        <Body>
-          <h1>Highlights from our pages:</h1>
-        </Body>
-
+        </SocialMedia>
+      </SocialMediaContainer>
+      <Body></Body>
+      <SocialMediaContainer>
+      <Body>
+        <h1>Parent Organization:</h1>
+      </Body>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+        <ParentAffiliation>
+        <Col>
+        <a href="https://www.ufhsa.com/">
+          <Icon src={HSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Hispanic Student Association
+        </AffiliationsText>
+        </Col>
+        </ParentAffiliation>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+      <Body>
+        <h1>In Association With:</h1>
+      </Body>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+       <Affiliations>
+        <Col>
+        <a href="https://www.ufhsa.com/argentina">
+          <Icon src={ArSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Argentine Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/tango">
+          <Icon src={ATCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Argentine Tango Club
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/cuba">
+          <Icon src={CASALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Cuban American Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/centralamerica">
+          <Icon src={CALORLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Central American Latino Organization
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/salsa">
+          <Icon src={GSCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Gator Salsa Club
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/hispanic-communicators">
+          <Icon src={HCALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Hispanic Communicators Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/mexico">
+          <Icon src={MASALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Mexican-American Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/peru">
+          <Icon src={PASSLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Peruvian American Student Society
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/colombia">
+          <Icon src={PCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Por Colombia
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/sabor-latino">
+          <Icon src={CarouselImg1}></Icon>
+        </a>
+        <AffiliationsText>
+          Sabor Latino
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/puertorico">
+          <Icon src={UEPALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          La Union de Estudiantes Puertorriqueños Activos
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/venezuela">
+          <Icon src={VENSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Venezuelan Student Association
+        </AffiliationsText>
+        </Col>
+       </Affiliations>
+      </SocialMediaContainer>
+      <Body></Body>
     </Container>
   );
 };
