@@ -2,12 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
+import UFlogo from '../assets/UF logo.png'
+import HSAlogo from '../assets/HSA Logo.png'
+import GWlogo from '../assets/GatorWell.jpg'
+import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
 
 interface Props {}
 
 const Title = styled.h1`
   font-family: Roboto;
+  padding: 5%;
+  margin-right: 100px;
+`;
+const StyledCard = styled.div`
+  transition: transform .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const HomePage: React.FC<Props> = ({}) => {
@@ -26,6 +41,48 @@ export const HomePage: React.FC<Props> = ({}) => {
         Quaerat exercitationem minima dolor amet rerum nesciunt est occaecati. Labore quidem quae excepturi. Et praesentium quidem nihil quos.
         </h2>
       </CenterRow>
+
+      <CenterRow>
+        <Title>Resources</Title>
+      </CenterRow>
+
+      <Container>
+        <CenterRow>  
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/campus-resources" target="_blank">
+                <Card style={{ width: '15rem', height: '15rem'}} bg='light' >
+                    <Image src={UFlogo} style={{ padding: '5%', maxWidth: '100%', margin: 'auto' }} /> 
+                </Card>
+              </a>
+              <Card.Title  style={{ padding: '2rem 1rem', fontSize:'25px' }}>Campus Resources</Card.Title>    
+            </StyledCard>   
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/hsa-resources" target="_blank">
+                <Card style={{ width: '15rem', height: '15rem'}} bg='light' >
+                    <Image src={HSAlogo} style={{ padding: '5%' }} /> 
+                </Card>
+              </a>
+              <Card.Title  style={{ padding: '2rem 2rem', fontSize:'25px' }}>HSA Resources</Card.Title>    
+            </StyledCard>   
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/mental-health-resources" target="_blank">
+                <Card style={{ width: '15rem', height: '15rem'}} bg='light' >
+                    <Image src={GWlogo} style={{ padding: '5%' }} /> 
+                </Card>
+              </a>
+              <Card.Title  style={{padding: '2rem 2.5rem', fontSize:'25px'  }}>Mental Health</Card.Title>    
+            </StyledCard>   
+          </Col>
+        </CenterRow>
+      </Container>
+
+      <Title>
+      </Title>
     </Container>
   );
 };
