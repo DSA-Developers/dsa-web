@@ -2,30 +2,268 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
-import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image';
+import Carousel from 'react-bootstrap/Carousel';
+import CarouselImg1 from '../assets/placeholderCarousel1.jpg';
+import CarouselImg2 from '../assets/placeholderCarousel2.jpg';
+import CarouselImg3 from '../assets/placeholderCarousel3.jpg';
+import DSAMemberPhoto from '../assets/DSA Members.png';
+import FacebookLogo from '../assets/facebook.svg';
+import GroupMeLogo from '../assets/groupme.svg';
+import InstagramLogo from '../assets/instagram.svg';
+import DSALogo from '../assets/logo.png';
+import HSALogo from '../assets/HispanicStudentLogo.png';
+import ArSALogo from '../assets/ArgentineStudentsLogo.png';
+import ATCLogo from '../assets/ArgentineTango.png';
+import CASALogo from '../assets/CubanAmericanLogo.png';
+import CALORLogo from '../assets/CentralAmericanLogo.png';
+import GSCLogo from '../assets/GatorSalsaLogo.png';
+import HCALogo from '../assets/HispanicCommunicatorsLogo.png';
+import MASALogo from '../assets/MexicanStudentLogo.png';
+import PASSLogo from '../assets/PeruvianAmericanLogo.png';
+import PCLogo from '../assets/PorColombiaLogo.png';
+import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
+import VENSALogo from '../assets/VenezuelanStudentLogo.png';
+import { readBuilderProgram } from 'typescript';
 
 interface Props {}
 
 const Title = styled.h1`
   font-family: Roboto;
+  font-size: 80px;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px 0px 0px;
+`;
+
+const Body = styled.p`
+  justify-content: center;
+  display:flex;
+  padding: 20px 0px 20px 0px;
+`;
+
+const Icon = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+`;
+
+const SocialMediaContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  background-color: #eee;
+  justify-content: center;
+  display: flex;
+`;
+
+const CarouselContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  display: flex;
+`;
+
+const SocialMedia = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 0px;
+`;
+
+const ParentAffiliation = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+`;
+
+const Affiliations = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+`;
+
+const AffiliationsText = styled.p`
+  justify-content: center;
+`;
+
+const CarouselImage = styled.img`
+  width: 1100px;
+  height: 600px;
 `;
 
 export const HomePage: React.FC<Props> = ({}) => {
   return (
     <Container>
-      <CenterRow>
-        <Title>Home Page</Title>
-      </CenterRow>
-      <CenterRow>
+      <Title>Welcome to the DSA at UF!</Title>
+      <CarouselContainer>
+      <Carousel>
+        <Carousel.Item interval={5000}>
+          <CarouselImage
+            src={DSAMemberPhoto}
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <CarouselImage
+            src={CarouselImg2}
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <CarouselImage
+            src={CarouselImg3}
+          />
+        </Carousel.Item>
+      </Carousel>
+      </CarouselContainer>
+      <Body>
         <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum elementum lorem. Quisque ac dapibus lacus, in sagittis leo. Praesent fermentum nec massa et imperdiet. Fusce sapien nisl, lacinia ut ante eu, laoreet elementum ex. Duis eget purus a dui pellentesque maximus. Aenean vel ultricies velit. Mauris scelerisque sapien dolor, a laoreet magna aliquet ut. Vestibulum nec dignissim tellus.
-        Recusandae autem et ipsam. Saepe qui et repellat. Maxime distinctio non occaecati cum voluptates voluptatibus quo minima. Inventore facilis a accusantium quaerat ut quam quos. Enim qui porro nobis in qui ratione.
-        Porro non maxime et porro veniam ut laudantium. Magni quidem non officiis eaque nobis quidem. Laboriosam doloremque quos eius. Maiores quia est explicabo nisi consectetur. Consectetur velit ducimus maiores iusto quia natus aliquid. Odio libero magnam praesentium accusantium pariatur quia perspiciatis incidunt.
-        Provident consectetur quo nostrum veniam. Nam inventore ullam repellat soluta corrupti quam. Dolor quis aliquam exercitationem rerum iure placeat voluptatem.
-        Id non rem reprehenderit dolor similique et. Et ut laborum velit incidunt. Ea excepturi et repudiandae. Rem culpa rerum dolores accusantium sed magnam facilis officia.
-        Quaerat exercitationem minima dolor amet rerum nesciunt est occaecati. Labore quidem quae excepturi. Et praesentium quidem nihil quos.
+        ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join
+        our GroupMe or follow us on Instagram or Facebook for event information, memes, and
+        friendship!
         </h2>
-      </CenterRow>
+      </Body>
+      <SocialMediaContainer>
+          <h1>Find us here as well:</h1>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+        <SocialMedia>
+          <Col>
+            <a href='https://www.facebook.com/DSAatUF'>
+              <Icon src={FacebookLogo}></Icon>
+            </a>
+          </Col>
+          <Col>
+            <a href='https://www.instagram.com/uf.dsa/'>
+              <Icon src={InstagramLogo}></Icon>
+            </a>
+          </Col>
+          <Col>
+            <a href='https://groupme.com/join_group/53205471/hXrFzndj'>
+              <Icon src={GroupMeLogo}></Icon>
+            </a>
+          </Col>
+        </SocialMedia>
+      </SocialMediaContainer>
+      <Body></Body>
+      <SocialMediaContainer>
+      <Body>
+        <h1>Parent Organization:</h1>
+      </Body>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+        <ParentAffiliation>
+        <Col>
+        <a href="https://www.ufhsa.com/">
+          <Icon src={HSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Hispanic Student Association
+        </AffiliationsText>
+        </Col>
+        </ParentAffiliation>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+      <Body>
+        <h1>In Association With:</h1>
+      </Body>
+      </SocialMediaContainer>
+      <SocialMediaContainer>
+       <Affiliations>
+        <Col>
+        <a href="https://www.ufhsa.com/argentina">
+          <Icon src={ArSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Argentine Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/tango">
+          <Icon src={ATCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Argentine Tango Club
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/cuba">
+          <Icon src={CASALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Cuban American Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/centralamerica">
+          <Icon src={CALORLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Central American Latino Organization
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/salsa">
+          <Icon src={GSCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Gator Salsa Club
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/hispanic-communicators">
+          <Icon src={HCALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Hispanic Communicators Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/mexico">
+          <Icon src={MASALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Mexican-American Student Association
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/peru">
+          <Icon src={PASSLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Peruvian American Student Society
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/colombia">
+          <Icon src={PCLogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Por Colombia
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/sabor-latino">
+          <Icon src={CarouselImg1}></Icon>
+        </a>
+        <AffiliationsText>
+          Sabor Latino
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/puertorico">
+          <Icon src={UEPALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          La Union de Estudiantes Puertorriqueños Activos
+        </AffiliationsText>
+        </Col>
+        <Col>
+        <a href="https://www.ufhsa.com/venezuela">
+          <Icon src={VENSALogo}></Icon>
+        </a>
+        <AffiliationsText>
+          Venezuelan Student Association
+        </AffiliationsText>
+        </Col>
+       </Affiliations>
+      </SocialMediaContainer>
+      <Body></Body>
     </Container>
   );
 };

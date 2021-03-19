@@ -2,38 +2,513 @@
 
 exports[`Home Page renders 1`] = `
 .c0 {
+  font-family: Roboto;
+  font-size: 80px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 0px 0px 0px;
+}
+
+.c3 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+}
+
+.c6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.c4 {
+  padding: 20px 0px 20px 0px;
+  background-color: #eee;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  padding: 20px 0px 20px 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: grid;
+  grid-template-columns: repeat(3,150px);
+  grid-gap: 0px;
+}
+
+.c7 {
+  display: grid;
+  grid-template-columns: repeat(1,150px);
+}
+
+.c9 {
+  display: grid;
+  grid-template-columns: repeat(6,150px);
+}
+
+.c8 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.c1 {
-  font-family: Roboto;
+.c2 {
+  width: 1100px;
+  height: 600px;
 }
 
 <div
   className="container"
 >
-  <div
-    className="c0 row"
+  <h1
+    className="c0"
   >
-    <h1
-      className="c1"
+    Welcome to the DSA at UF!
+  </h1>
+  <div
+    className="c1"
+  >
+    <div
+      className="carousel slide"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
     >
-      Home Page
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="active carousel-item"
+          interval={5000}
+        >
+          <img
+            className="c2"
+            src="DSA Members.png"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={5000}
+        >
+          <img
+            className="c2"
+            src="placeholderCarousel2.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={5000}
+        >
+          <img
+            className="c2"
+            src="placeholderCarousel3.jpg"
+          />
+        </div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-prev-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Previous
+        </span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-next-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+  <p
+    className="c3"
+  >
+    <h2>
+      ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or follow us on Instagram or Facebook for event information, memes, and friendship!
+    </h2>
+  </p>
+  <div
+    className="c4"
+  >
+    <h1>
+      Find us here as well:
     </h1>
   </div>
   <div
-    className="c0 row"
+    className="c4"
   >
-    <h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum elementum lorem. Quisque ac dapibus lacus, in sagittis leo. Praesent fermentum nec massa et imperdiet. Fusce sapien nisl, lacinia ut ante eu, laoreet elementum ex. Duis eget purus a dui pellentesque maximus. Aenean vel ultricies velit. Mauris scelerisque sapien dolor, a laoreet magna aliquet ut. Vestibulum nec dignissim tellus. Recusandae autem et ipsam. Saepe qui et repellat. Maxime distinctio non occaecati cum voluptates voluptatibus quo minima. Inventore facilis a accusantium quaerat ut quam quos. Enim qui porro nobis in qui ratione. Porro non maxime et porro veniam ut laudantium. Magni quidem non officiis eaque nobis quidem. Laboriosam doloremque quos eius. Maiores quia est explicabo nisi consectetur. Consectetur velit ducimus maiores iusto quia natus aliquid. Odio libero magnam praesentium accusantium pariatur quia perspiciatis incidunt. Provident consectetur quo nostrum veniam. Nam inventore ullam repellat soluta corrupti quam. Dolor quis aliquam exercitationem rerum iure placeat voluptatem. Id non rem reprehenderit dolor similique et. Et ut laborum velit incidunt. Ea excepturi et repudiandae. Rem culpa rerum dolores accusantium sed magnam facilis officia. Quaerat exercitationem minima dolor amet rerum nesciunt est occaecati. Labore quidem quae excepturi. Et praesentium quidem nihil quos.
-    </h2>
+    <div
+      className="c5"
+    >
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.facebook.com/DSAatUF"
+        >
+          <img
+            className="c6"
+            src="facebook.svg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.instagram.com/uf.dsa/"
+        >
+          <img
+            className="c6"
+            src="instagram.svg"
+          />
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://groupme.com/join_group/53205471/hXrFzndj"
+        >
+          <img
+            className="c6"
+            src="groupme.svg"
+          />
+        </a>
+      </div>
+    </div>
   </div>
+  <p
+    className="c3"
+  />
+  <div
+    className="c4"
+  >
+    <p
+      className="c3"
+    >
+      <h1>
+        Parent Organization:
+      </h1>
+    </p>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c7"
+    >
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/"
+        >
+          <img
+            className="c6"
+            src="HispanicStudentLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Hispanic Student Association
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <p
+      className="c3"
+    >
+      <h1>
+        In Association With:
+      </h1>
+    </p>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c9"
+    >
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/argentina"
+        >
+          <img
+            className="c6"
+            src="ArgentineStudentsLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Argentine Student Association
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/tango"
+        >
+          <img
+            className="c6"
+            src="ArgentineTango.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Argentine Tango Club
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/cuba"
+        >
+          <img
+            className="c6"
+            src="CubanAmericanLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Cuban American Student Association
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/centralamerica"
+        >
+          <img
+            className="c6"
+            src="CentralAmericanLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Central American Latino Organization
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/salsa"
+        >
+          <img
+            className="c6"
+            src="GatorSalsaLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Gator Salsa Club
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/hispanic-communicators"
+        >
+          <img
+            className="c6"
+            src="HispanicCommunicatorsLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Hispanic Communicators Association
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/mexico"
+        >
+          <img
+            className="c6"
+            src="MexicanStudentLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Mexican-American Student Association
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/peru"
+        >
+          <img
+            className="c6"
+            src="PeruvianAmericanLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Peruvian American Student Society
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/colombia"
+        >
+          <img
+            className="c6"
+            src="PorColombiaLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Por Colombia
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/sabor-latino"
+        >
+          <img
+            className="c6"
+            src="placeholderCarousel1.jpg"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Sabor Latino
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/puertorico"
+        >
+          <img
+            className="c6"
+            src="UnionDeEstudiantesLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          La Union de Estudiantes Puertorriqueños Activos
+        </p>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          href="https://www.ufhsa.com/venezuela"
+        >
+          <img
+            className="c6"
+            src="VenezuelanStudentLogo.png"
+          />
+        </a>
+        <p
+          className="c8"
+        >
+          Venezuelan Student Association
+        </p>
+      </div>
+    </div>
+  </div>
+  <p
+    className="c3"
+  />
 </div>
 `;
