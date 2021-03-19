@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
 import { CenterRow } from './CenterRow';
 import { FullWidth } from './FullWidth';
-
 import logoFb from '../assets/facebook.svg';
 import logoInst from '../assets/instagram.svg';
 import logoGroup from '../assets/groupme.svg';
