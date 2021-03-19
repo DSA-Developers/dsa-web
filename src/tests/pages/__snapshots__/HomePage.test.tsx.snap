@@ -3,16 +3,20 @@
 exports[`Home Page renders 1`] = `
 .c0 {
   font-family: Roboto;
-  font-size: 80px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0px 0px 0px;
+  padding: 5%;
+  text-align: center;
+}
+
+.c10 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.c10:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .c3 {
@@ -36,6 +40,7 @@ exports[`Home Page renders 1`] = `
 .c4 {
   padding: 20px 0px 20px 0px;
   background-color: #eee;
+  width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -190,9 +195,11 @@ exports[`Home Page renders 1`] = `
   <p
     className="c3"
   >
-    <h2>
+    <h1
+      className="c0"
+    >
       ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or follow us on Instagram or Facebook for event information, memes, and friendship!
-    </h2>
+    </h1>
   </p>
   <div
     className="c4"
@@ -504,6 +511,146 @@ exports[`Home Page renders 1`] = `
         >
           Venezuelan Student Association
         </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <h1
+      className="c0"
+    >
+      Resources
+    </h1>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="c10"
+      >
+        <a
+          href="https://www.ufhsa.com/campus-resources"
+          target="_blank"
+        >
+          <div
+            className="card bg-light"
+            style={
+              Object {
+                "height": "15rem",
+                "width": "15rem",
+              }
+            }
+          >
+            <img
+              className=""
+              src="UF logo.png"
+              style={
+                Object {
+                  "margin": "auto",
+                  "maxWidth": "100%",
+                  "padding": "5%",
+                }
+              }
+            />
+          </div>
+        </a>
+        <div
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "25px",
+              "padding": "2rem 1rem",
+            }
+          }
+        >
+          Campus Resources
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="c10"
+      >
+        <a
+          href="https://www.ufhsa.com/hsa-resources"
+          target="_blank"
+        >
+          <div
+            className="card bg-light"
+            style={
+              Object {
+                "height": "15rem",
+                "width": "15rem",
+              }
+            }
+          >
+            <img
+              className=""
+              src="HSA Logo.png"
+              style={Object {}}
+            />
+          </div>
+        </a>
+        <div
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "25px",
+              "padding": "2rem 2rem",
+            }
+          }
+        >
+          HSA Resources
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="c10"
+      >
+        <a
+          href="https://www.ufhsa.com/mental-health-resources"
+          target="_blank"
+        >
+          <div
+            className="card bg-light"
+            style={
+              Object {
+                "height": "15rem",
+                "width": "15rem",
+              }
+            }
+          >
+            <img
+              className=""
+              src="GatorWell.jpg"
+              style={
+                Object {
+                  "padding": "5%",
+                }
+              }
+            />
+          </div>
+        </a>
+        <div
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "25px",
+              "padding": "2rem 2rem",
+            }
+          }
+        >
+          Mental Health
+        </div>
       </div>
     </div>
   </div>
