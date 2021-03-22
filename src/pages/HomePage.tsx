@@ -11,9 +11,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg1 from '../assets/placeholderCarousel1.jpg';
-import CarouselImg2 from '../assets/placeholderCarousel2.jpg';
-import CarouselImg3 from '../assets/placeholderCarousel3.jpg';
+import CarouselImg1 from '../assets/DSA Carousel.jpeg';
+import CarouselImg2 from '../assets/DSA Carousel2.jpg';
+import CarouselImg3 from '../assets/DSA Carousel3.jpg';
 import DSAMemberPhoto from '../assets/DSA Members.png';
 import FacebookLogo from '../assets/facebook.svg';
 import GroupMeLogo from '../assets/groupme.svg';
@@ -29,6 +29,7 @@ import HCALogo from '../assets/HispanicCommunicatorsLogo.png';
 import MASALogo from '../assets/MexicanStudentLogo.png';
 import PASSLogo from '../assets/PeruvianAmericanLogo.png';
 import PCLogo from '../assets/PorColombiaLogo.png';
+import SLLogo from '../assets/SaborLatinoLogo.png';
 import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
 import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { readBuilderProgram } from 'typescript';
@@ -106,7 +107,7 @@ export const HomePage: React.FC<Props> = ({}) => {
       <CarouselContainer>
         <Carousel>
           <Carousel.Item interval={5000}>
-            <CarouselImage src={DSAMemberPhoto} />
+            <CarouselImage src={CarouselImg1} />
           </Carousel.Item>
           <Carousel.Item interval={5000}>
             <CarouselImage src={CarouselImg2} />
@@ -242,41 +243,39 @@ export const HomePage: React.FC<Props> = ({}) => {
         </Affiliations>
       </SocialMediaContainer>
 
+      <Body></Body>
+
       <SocialMediaContainer>
-        <Title>Resources</Title>
+        <h1>Resources</h1>
       </SocialMediaContainer>
 
       <SocialMediaContainer>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/campus-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={UFlogo} style={{ padding: '5%', maxWidth: '100%', margin: 'auto' }} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Campus Resources</Card.Title>
-          </StyledCard>
-        </Col>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/hsa-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={HSAlogo} style={{}} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 2rem', fontSize: '25px' }}>HSA Resources</Card.Title>
-          </StyledCard>
-        </Col>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/mental-health-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={GWlogo} style={{ padding: '5%' }} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 2rem', fontSize: '25px' }}>Mental Health</Card.Title>
-          </StyledCard>
-        </Col>
+        <SocialMedia>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/campus-resources" target="_blank">
+                <Icon src={UFlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Campus Resources</Card.Title>
+            </StyledCard>
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/hsa-resources" target="_blank">
+                <Icon src={HSAlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>HSA Resources</Card.Title>
+            </StyledCard>
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/mental-health-resources" target="_blank">
+                <Icon src={GWlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Mental Health</Card.Title>
+            </StyledCard>
+          </Col>
+        </SocialMedia>
       </SocialMediaContainer>
 
       <Body></Body>
