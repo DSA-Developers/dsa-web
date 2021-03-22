@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About Page renders 1`] = `
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,15 +12,257 @@ exports[`About Page renders 1`] = `
   justify-content: center;
 }
 
+.c0 {
+  bottom: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c2 {
+  font-size: 4rem;
+}
+
+.c3 {
+  font-size: 2rem padding:10vh 0 10vh 0;
+  margin: 0 color:#4287f5;
+}
+
 <div
-  className="container"
+  className="c0"
 >
   <div
-    className="c0 row"
+    className="container"
   >
-    <h1>
-      About Us Page
-    </h1>
+    <div
+      className="c1 row"
+    >
+      <h1
+        className="c2"
+      >
+        About us
+      </h1>
+    </div>
+    <p>
+      The Dominican Student Association was first established at the University of Florida in 2000. We are a welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the lives of not only Dominican people but as many people as possible. DSA strives to create a community of Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
+    </p>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="c1 row"
+    >
+      <div
+        className="c3 card-deck"
+        style={
+          Object {
+            "height": "60%",
+            "width": "60%",
+          }
+        }
+      >
+        <div
+          className="card bg-danger text-light border-primary"
+        >
+          <img
+            className="card-img-top"
+            src="Valentina.png"
+          />
+          <div
+            className="card-body"
+          >
+            <div
+              className="card-title h5"
+            >
+              Valentina Litang
+            </div>
+            <p
+              className="card-text"
+            >
+              President
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c3 card-deck"
+        style={
+          Object {
+            "height": "60%",
+            "width": "60%",
+          }
+        }
+      >
+        <div
+          className="card bg-primary text-light border-danger"
+        >
+          <img
+            className="card-img-top"
+            src="Francis.jpg"
+          />
+          <div
+            className="card-body"
+          >
+            <div
+              className="card-title h5"
+            >
+              Francis Rivas
+            </div>
+            <p
+              className="card-text"
+            >
+              Vice-President
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c3 card-deck"
+    >
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Elise.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Elise Gonzalez
+          </div>
+          <p
+            className="card-text"
+          >
+            Treasurer
+          </p>
+        </div>
+      </div>
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Laurie.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Laurie Rodriguez
+          </div>
+          <p
+            className="card-text"
+          >
+            Independence Week Director
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c3 card-deck"
+    >
+      <div
+        className="card bg-primary text-light border-danger"
+      >
+        <img
+          className="card-img-top"
+          src="Richie.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Ricardo Cordero
+          </div>
+          <p
+            className="card-text"
+          >
+            PR Co-Director
+          </p>
+        </div>
+      </div>
+      <div
+        className="card bg-primary text-light border-danger"
+      >
+        <img
+          className="card-img-top"
+          src="Gely.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Gelybeth Rodriguez
+          </div>
+          <p
+            className="card-text"
+          >
+            PR Co-Director
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c3 card-deck"
+    >
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Jeff.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Jeff Fondeuro
+          </div>
+          <p
+            className="card-text"
+          >
+            Social Media Manager
+          </p>
+        </div>
+      </div>
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Nick.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Nicholas Suriel
+          </div>
+          <p
+            className="card-text"
+          >
+            Graphic Designer
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
