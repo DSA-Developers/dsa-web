@@ -130,7 +130,7 @@ exports[`Home Page renders 1`] = `
       >
         <div
           className="active carousel-item"
-          interval={4000}
+          interval={5000}
         >
           <img
             className="c2"
@@ -139,7 +139,7 @@ exports[`Home Page renders 1`] = `
         </div>
         <div
           className="carousel-item"
-          interval={4000}
+          interval={5000}
         >
           <img
             className="c2"
@@ -148,7 +148,7 @@ exports[`Home Page renders 1`] = `
         </div>
         <div
           className="carousel-item"
-          interval={4000}
+          interval={5000}
         >
           <img
             className="c2"
