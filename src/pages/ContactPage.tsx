@@ -5,11 +5,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import { FullWidth } from '../components/FullWidth';
 
-import database from '../firebase';
-
-console.log(database);
-
-
 interface Props {}
 
 const Header = styled.h1`
@@ -35,11 +30,6 @@ export const ContactPage: React.FC<Props> = ({}) => {
           </Button>
         </Container>
       </MailingList>
-      <Button
-        onClick={() => {
-          database.ref('test').push('test message');
-        }}
-      ></Button>
     </FullWidth>
   );
 };

@@ -14,6 +14,8 @@ import gely from '../assets/Gely.jpg';
 import francis from '../assets/Francis.jpg';
 import elise from '../assets/Elise.jpg';
 
+import { database, storage } from '../firebase';
+
 interface Props {}
 
 const Header = styled.h1`
@@ -32,6 +34,21 @@ const Cards = styled(Card)`
   text: white
   width: 18rem
 `;
+
+const storageRef = storage.ref();
+const membersRef = database.ref('members/');
+
+membersRef.on('value', (snapshot: any) => {
+  snapshot.forEach((member: any) => {
+    console.log(member.val().name, member.val().role);
+    storageRef
+      .child('members/' + member.val().photo)
+      .getDownloadURL()
+      .then((res: any) => {
+        console.log(res);
+      });
+  });
+});
 
 export const AboutPage: React.FC<Props> = ({}) => {
   return (
