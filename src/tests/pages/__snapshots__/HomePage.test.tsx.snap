@@ -134,7 +134,7 @@ exports[`Home Page renders 1`] = `
         >
           <img
             className="c2"
-            src="DSA Members.png"
+            src="DSA Carousel.jpeg"
           />
         </div>
         <div
@@ -143,7 +143,7 @@ exports[`Home Page renders 1`] = `
         >
           <img
             className="c2"
-            src="placeholderCarousel2.jpg"
+            src="DSA Carousel2.jpg"
           />
         </div>
         <div
@@ -152,7 +152,7 @@ exports[`Home Page renders 1`] = `
         >
           <img
             className="c2"
-            src="placeholderCarousel3.jpg"
+            src="DSA Carousel3.jpg"
           />
         </div>
       </div>
@@ -469,7 +469,7 @@ exports[`Home Page renders 1`] = `
         >
           <img
             className="c6"
-            src="placeholderCarousel1.jpg"
+            src="DSA Carousel.jpeg"
           />
         </a>
         <p

@@ -11,9 +11,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg1 from '../assets/placeholderCarousel1.jpg';
-import CarouselImg2 from '../assets/placeholderCarousel2.jpg';
-import CarouselImg3 from '../assets/placeholderCarousel3.jpg';
+import CarouselImg1 from '../assets/DSA Carousel.jpeg';
+import CarouselImg2 from '../assets/DSA Carousel2.jpg';
+import CarouselImg3 from '../assets/DSA Carousel3.jpg';
 import DSAMemberPhoto from '../assets/DSA Members.png';
 import FacebookLogo from '../assets/facebook.svg';
 import GroupMeLogo from '../assets/groupme.svg';
@@ -29,6 +29,7 @@ import HCALogo from '../assets/HispanicCommunicatorsLogo.png';
 import MASALogo from '../assets/MexicanStudentLogo.png';
 import PASSLogo from '../assets/PeruvianAmericanLogo.png';
 import PCLogo from '../assets/PorColombiaLogo.png';
+import SLLogo from '../assets/SaborLatinoLogo.png';
 import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
 import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { readBuilderProgram } from 'typescript';
@@ -105,13 +106,13 @@ export const HomePage: React.FC<Props> = ({}) => {
       <Title>Welcome to the DSA at UF!</Title>
       <CarouselContainer>
         <Carousel>
-          <Carousel.Item interval={4000}>
-            <CarouselImage src={DSAMemberPhoto} />
+          <Carousel.Item interval={5000}>
+            <CarouselImage src={CarouselImg1} />
           </Carousel.Item>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={5000}>
             <CarouselImage src={CarouselImg2} />
           </Carousel.Item>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={5000}>
             <CarouselImage src={CarouselImg3} />
           </Carousel.Item>
         </Carousel>
