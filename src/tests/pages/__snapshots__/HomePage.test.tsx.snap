@@ -514,12 +514,13 @@ exports[`Home Page renders 1`] = `
       </div>
     </div>
   </div>
+  <p
+    className="c3"
+  />
   <div
     className="c4"
   >
-    <h1
-      className="c0"
-    >
+    <h1>
       Resources
     </h1>
   </div>
@@ -527,129 +528,90 @@ exports[`Home Page renders 1`] = `
     className="c4"
   >
     <div
-      className="col"
+      className="c5"
     >
       <div
-        className="c10"
+        className="col"
       >
-        <a
-          href="https://www.ufhsa.com/campus-resources"
-          target="_blank"
+        <div
+          className="c10"
         >
-          <div
-            className="card bg-light"
-            style={
-              Object {
-                "height": "15rem",
-                "width": "15rem",
-              }
-            }
+          <a
+            href="https://www.ufhsa.com/campus-resources"
+            target="_blank"
           >
             <img
-              className=""
+              className="c6"
               src="UF logo.png"
-              style={
-                Object {
-                  "margin": "auto",
-                  "maxWidth": "100%",
-                  "padding": "5%",
-                }
-              }
             />
-          </div>
-        </a>
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "25px",
-              "padding": "2rem 1rem",
-            }
-          }
-        >
-          Campus Resources
-        </div>
-      </div>
-    </div>
-    <div
-      className="col"
-    >
-      <div
-        className="c10"
-      >
-        <a
-          href="https://www.ufhsa.com/hsa-resources"
-          target="_blank"
-        >
+          </a>
           <div
-            className="card bg-light"
+            className="card-title h5"
             style={
               Object {
-                "height": "15rem",
-                "width": "15rem",
+                "fontSize": "25px",
+                "padding": "2rem 1rem",
               }
             }
           >
+            Campus Resources
+          </div>
+        </div>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="c10"
+        >
+          <a
+            href="https://www.ufhsa.com/hsa-resources"
+            target="_blank"
+          >
             <img
-              className=""
+              className="c6"
               src="HSA Logo.png"
-              style={Object {}}
             />
-          </div>
-        </a>
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "25px",
-              "padding": "2rem 2rem",
-            }
-          }
-        >
-          HSA Resources
-        </div>
-      </div>
-    </div>
-    <div
-      className="col"
-    >
-      <div
-        className="c10"
-      >
-        <a
-          href="https://www.ufhsa.com/mental-health-resources"
-          target="_blank"
-        >
+          </a>
           <div
-            className="card bg-light"
+            className="card-title h5"
             style={
               Object {
-                "height": "15rem",
-                "width": "15rem",
+                "fontSize": "25px",
+                "padding": "2rem 1rem",
               }
             }
           >
-            <img
-              className=""
-              src="GatorWell.jpg"
-              style={
-                Object {
-                  "padding": "5%",
-                }
-              }
-            />
+            HSA Resources
           </div>
-        </a>
+        </div>
+      </div>
+      <div
+        className="col"
+      >
         <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "25px",
-              "padding": "2rem 2rem",
-            }
-          }
+          className="c10"
         >
-          Mental Health
+          <a
+            href="https://www.ufhsa.com/mental-health-resources"
+            target="_blank"
+          >
+            <img
+              className="c6"
+              src="GatorWell.jpg"
+            />
+          </a>
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "25px",
+                "padding": "2rem 1rem",
+              }
+            }
+          >
+            Mental Health
+          </div>
         </div>
       </div>
     </div>

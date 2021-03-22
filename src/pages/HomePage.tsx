@@ -105,23 +105,17 @@ export const HomePage: React.FC<Props> = ({}) => {
     <Container>
       <Title>Welcome to the DSA at UF!</Title>
       <CarouselContainer>
-      <Carousel>
-        <Carousel.Item interval={5000}>
-          <CarouselImage
-            src={CarouselImg1}
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <CarouselImage
-            src={CarouselImg2}
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <CarouselImage
-            src={CarouselImg3}
-          />
-        </Carousel.Item>
-      </Carousel>
+        <Carousel>
+          <Carousel.Item interval={5000}>
+            <CarouselImage src={CarouselImg1} />
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <CarouselImage src={CarouselImg2} />
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <CarouselImage src={CarouselImg3} />
+          </Carousel.Item>
+        </Carousel>
       </CarouselContainer>
       <Body>
         <Title>
@@ -249,41 +243,39 @@ export const HomePage: React.FC<Props> = ({}) => {
         </Affiliations>
       </SocialMediaContainer>
 
+      <Body></Body>
+
       <SocialMediaContainer>
-        <Title>Resources</Title>
+        <h1>Resources</h1>
       </SocialMediaContainer>
 
       <SocialMediaContainer>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/campus-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={UFlogo} style={{ padding: '5%', maxWidth: '100%', margin: 'auto' }} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Campus Resources</Card.Title>
-          </StyledCard>
-        </Col>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/hsa-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={HSAlogo} style={{}} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 2rem', fontSize: '25px' }}>HSA Resources</Card.Title>
-          </StyledCard>
-        </Col>
-        <Col>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/mental-health-resources" target="_blank">
-              <Card style={{ width: '15rem', height: '15rem' }} bg="light">
-                <Image src={GWlogo} style={{ padding: '5%' }} />
-              </Card>
-            </a>
-            <Card.Title style={{ padding: '2rem 2rem', fontSize: '25px' }}>Mental Health</Card.Title>
-          </StyledCard>
-        </Col>
+        <SocialMedia>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/campus-resources" target="_blank">
+                <Icon src={UFlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Campus Resources</Card.Title>
+            </StyledCard>
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/hsa-resources" target="_blank">
+                <Icon src={HSAlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>HSA Resources</Card.Title>
+            </StyledCard>
+          </Col>
+          <Col>
+            <StyledCard>
+              <a href="https://www.ufhsa.com/mental-health-resources" target="_blank">
+                <Icon src={GWlogo} />
+              </a>
+              <Card.Title style={{ padding: '2rem 1rem', fontSize: '25px' }}>Mental Health</Card.Title>
+            </StyledCard>
+          </Col>
+        </SocialMedia>
       </SocialMediaContainer>
 
       <Body></Body>
