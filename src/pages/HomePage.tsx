@@ -103,7 +103,6 @@ const CarouselImage = styled.img`
 export const HomePage: React.FC<Props> = ({}) => {
   return (
     <Container>
-      <Title>Welcome to the DSA at UF!</Title>
       <CarouselContainer>
         <Carousel>
           <Carousel.Item interval={5000}>
@@ -224,7 +223,7 @@ export const HomePage: React.FC<Props> = ({}) => {
           </Col>
           <Col>
             <a href="https://www.ufhsa.com/sabor-latino">
-              <Icon src={CarouselImg1}></Icon>
+              <Icon src={SLLogo}></Icon>
             </a>
             <AffiliationsText>Sabor Latino</AffiliationsText>
           </Col>
@@ -277,7 +276,6 @@ export const HomePage: React.FC<Props> = ({}) => {
           </Col>
         </SocialMedia>
       </SocialMediaContainer>
-
       <Body></Body>
     </Container>
   );
