@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { FullWidth } from '../components/FullWidth';
 import { Card, CardDeck } from 'react-bootstrap';
-import stock from '../assets/stockimage.jpg';
+import {MemberCard} from '../components/MemberCard';
 import valentina from '../assets/Valentina.png';
 import richie from '../assets/Richie.jpg';
 import nick from '../assets/Nick.jpg';
@@ -33,7 +33,23 @@ const Cards = styled(Card)`
   width: 18rem
 `;
 
+
 export const AboutPage: React.FC<Props> = ({}) => {
+
+  
+    const cardInfo = [
+      {image: valentina, title: "President", text: "Valentina Litang"},
+      {image: francis, title: "Vice-President", text: "Francis Rivas"},
+      {image: elise, title: "Treasurer", text: "Elise Gonzalez"},
+      {image: laurie, title: "Independence Week Director", text: "Laurie Rodriguez"},
+      {image: richie, title: "PR Co-Director", text: "Ricardo Cordero"},
+      {image: gely, title: "PR Co-Director", text: "Gelybeth Rodriguez"},
+      {image: jeff, title: "Social Media Manager", text: "Jeff Fondeuro"},
+      {image: nick, title: "Graphic Designer", text: "Nicholas Suriel"},
+    ];
+  
+  const cards = cardInfo.map((card)=><MemberCard name={card.text} position={card.title} fileName={card.image}/>)
+
   return (
     <FullWidth>
       <Container>
@@ -50,76 +66,8 @@ export const AboutPage: React.FC<Props> = ({}) => {
       </Container>
      
       <Container>
-        <CenterRow>
-          <Hierarchy style={{width: "60%", height: "60%"}}>
-            <Card bg='danger' text='light' border='primary' >
-              <Card.Img variant="top" src={valentina} />
-              <Card.Body>
-                <Card.Title>Valentina Litang</Card.Title>
-                <Card.Text>President</Card.Text>
-              </Card.Body>
-            </Card>
-          </Hierarchy>
-
-          <Hierarchy style={{width: "60%", height: "60%"}}>
-            <Card bg='primary' text='light' border='danger'>
-              <Card.Img variant="top" src={francis} />
-              <Card.Body>
-                <Card.Title>Francis Rivas</Card.Title>
-                <Card.Text>Vice-President</Card.Text>
-              </Card.Body>
-            </Card>
-          </Hierarchy>
-        </CenterRow>
-
         <Hierarchy>
-          <Card bg='danger' text='light' border='primary'>
-            <Card.Img variant="top" src={elise} />
-            <Card.Body>
-              <Card.Title>Elise Gonzalez</Card.Title>
-              <Card.Text>Treasurer</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card bg='danger' text='light' border='primary' >
-            <Card.Img variant="top" src={laurie} />
-            <Card.Body>
-              <Card.Title>Laurie Rodriguez</Card.Title>
-              <Card.Text>Independence Week Director</Card.Text>
-            </Card.Body>
-          </Card>
-        </Hierarchy>
-        <Hierarchy>
-          <Card bg='primary' text='light' border='danger' >
-            <Card.Img variant="top" src={richie} />
-            <Card.Body>
-              <Card.Title>Ricardo Cordero</Card.Title>
-              <Card.Text>PR Co-Director</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card bg='primary' text='light' border='danger' >
-            <Card.Img variant="top" src={gely} />
-            <Card.Body>
-              <Card.Title>Gelybeth Rodriguez</Card.Title>
-              <Card.Text>PR Co-Director</Card.Text>
-            </Card.Body>
-          </Card>
-        </Hierarchy>  
-
-        <Hierarchy>
-          <Card bg='danger' text='light' border='primary' >
-            <Card.Img variant="top" src={jeff} />
-            <Card.Body>
-              <Card.Title>Jeff Fondeuro</Card.Title>
-              <Card.Text>Social Media Manager</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card bg='danger' text='light' border='primary' >
-            <Card.Img variant="top" src={nick} />
-            <Card.Body>
-              <Card.Title>Nicholas Suriel</Card.Title>
-              <Card.Text>Graphic Designer</Card.Text>
-            </Card.Body>
-          </Card>
+          {cards}
         </Hierarchy>
       </Container>
     </FullWidth>
