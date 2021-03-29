@@ -25,9 +25,9 @@ exports[`Navigation Navigation bar renders 1`] = `
     <img
       alt="DSA Logo"
       className="d-inline-block align-top"
-      height="80"
+      height="100"
       src="logo.png"
-      width="80"
+      width="100"
     />
     <span
       className="c0 navbar-text"
