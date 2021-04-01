@@ -21,12 +21,25 @@ const Icon = styled.img`
   border-radius: 25px;
 `;
 
+const StyledTitle = styled.h1`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 450;
+  line-height: 26.4px;
+  padding: 5%;
+  text-align: center;
+`;
+
 export const OrganizationIcon: React.FC<Props> = ({ link, photo, text }) => {
   return (
     <StyledCard>
       <a href={link} target="_blank" style={{ color: '#000' }}>
         <Icon src={photo} />
-        <Card.Title style={{ padding: '25px 50px 25px 0px', fontSize: '17px', textAlign: 'center' }}>{text}</Card.Title>
+        <Card.Title style={{ padding: '25px 100px 25px 0px', fontSize: '22px', textAlign: 'center' }}>
+          <StyledTitle>{text}</StyledTitle>
+        </Card.Title>
       </a>
     </StyledCard>
   );

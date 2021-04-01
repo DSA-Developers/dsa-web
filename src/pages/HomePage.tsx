@@ -6,7 +6,7 @@ import HSAlogo from '../assets/HSA Logo.png';
 import GWlogo from '../assets/GatorWell.jpg';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg1 from '../assets/DSA Carousel.jpeg';
+import CarouselImg1 from '../assets/DSA Carousel.jpg';
 import CarouselImg2 from '../assets/DSA Carousel2.jpg';
 import CarouselImg3 from '../assets/DSA Carousel3.jpg';
 import FacebookLogo from '../assets/facebook.svg';
@@ -26,84 +26,9 @@ import SLLogo from '../assets/SaborLatinoLogo.png';
 import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
 import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { OrganizationIcon } from '../components/OrganizationIcon';
+import Button from 'react-bootstrap/Button';
 
 interface Props {}
-
-const Title = styled.h1`
-  font-family: Roboto;
-  padding: 5%;
-  text-align: center;
-`;
-const StyledCard = styled.div`
-  transition: transform 0.2s;
-  max-width: 200px;
-  &:hover {
-    transform: scale(1.1);
-  }
-`;
-
-const Body = styled.p`
-  justify-content: center;
-  display: flex;
-  padding: 20px 20px 20px 0px;
-`;
-
-const Icon = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
-`;
-
-const SocialMediaContainer = styled.div`
-  padding: 20px 0px 20px 0px;
-  background-color: #eee;
-  width: 100%;
-  justify-content: center;
-  display: grid;
-  margin: 50px 0px;
-`;
-
-const CarouselContainer = styled.div`
-  padding: 20px 0px 20px 0px;
-  justify-content: center;
-  display: flex;
-`;
-
-const SocialMedia = styled.div`
-  padding: 20px 0px 20px 0px;
-  background-color: #eee;
-  width: 100%;
-  justify-content: center;
-  margin: 50px 0px;
-  display: flex;
-  grid-template-columns: repeat(3, 150px);
-  grid-gap: 30px;
-`;
-
-const ParentAffiliation = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-`;
-
-const Affiliations = styled.div`
-  margin: 25px;
-  display: grid;
-  grid-template-columns: repeat(6, 150px);
-  box-sizing: border-box;
-  width: 850px;
-  height: 10%;
-`;
-const Resources = styled.div`
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-`;
-
-const CarouselImage = styled.img`
-  width: 1100px;
-  height: 600px;
-`;
 
 export const HomePage: React.FC<Props> = ({}) => {
   const clubInfo = [
@@ -142,30 +67,35 @@ export const HomePage: React.FC<Props> = ({}) => {
   ));
 
   return (
-    <Container>
-      <Title>Welcome to the DSA at UF!</Title>
+    <Container fluid style={{ width: '100%' }}>
       <CarouselContainer>
         <Carousel>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={3500}>
             <CarouselImage src={CarouselImg1} />
           </Carousel.Item>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={3500}>
             <CarouselImage src={CarouselImg2} />
           </Carousel.Item>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={3500}>
             <CarouselImage src={CarouselImg3} />
           </Carousel.Item>
         </Carousel>
       </CarouselContainer>
 
-      <Title>
-        ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or
-        follow us on Instagram or Facebook for event information, memes, and friendship!
-      </Title>
+      <DescriptionContainer>
+        <Title>Welcome to the Dominican Student Association at UF!</Title>
+
+        <Description>
+          ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or
+          follow us on Instagram or Facebook for event information, memes, and friendship!
+        </Description>
+      </DescriptionContainer>
 
       <SocialMedia>
         <Body>
-          <h1>Find us here as well:</h1>
+          <StyledButton variant="info" disabled>
+            <ButtonText>Join Now</ButtonText>
+          </StyledButton>
         </Body>
 
         <StyledCard>
@@ -187,36 +117,161 @@ export const HomePage: React.FC<Props> = ({}) => {
         </StyledCard>
       </SocialMedia>
 
-      <SocialMediaContainer>
-        <Body>
-          <h1>Parent Organization:</h1>
-        </Body>
-
+      <ParentContainer>
+        <Title>Parent Organization</Title>
+        <br />
         <ParentAffiliation>
           <StyledCard>
             <a href="https://www.ufhsa.com/" target="_blank" style={{ color: '#000' }}>
               <img src={HSALogo} />
 
               <Card.Title style={{ paddingTop: '20px', textAlign: 'center', fontSize: '26px' }}>
-                Hispanic Student Association
+                <ParentTitle>Hispanic Student Association</ParentTitle>
               </Card.Title>
             </a>
           </StyledCard>
         </ParentAffiliation>
         <br />
-        <Body>
+        <Title>
           <h1>In Association With:</h1>
-        </Body>
+        </Title>
         <Affiliations>{clubs}</Affiliations>
-      </SocialMediaContainer>
+      </ParentContainer>
 
-      <SocialMediaContainer>
-        <Body>
-          <h1>Resources</h1>
-        </Body>
-
+      <ParentContainer style={{ backgroundColor: '#fff' }}>
+        <Title>General Resources</Title>
+        <br />
         <Resources>{resources}</Resources>
-      </SocialMediaContainer>
+      </ParentContainer>
     </Container>
   );
 };
+
+const Title = styled.div`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding: 4%;
+  margin-bottom: -2%;
+  text-align: center;
+  background: -webkit-linear-gradient(0.5turn, #ce1126, #002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+const ParentTitle = styled.h1`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 600;
+  line-height: 26.4px;
+  padding: 5%;
+  text-align: center;
+`;
+
+const Description = styled.h1`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 350;
+  line-height: 60px;
+  padding: 5% 10%;
+  text-align: center;
+`;
+
+const StyledButton = styled(Button)`
+  Button.[disabled] {
+    background-color: #17a2b8;
+  }
+`;
+
+const ButtonText = styled.h1`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+`;
+
+const StyledCard = styled.div`
+  transition: transform 0.2s;
+  max-width: 200px;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const Body = styled.p`
+  justify-content: center;
+  display: flex;
+  padding: 20px 40px 20px 0px;
+`;
+
+const Icon = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+`;
+
+const ParentContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  background-color: #f8f9fb;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  margin: 50px 0px;
+`;
+
+const DescriptionContainer = styled.div`
+  padding: 20px 400px 20px 400px;
+  background-color: #f8f9fb;
+  width: 100vw;
+  textalign: 'center';
+`;
+
+const CarouselContainer = styled.div`
+  padding: 0px 0px 0px 0px;
+  margin-bottom: -40px;
+  justify-content: center;
+  display: flex;
+`;
+
+const SocialMedia = styled.div`
+  padding: 20px 0px 20px 0px;
+  background-color: #fff;
+  width: 100vw;
+  justify-content: center;
+  margin: 50px -13px;
+  display: flex;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 30px;
+`;
+
+const ParentAffiliation = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+`;
+
+const Affiliations = styled.div`
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  box-sizing: border-box;
+  width: 1150px;
+  height: 10%;
+`;
+const Resources = styled.div`
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  width: 520px;
+`;
+
+const CarouselImage = styled.img`
+  width: 100vw;
+  height: auto;
+`;

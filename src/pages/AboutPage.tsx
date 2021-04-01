@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { FullWidth } from '../components/FullWidth';
 import { Card, CardDeck } from 'react-bootstrap';
-import {MemberCard} from '../components/MemberCard';
+import { MemberCard } from '../components/MemberCard';
 import valentina from '../assets/Valentina.png';
 import richie from '../assets/Richie.jpg';
 import nick from '../assets/Nick.jpg';
@@ -33,22 +33,19 @@ const Cards = styled(Card)`
   width: 18rem
 `;
 
-
 export const AboutPage: React.FC<Props> = ({}) => {
+  const cardInfo = [
+    { image: valentina, title: 'President', text: 'Valentina Litang' },
+    { image: francis, title: 'Vice-President', text: 'Francis Rivas' },
+    { image: elise, title: 'Treasurer', text: 'Elise Gonzalez' },
+    { image: laurie, title: 'Independence Week Director', text: 'Laurie Rodriguez' },
+    { image: richie, title: 'PR Co-Director', text: 'Ricardo Cordero' },
+    { image: gely, title: 'PR Co-Director', text: 'Gelybeth Rodriguez' },
+    { image: jeff, title: 'Social Media Manager', text: 'Jeff Fondeuro' },
+    { image: nick, title: 'Graphic Designer', text: 'Nicholas Suriel' },
+  ];
 
-  
-    const cardInfo = [
-      {image: valentina, title: "President", text: "Valentina Litang"},
-      {image: francis, title: "Vice-President", text: "Francis Rivas"},
-      {image: elise, title: "Treasurer", text: "Elise Gonzalez"},
-      {image: laurie, title: "Independence Week Director", text: "Laurie Rodriguez"},
-      {image: richie, title: "PR Co-Director", text: "Ricardo Cordero"},
-      {image: gely, title: "PR Co-Director", text: "Gelybeth Rodriguez"},
-      {image: jeff, title: "Social Media Manager", text: "Jeff Fondeuro"},
-      {image: nick, title: "Graphic Designer", text: "Nicholas Suriel"},
-    ];
-  
-  const cards = cardInfo.map((card)=><MemberCard name={card.text} position={card.title} fileName={card.image}/>)
+  const cards = cardInfo.map((card) => <MemberCard name={card.text} position={card.title} fileName={card.image} />);
 
   return (
     <FullWidth>
@@ -57,18 +54,17 @@ export const AboutPage: React.FC<Props> = ({}) => {
           <Header>About us</Header>
         </CenterRow>
         <p>
-          The Dominican Student Association was first established at the University of Florida in 2000. 
-          We are a welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the lives of not only Dominican people but as many people as possible.
-          DSA strives to create a community of Dominicans at the university. 
-          DSA hosts monthly General Body Meetings and social events, and during the Spring semester, a full week is dedicated to celebrating Dominican Independence. 
-          DSA also partakes in drives such as the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
+          The Dominican Student Association was first established at the University of Florida in 2000. We are a
+          welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the
+          lives of not only Dominican people but as many people as possible. DSA strives to create a community of
+          Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring
+          semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as
+          the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
         </p>
       </Container>
-     
+
       <Container>
-        <Hierarchy>
-          {cards}
-        </Hierarchy>
+        <Hierarchy>{cards}</Hierarchy>
       </Container>
     </FullWidth>
   );
