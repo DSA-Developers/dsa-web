@@ -8,12 +8,19 @@ import Nav from 'react-bootstrap/Nav';
 interface Props {}
 
 const StyledTitle = styled(Navbar.Text)`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   margin: 0 0 0 0.5em;
   font-size: 3rem;
 `;
 
 const StyledNav = styled(Nav)`
   font-size: 2rem;
+`;
+
+const StyledNavbar = styled(Navbar)`
+  background: -webkit-linear-gradient(90deg, #c7daea, #f8f9fb);
 `;
 
 const StyledLink = styled(Nav.Item)`
@@ -23,7 +30,7 @@ const StyledLink = styled(Nav.Item)`
 
 export const Navigation: React.FC<Props> = ({}) => {
   return (
-    <Navbar bg="light" variant="light" className="navbar border-bottom pl-5 pr-5">
+    <StyledNavbar className="navbar border-bottom pl-5 pr-5">
       <Navbar.Brand className="align-items-center" href="/home">
         <img src={Logo} width="80" height="80" className="d-inline-block align-top" alt="DSA Logo" />
         <StyledTitle>
@@ -52,6 +59,6 @@ export const Navigation: React.FC<Props> = ({}) => {
           </Nav.Link>
         </StyledLink>
       </StyledNav>
-    </Navbar>
+    </StyledNavbar>
   );
 };
