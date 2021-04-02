@@ -48,12 +48,12 @@ export const Navigation: React.FC<Props> = ({}) => {
         </StyledLink>
         <StyledLink>
           <Nav.Link as={Link} to="/about">
-            <Title> About</Title>
+            <Title>About</Title>
           </Nav.Link>
         </StyledLink>
         <StyledLink>
           <Nav.Link as={Link} to="/gallery">
-            <Title> Gallery</Title>
+            <Title>Gallery</Title>
           </Nav.Link>
         </StyledLink>
         <StyledLink>

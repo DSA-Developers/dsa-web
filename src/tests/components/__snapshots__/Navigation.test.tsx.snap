@@ -83,7 +83,7 @@ exports[`Navigation Navigation bar renders 1`] = `
         <div
           className="c4"
         >
-           About
+          About
         </div>
       </a>
     </div>
@@ -100,7 +100,7 @@ exports[`Navigation Navigation bar renders 1`] = `
         <div
           className="c4"
         >
-           Gallery
+          Gallery
         </div>
       </a>
     </div>
