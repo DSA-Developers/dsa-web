@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import { CenterRow } from '../components/CenterRow';
+import { FullWidth } from '../components/FullWidth';
+import { CardDeck } from 'react-bootstrap';
 import { MemberCard } from '../components/MemberCard';
+
+import { database, storage } from '../firebase';
+
 import valentina from '../assets/Valentina.png';
 import richie from '../assets/Richie.jpg';
 import nick from '../assets/Nick.jpg';
@@ -31,6 +37,75 @@ export const AboutPage: React.FC<Props> = ({}) => {
 
   const cards2 = cardInfo2.map((card) => <MemberCard name={card.text} position={card.title} fileName={card.image} />);
 
+  /*
+interface CardType {
+  name: string;
+  photo: string;
+  role: string;
+  url: string;
+}
+
+const storageRef = storage.ref();
+const membersRef = database.ref('members');
+console.log(membersRef);
+
+const useCards = () => {
+  const [cardInfo, setCardInfo] = useState<Array<CardType>>([]);
+
+  const fetchMemberInfo = async () => {
+    let info: Array<CardType> = [];
+    let keysNoURL: Array<number> = [];
+
+    const snapshot = await membersRef.get();
+    snapshot.forEach((member: any) => {
+      if (!member.val().url) {
+        keysNoURL.push(member.key);
+      }
+      let memberInfo: CardType = {
+        name: member.val().name,
+        role: member.val().role,
+        photo: member.val().photo,
+        url: '' || member.val().url,
+      };
+      info = [...info, memberInfo];
+    });
+
+    if (keysNoURL.length !== 0) {
+      await fetchPhotos(info, keysNoURL);
+    }
+
+    setCardInfo(info);
+  };
+
+  const fetchPhotos = async (info: Array<CardType>, keys: Array<number>) => {
+    for (const index of keys) {
+      const member = info[index - 1];
+      const url = await storageRef.child('members/' + member.photo).getDownloadURL();
+      info[index - 1] = { ...member, url: url };
+      membersRef.child(`${index}`).set({
+        name: member.name,
+        role: member.role,
+        photo: member.photo,
+        url: url,
+      });
+    }
+    return info;
+  };
+
+  useEffect(() => {
+    fetchMemberInfo();
+  }, []);
+
+  return cardInfo;
+};
+
+export const AboutPage: React.FC<Props> = ({}) => {
+  const cardInfo = useCards();
+
+  const cards = cardInfo.map((card) => (
+    <MemberCard key={card.url} name={card.name} position={card.role} fileName={card.url} />
+  ));
+  */
   return (
     <Container fluid>
       <DescriptionContainer>

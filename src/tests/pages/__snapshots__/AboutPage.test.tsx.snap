@@ -151,6 +151,7 @@ exports[`About Page renders 1`] = `
     className="c3"
   >
     <div
+<<<<<<< HEAD
       className="c1"
     >
       Executive Board
@@ -404,6 +405,10 @@ exports[`About Page renders 1`] = `
         </div>
       </div>
     </div>
+=======
+      className="c3 card-deck"
+    />
+>>>>>>> 7adcfb203c8660df1dfde5052d8025cf9c39f6e7
   </div>
 </div>
 `;
