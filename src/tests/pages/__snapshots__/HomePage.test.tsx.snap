@@ -30,6 +30,13 @@ exports[`Home Page renders 1`] = `
   text-align: center;
 }
 
+.c2 {
+  padding: 20px 400px 20px 400px;
+  background-color: #f8f9fb;
+  width: 100vw;
+  textalign: 'center';
+}
+
 .c3 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
@@ -44,17 +51,6 @@ exports[`Home Page renders 1`] = `
   -webkit-text-fill-color: transparent;
 }
 
-.c13 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 600;
-  line-height: 26.4px;
-  padding: 5%;
-  text-align: center;
-}
-
 .c4 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 35px;
@@ -63,6 +59,17 @@ exports[`Home Page renders 1`] = `
   font-weight: 350;
   line-height: 60px;
   padding: 5% 10%;
+  text-align: center;
+}
+
+.c13 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 600;
+  line-height: 26.4px;
+  padding: 5%;
   text-align: center;
 }
 
@@ -119,13 +126,6 @@ exports[`Home Page renders 1`] = `
   justify-content: center;
   display: grid;
   margin: 50px 0px;
-}
-
-.c2 {
-  padding: 20px 400px 20px 400px;
-  background-color: #f8f9fb;
-  width: 100vw;
-  textalign: 'center';
 }
 
 .c0 {

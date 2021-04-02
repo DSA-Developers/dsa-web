@@ -25,20 +25,45 @@ exports[`Contact Page renders 1`] = `
 >
   <div
     className="c1 jumbotron jumbotron-fluid"
+    style={
+      Object {
+        "backgroundImage": "url(Newsletter.jpg)",
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+      }
+    }
   >
     <div
       className="container"
+      style={
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.7)",
+          "padding": "20px 20px 20px 20px",
+        }
+      }
     >
       <h1
         className="c2"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
       >
         Mailing List
       </h1>
-      <p>
+      <p
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
         Join our mailing list to stay up to date!
       </p>
       <a
-        className="btn btn-dark btn-lg"
+        className="btn btn-light btn-lg"
         href="http://eepurl.com/gRikBb"
         onClick={[Function]}
         onKeyDown={[Function]}
