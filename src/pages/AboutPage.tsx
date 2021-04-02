@@ -5,6 +5,9 @@ import { CenterRow } from '../components/CenterRow';
 import { FullWidth } from '../components/FullWidth';
 import { Card, CardDeck } from 'react-bootstrap';
 import { MemberCard } from '../components/MemberCard';
+import { DescriptionContainer } from '../components/DescriptionContainer';
+import { Title } from '../components/Title';
+import { Description } from '../components/Description';
 import valentina from '../assets/Valentina.png';
 import richie from '../assets/Richie.jpg';
 import nick from '../assets/Nick.jpg';
@@ -15,10 +18,6 @@ import francis from '../assets/Francis.jpg';
 import elise from '../assets/Elise.jpg';
 
 interface Props {}
-
-const Header = styled.h1`
-  font-size: 4rem;
-`;
 
 const Hierarchy = styled(CardDeck)`
   font-size: 2rem
@@ -49,20 +48,17 @@ export const AboutPage: React.FC<Props> = ({}) => {
 
   return (
     <FullWidth>
-      <Container>
-        <CenterRow>
-          <Header>About us</Header>
-        </CenterRow>
-        <p>
+      <DescriptionContainer> 
+        <Title>About us</Title>
+        <Description>
           The Dominican Student Association was first established at the University of Florida in 2000. We are a
           welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the
           lives of not only Dominican people but as many people as possible. DSA strives to create a community of
           Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring
           semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as
           the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
-        </p>
-      </Container>
-
+        </Description>
+      </DescriptionContainer>  
       <Container>
         <Hierarchy>{cards}</Hierarchy>
       </Container>

@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import { FullWidth } from '../components/FullWidth';
+import Newsletter from '../assets/Newsletter.jpg';
 
 interface Props {}
 
@@ -21,11 +22,11 @@ const MailingList = styled(Jumbotron)`
 export const ContactPage: React.FC<Props> = ({}) => {
   return (
     <FullWidth>
-      <MailingList fluid>
-        <Container>
-          <Header>Mailing List</Header>
-          <p>Join our mailing list to stay up to date!</p>
-          <Button variant="dark" size="lg" href="http://eepurl.com/gRikBb">
+      <MailingList fluid style={{backgroundImage: `url(${Newsletter})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} >
+        <Container style={{backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: '20px 20px 20px 20px'}}>
+          <Header style={{color: 'white'}}>Mailing List</Header>
+          <p style={{color:'white'}}>Join our mailing list to stay up to date!</p>
+          <Button variant="light" size="lg" href="http://eepurl.com/gRikBb">
             Subscribe
           </Button>
         </Container>
