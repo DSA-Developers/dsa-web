@@ -22,8 +22,12 @@ exports[`Navigation Navigation bar renders 1`] = `
   text-transform: uppercase;
 }
 
+.c4 {
+  font-weight: 500;
+}
+
 <nav
-  className="c0 navbar border-bottom pl-5 pr-5 navbar navbar-expand navbar-light"
+  className="c0 navbar border-bottom pl-5 pr-5 py-0 navbar navbar-expand navbar-light"
 >
   <a
     className="align-items-center navbar-brand"
@@ -59,7 +63,11 @@ exports[`Navigation Navigation bar renders 1`] = `
         href="/home"
         onClick={[Function]}
       >
-        Home
+        <div
+          className="c4"
+        >
+          Home
+        </div>
       </a>
     </div>
     <div
@@ -72,7 +80,11 @@ exports[`Navigation Navigation bar renders 1`] = `
         href="/about"
         onClick={[Function]}
       >
-        About
+        <div
+          className="c4"
+        >
+           About
+        </div>
       </a>
     </div>
     <div
@@ -85,7 +97,11 @@ exports[`Navigation Navigation bar renders 1`] = `
         href="/gallery"
         onClick={[Function]}
       >
-        Gallery
+        <div
+          className="c4"
+        >
+           Gallery
+        </div>
       </a>
     </div>
     <div
@@ -98,7 +114,11 @@ exports[`Navigation Navigation bar renders 1`] = `
         href="/contact"
         onClick={[Function]}
       >
-        Contact
+        <div
+          className="c4"
+        >
+          Contact
+        </div>
       </a>
     </div>
   </div>

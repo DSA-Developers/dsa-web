@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact Page renders 1`] = `
-.c0 {
-  bottom: 0;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.c2 {
-  font-size: 4rem;
-}
-
 .c1 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding-bottom: 40px;
+  background: -webkit-linear-gradient(0.5turn,#9c4c5c,#002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c0 {
   padding: 20vh 0 20vh 0;
   font-size: 2rem;
   color: #343a40;
@@ -21,31 +21,29 @@ exports[`Contact Page renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 jumbotron"
 >
   <div
-    className="c1 jumbotron jumbotron-fluid"
+    className="container"
   >
     <div
-      className="container"
+      className="c1"
     >
-      <h1
-        className="c2"
-      >
-        Mailing List
-      </h1>
-      <p>
-        Join our mailing list to stay up to date!
-      </p>
-      <a
-        className="btn btn-dark btn-lg"
-        href="http://eepurl.com/gRikBb"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-      >
-        Subscribe
-      </a>
+      Mailing List
     </div>
+    <p>
+      Join our mailing list to stay up to date!
+    </p>
+    <br />
+    <a
+      className="btn btn-info btn-lg"
+      href="http://eepurl.com/gRikBb"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      target="_blank"
+    >
+      Subscribe
+    </a>
   </div>
 </div>
 `;

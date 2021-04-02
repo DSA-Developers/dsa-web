@@ -1,7 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About Page renders 1`] = `
+.c9 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  width: 400px;
+}
+
+.c9:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c10 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.c11 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 450;
+  line-height: 26.4px;
+  padding: 3%;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.c0 {
+  padding: 20px 400px 50px 400px;
+  background-color: #f8f9fb;
+  textalign: 'center';
+}
+
+.c3 {
+  background-color: #fff;
+  margin: -30px 0px 60px 0px;
+}
+
+.c2 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 350;
+  line-height: 40px;
+  padding: 2% 3%;
+  text-align: center;
+}
+
 .c1 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding: 4%;
+  margin-bottom: -2%;
+  text-align: center;
+  background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10,224 +77,330 @@ exports[`About Page renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 30px 0px 50px 30px;
 }
 
-.c0 {
-  bottom: 0;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.c8 {
+  margin: 20px 0px 0px 70px;
+  display: grid;
+  grid-template-columns: repeat(4,280px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c2 {
-  font-size: 4rem;
+.c12 {
+  margin: 20px 0px 0px 70px;
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c3 {
-  font-size: 2rem padding:10vh 0 10vh 0;
-  margin: 0 color:#4287f5;
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.c5:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c6 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-right: 30px;
+}
+
+.c7 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 450;
+  line-height: 10px;
+  padding: 30px 30px 0px 0px;
+  text-align: center;
 }
 
 <div
-  className="c0"
+  className="container-fluid"
 >
   <div
-    className="container"
+    className="c0"
   >
     <div
-      className="c1 row"
+      className="c1"
     >
-      <h1
-        className="c2"
-      >
-        About us
-      </h1>
+      About us
     </div>
-    <p>
+    <h1
+      className="c2"
+    >
       The Dominican Student Association was first established at the University of Florida in 2000. We are a welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the lives of not only Dominican people but as many people as possible. DSA strives to create a community of Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
-    </p>
+    </h1>
   </div>
   <div
-    className="container"
+    className="c3"
   >
     <div
-      className="c3 card-deck"
+      className="c1"
+    >
+      Executive Board
+    </div>
+    <div
+      className="c4"
     >
       <div
-        className="card bg-danger text-light border-primary"
+        className="c5"
       >
         <img
-          className="card-img-top"
+          className="c6"
           src="Valentina.png"
         />
-        <div
-          className="card-body"
+        <h1
+          className="c7"
         >
-          <div
-            className="card-title h5"
-          >
+          <b>
             Valentina Litang
-          </div>
-          <p
-            className="card-text"
-          >
-            President
-          </p>
-        </div>
+          </b>
+        </h1>
+        <h1
+          className="c7"
+        >
+          President
+        </h1>
       </div>
+    </div>
+    <div
+      className="c8"
+    >
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Francis.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Francis Rivas
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Francis Rivas
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             Vice-President
-          </p>
+          </h1>
         </div>
       </div>
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Elise.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Elise Gonzalez
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Elise Gonzalez
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             Treasurer
-          </p>
+          </h1>
         </div>
       </div>
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Laurie.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Laurie Rodriguez
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Laurie Rodriguez
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             Independence Week Director
-          </p>
+          </h1>
         </div>
       </div>
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Richie.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Ricardo Cordero
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Ricardo Cordero
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             PR Co-Director
-          </p>
+          </h1>
         </div>
       </div>
+    </div>
+    <div
+      className="c12"
+    >
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Gely.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Gelybeth Rodriguez
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Gelybeth Rodriguez
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             PR Co-Director
-          </p>
+          </h1>
         </div>
       </div>
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Jeff.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Jeff Fondeuro
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Jeff Fondeuro
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             Social Media Manager
-          </p>
+          </h1>
         </div>
       </div>
       <div
-        className="card bg-danger text-light border-primary"
+        className="c9"
       >
         <img
-          className="card-img-top"
+          className="c10"
           src="Nick.jpg"
         />
         <div
-          className="card-body"
+          className="card-title h5"
+          style={
+            Object {
+              "fontSize": "22px",
+              "padding": "25px 120px 25px 0px",
+              "textAlign": "center",
+            }
+          }
         >
-          <div
-            className="card-title h5"
+          <h1
+            className="c11"
           >
-            Nicholas Suriel
-          </div>
-          <p
-            className="card-text"
+            <b>
+              Nicholas Suriel
+            </b>
+          </h1>
+          <h1
+            className="c11"
           >
             Graphic Designer
-          </p>
+          </h1>
         </div>
       </div>
     </div>
