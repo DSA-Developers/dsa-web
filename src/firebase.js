@@ -1,4 +1,8 @@
-// Your web app's Firebase configurationc
+import firebase from 'firebase/app'
+import "firebase/database"
+import "firebase/storage"
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDPthlNC38oorbhktIiarI5rUijKs6pc1Q",
   authDomain: "dsa-website-4bde2.firebaseapp.com",

@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 interface Props {
   name: string;
   position: string;
-  fileName: string | undefined;
+  fileName: string;
 }
 
 export const MemberCard: React.FC<Props> = ({ name, position, fileName}) => {

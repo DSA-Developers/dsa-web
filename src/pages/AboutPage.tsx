@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { FullWidth } from '../components/FullWidth';
-import { Card, CardDeck } from 'react-bootstrap';
+import { CardDeck } from 'react-bootstrap';
 import { MemberCard } from '../components/MemberCard';
 
 import { database, storage } from '../firebase';
@@ -21,17 +21,11 @@ const Hierarchy = styled(CardDeck)`
   color: #4287f5
 `;
 
-const Cards = styled(Card)`
-  background: #4287f5
-  text: white
-  width: 18rem
-`;
-
 interface CardType {
-  text: string;
-  image?: string;
-  title: string;
-  fileName: string;
+  name: string;
+  photo: string;
+  role: string;
+  url: string;
 }
 
 const storageRef = storage.ref();
@@ -41,41 +35,48 @@ console.log(membersRef);
 const useCards = () => {
   const [cardInfo, setCardInfo] = useState<Array<CardType>>([]);
 
-  const fetchMembers = async () => {
+  const fetchMemberInfo = async () => {
     let info: Array<CardType> = [];
+    let keysNoURL: Array<number> = [];
 
     const snapshot = await membersRef.get();
     snapshot.forEach((member: any) => {
+      if (!member.val().url) {
+        keysNoURL.push(member.key);
+      }
       let memberInfo: CardType = {
-        text: member.val().name,
-        title: member.val().role,
-        fileName: member.val().photo,
-        image: '',
+        name: member.val().name,
+        role: member.val().role,
+        photo: member.val().photo,
+        url: '' || member.val().url,
       };
       info = [...info, memberInfo];
     });
 
-    info = await fetchPhotos(info);
+    if (keysNoURL.length !== 0) {
+      await fetchPhotos(info, keysNoURL);
+    }
 
     setCardInfo(info);
   };
 
-  const fetchPhotos = async (info: Array<CardType>) => {
-    let index = 0;
-    for (const member of info) {
-      const photo = await storageRef.child('members/' + member.fileName).getDownloadURL();
-      info[index] = { ...member, image: photo };
-      index++;
+  const fetchPhotos = async (info: Array<CardType>, keys: Array<number>) => {
+    for (const index of keys) {
+      const member = info[index - 1];
+      const url = await storageRef.child('members/' + member.photo).getDownloadURL();
+      info[index - 1] = { ...member, url: url };
+      membersRef.child(`${index}`).set({
+        name: member.name,
+        role: member.role,
+        photo: member.photo,
+        url: url,
+      });
     }
     return info;
   };
 
-  const getInfo = async () => {
-    fetchMembers();
-  };
-
   useEffect(() => {
-    getInfo();
+    fetchMemberInfo();
   }, []);
 
   return cardInfo;
@@ -85,10 +86,8 @@ export const AboutPage: React.FC<Props> = ({}) => {
   const cardInfo = useCards();
 
   const cards = cardInfo.map((card) => (
-    <MemberCard key={card.text} name={card.text} position={card.title} fileName={card.image} />
+    <MemberCard key={card.url} name={card.name} position={card.role} fileName={card.url} />
   ));
-
-  const pres = {};
 
   return (
     <FullWidth>
