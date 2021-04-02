@@ -52,76 +52,52 @@ exports[`About Page renders 1`] = `
     className="container"
   >
     <div
-      className="c1 row"
-    >
-      <div
-        className="c3 card-deck"
-        style={
-          Object {
-            "height": "60%",
-            "width": "60%",
-          }
-        }
-      >
-        <div
-          className="card bg-danger text-light border-primary"
-        >
-          <img
-            className="card-img-top"
-            src="Valentina.png"
-          />
-          <div
-            className="card-body"
-          >
-            <div
-              className="card-title h5"
-            >
-              Valentina Litang
-            </div>
-            <p
-              className="card-text"
-            >
-              President
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c3 card-deck"
-        style={
-          Object {
-            "height": "60%",
-            "width": "60%",
-          }
-        }
-      >
-        <div
-          className="card bg-primary text-light border-danger"
-        >
-          <img
-            className="card-img-top"
-            src="Francis.jpg"
-          />
-          <div
-            className="card-body"
-          >
-            <div
-              className="card-title h5"
-            >
-              Francis Rivas
-            </div>
-            <p
-              className="card-text"
-            >
-              Vice-President
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
       className="c3 card-deck"
     >
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Valentina.png"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Valentina Litang
+          </div>
+          <p
+            className="card-text"
+          >
+            President
+          </p>
+        </div>
+      </div>
+      <div
+        className="card bg-danger text-light border-primary"
+      >
+        <img
+          className="card-img-top"
+          src="Francis.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Francis Rivas
+          </div>
+          <p
+            className="card-text"
+          >
+            Vice-President
+          </p>
+        </div>
+      </div>
       <div
         className="card bg-danger text-light border-primary"
       >
@@ -166,12 +142,8 @@ exports[`About Page renders 1`] = `
           </p>
         </div>
       </div>
-    </div>
-    <div
-      className="c3 card-deck"
-    >
       <div
-        className="card bg-primary text-light border-danger"
+        className="card bg-danger text-light border-primary"
       >
         <img
           className="card-img-top"
@@ -193,7 +165,7 @@ exports[`About Page renders 1`] = `
         </div>
       </div>
       <div
-        className="card bg-primary text-light border-danger"
+        className="card bg-danger text-light border-primary"
       >
         <img
           className="card-img-top"
@@ -214,10 +186,6 @@ exports[`About Page renders 1`] = `
           </p>
         </div>
       </div>
-    </div>
-    <div
-      className="c3 card-deck"
-    >
       <div
         className="card bg-danger text-light border-primary"
       >

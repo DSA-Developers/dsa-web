@@ -1,46 +1,97 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Page renders 1`] = `
-.c3 {
-  font-family: Roboto;
-  padding: 5%;
-  text-align: center;
-}
-
-.c10 {
+.c15 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
 }
 
-.c10:hover {
+.c15:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c2 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0px 20px 0px;
-}
-
-.c6 {
+.c16 {
   width: 100px;
   height: 100px;
   border-radius: 25px;
 }
 
+.c17 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 450;
+  line-height: 26.4px;
+  padding: 5%;
+  text-align: center;
+}
+
+.c3 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding: 4%;
+  margin-bottom: -2%;
+  text-align: center;
+  background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c13 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 600;
+  line-height: 26.4px;
+  padding: 5%;
+  text-align: center;
+}
+
 .c4 {
-  padding: 20px 0px 20px 0px;
-  background-color: #eee;
-  width: 100%;
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 350;
+  line-height: 60px;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.c7 Button.[disabled] {
+  background-color: #17a2b8;
+}
+
+.c8 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+.c9 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  max-width: 200px;
+}
+
+.c9:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -49,10 +100,37 @@ exports[`Home Page renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 40px 20px 0px;
+}
+
+.c10 {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.c11 {
+  padding: 20px 0px 20px 0px;
+  background-color: #f8f9fb;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: grid;
+  margin: 50px 0px;
+}
+
+.c2 {
+  padding: 20px 400px 20px 400px;
+  background-color: #f8f9fb;
+  width: 100vw;
+  textalign: 'center';
 }
 
 .c0 {
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: -40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -64,35 +142,62 @@ exports[`Home Page renders 1`] = `
 }
 
 .c5 {
-  display: grid;
-  grid-template-columns: repeat(3,150px);
-  grid-gap: 0px;
-}
-
-.c7 {
-  display: grid;
-  grid-template-columns: repeat(1,150px);
-}
-
-.c9 {
-  display: grid;
-  grid-template-columns: repeat(6,150px);
-}
-
-.c8 {
+  padding: 20px 0px 20px 0px;
+  background-color: #fff;
+  width: 100vw;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 50px -13px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-template-columns: repeat(3,150px);
+  grid-gap: 30px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.c14 {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(6,200px);
+  box-sizing: border-box;
+  width: 1150px;
+  height: 10%;
+}
+
+.c18 {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  width: 520px;
 }
 
 .c1 {
-  width: 1100px;
-  height: 600px;
+  width: 100vw;
+  height: auto;
 }
 
 <div
-  className="container"
+  className="container-fluid"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
 >
   <div
     className="c0"
@@ -125,16 +230,16 @@ exports[`Home Page renders 1`] = `
       >
         <div
           className="active carousel-item"
-          interval={5000}
+          interval={3500}
         >
           <img
             className="c1"
-            src="DSA Carousel.jpeg"
+            src="DSA Carousel.jpg"
           />
         </div>
         <div
           className="carousel-item"
-          interval={5000}
+          interval={3500}
         >
           <img
             className="c1"
@@ -143,7 +248,7 @@ exports[`Home Page renders 1`] = `
         </div>
         <div
           className="carousel-item"
-          interval={5000}
+          interval={3500}
         >
           <img
             className="c1"
@@ -187,432 +292,665 @@ exports[`Home Page renders 1`] = `
       </a>
     </div>
   </div>
-  <p
+  <div
     className="c2"
   >
-    <h1
+    <div
       className="c3"
+    >
+      Welcome to the Dominican Student Association at UF!
+    </div>
+    <h1
+      className="c4"
     >
       ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or follow us on Instagram or Facebook for event information, memes, and friendship!
     </h1>
-  </p>
-  <div
-    className="c4"
-  >
-    <h1>
-      Find us here as well:
-    </h1>
   </div>
   <div
-    className="c4"
-  >
-    <div
-      className="c5"
-    >
-      <div
-        className="col"
-      >
-        <a
-          href="https://www.facebook.com/DSAatUF"
-        >
-          <img
-            className="c6"
-            src="facebook.svg"
-          />
-        </a>
-      </div>
-      <div
-        className="col"
-      >
-        <a
-          href="https://www.instagram.com/uf.dsa/"
-        >
-          <img
-            className="c6"
-            src="instagram.svg"
-          />
-        </a>
-      </div>
-      <div
-        className="col"
-      >
-        <a
-          href="https://groupme.com/join_group/53205471/hXrFzndj"
-        >
-          <img
-            className="c6"
-            src="groupme.svg"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-  <p
-    className="c2"
-  />
-  <div
-    className="c4"
+    className="c5"
   >
     <p
-      className="c2"
+      className="c6"
     >
-      <h1>
-        Parent Organization:
-      </h1>
+      <button
+        className="c7 btn btn-info"
+        disabled={true}
+        type="button"
+      >
+        <h1
+          className="c8"
+        >
+          Join Now
+        </h1>
+      </button>
     </p>
+    <div
+      className="c9"
+    >
+      <a
+        href="https://www.facebook.com/DSAatUF"
+        title="Facebook"
+      >
+        <img
+          className="c10"
+          src="facebook.svg"
+        />
+      </a>
+    </div>
+    <div
+      className="c9"
+    >
+      <a
+        href="https://www.instagram.com/uf.dsa/"
+        title="Instagram"
+      >
+        <img
+          className="c10"
+          src="instagram.svg"
+        />
+      </a>
+    </div>
+    <div
+      className="c9"
+    >
+      <a
+        href="https://groupme.com/join_group/53205471/hXrFzndj"
+        title="GroupMe"
+      >
+        <img
+          className="c10"
+          src="groupme.svg"
+        />
+      </a>
+    </div>
   </div>
   <div
-    className="c4"
+    className="c11"
   >
     <div
-      className="c7"
+      className="c3"
+    >
+      Parent Organization
+    </div>
+    <br />
+    <div
+      className="c12"
     >
       <div
-        className="col"
+        className="c9"
       >
         <a
           href="https://www.ufhsa.com/"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
             src="HispanicStudentLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "26px",
+                "paddingTop": "20px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c13"
+            >
+              Hispanic Student Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Hispanic Student Association
-        </p>
       </div>
     </div>
-  </div>
-  <div
-    className="c4"
-  >
-    <p
-      className="c2"
+    <br />
+    <div
+      className="c3"
     >
       <h1>
         In Association With:
       </h1>
-    </p>
-  </div>
-  <div
-    className="c4"
-  >
+    </div>
     <div
-      className="c9"
+      className="c14"
     >
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/argentina"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="ArgentineStudentsLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Argentine Student Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Argentine Student Association
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/tango"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="ArgentineTango.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Argentine Tango Club
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Argentine Tango Club
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/cuba"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="CubanAmericanLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Cuban American Student Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Cuban American Student Association
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/centralamerica"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="CentralAmericanLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Central American Latino Organization
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Central American Latino Organization
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/salsa"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="GatorSalsaLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Gator Salsa Club
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Gator Salsa Club
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/hispanic-communicators"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="HispanicCommunicatorsLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Hispanic Communicators Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Hispanic Communicators Association
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/mexico"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="MexicanStudentLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Mexican-American Student Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Mexican-American Student Association
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/peru"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="PeruvianAmericanLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Peruvian American Student Society
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Peruvian American Student Society
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/colombia"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="PorColombiaLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Por Colombia
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Por Colombia
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/sabor-latino"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="SaborLatinoLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Sabor Latino
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Sabor Latino
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/puertorico"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="UnionDeEstudiantesLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              La Union de Estudiantes Puertorriqueños Activos
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          La Union de Estudiantes Puertorriqueños Activos
-        </p>
       </div>
       <div
-        className="col"
+        className="c15"
       >
         <a
           href="https://www.ufhsa.com/venezuela"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
           <img
-            className="c6"
+            className="c16"
             src="VenezuelanStudentLogo.png"
           />
+          <div
+            className="card-title h5"
+            style={
+              Object {
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <h1
+              className="c17"
+            >
+              Venezuelan Student Association
+            </h1>
+          </div>
         </a>
-        <p
-          className="c8"
-        >
-          Venezuelan Student Association
-        </p>
       </div>
     </div>
   </div>
-  <p
-    className="c2"
-  />
   <div
-    className="c4"
-  >
-    <h1>
-      Resources
-    </h1>
-  </div>
-  <div
-    className="c4"
+    className="c11"
+    style={
+      Object {
+        "backgroundColor": "#fff",
+      }
+    }
   >
     <div
-      className="c5"
+      className="c3"
+    >
+      General Resources
+    </div>
+    <br />
+    <div
+      className="c18"
     >
       <div
-        className="col"
+        className="c15"
       >
-        <div
-          className="c10"
+        <a
+          href="https://www.ufhsa.com/campus-resources"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
-          <a
-            href="https://www.ufhsa.com/campus-resources"
-            target="_blank"
-          >
-            <img
-              className="c6"
-              src="UF logo.png"
-            />
-          </a>
+          <img
+            className="c16"
+            src="UF logo.png"
+          />
           <div
             className="card-title h5"
             style={
               Object {
-                "fontSize": "25px",
-                "padding": "2rem 1rem",
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
               }
             }
           >
-            Campus Resources
+            <h1
+              className="c17"
+            >
+              Campus Resources
+            </h1>
           </div>
-        </div>
+        </a>
       </div>
       <div
-        className="col"
+        className="c15"
       >
-        <div
-          className="c10"
+        <a
+          href="https://www.ufhsa.com/hsa-resources"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
-          <a
-            href="https://www.ufhsa.com/hsa-resources"
-            target="_blank"
-          >
-            <img
-              className="c6"
-              src="HSA Logo.png"
-            />
-          </a>
+          <img
+            className="c16"
+            src="HSA Logo.png"
+          />
           <div
             className="card-title h5"
             style={
               Object {
-                "fontSize": "25px",
-                "padding": "2rem 1rem",
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
               }
             }
           >
-            HSA Resources
+            <h1
+              className="c17"
+            >
+              HSA Resources
+            </h1>
           </div>
-        </div>
+        </a>
       </div>
       <div
-        className="col"
+        className="c15"
       >
-        <div
-          className="c10"
+        <a
+          href="https://www.ufhsa.com/mental-health-resources"
+          style={
+            Object {
+              "color": "#000",
+            }
+          }
+          target="_blank"
         >
-          <a
-            href="https://www.ufhsa.com/mental-health-resources"
-            target="_blank"
-          >
-            <img
-              className="c6"
-              src="GatorWell.jpg"
-            />
-          </a>
+          <img
+            className="c16"
+            src="GatorWell.jpg"
+          />
           <div
             className="card-title h5"
             style={
               Object {
-                "fontSize": "25px",
-                "padding": "2rem 1rem",
+                "fontSize": "22px",
+                "padding": "25px 100px 25px 0px",
+                "textAlign": "center",
               }
             }
           >
-            Mental Health
+            <h1
+              className="c17"
+            >
+              Mental Health
+            </h1>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
-  <p
-    className="c2"
-  />
 </div>
 `;
