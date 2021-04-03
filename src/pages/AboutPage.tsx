@@ -1,43 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
-import { CenterRow } from '../components/CenterRow';
-import { FullWidth } from '../components/FullWidth';
-import { CardDeck } from 'react-bootstrap';
 import { MemberCard } from '../components/MemberCard';
 
 import { database, storage } from '../firebase';
 
-import valentina from '../assets/Valentina.png';
-import richie from '../assets/Richie.jpg';
-import nick from '../assets/Nick.jpg';
-import laurie from '../assets/Laurie.jpg';
-import jeff from '../assets/Jeff.jpg';
-import gely from '../assets/Gely.jpg';
-import francis from '../assets/Francis.jpg';
-import elise from '../assets/Elise.jpg';
-
 interface Props {}
 
-export const AboutPage: React.FC<Props> = ({}) => {
-  const cardInfo1 = [
-    { image: francis, title: 'Vice-President', text: 'Francis Rivas' },
-    { image: elise, title: 'Treasurer', text: 'Elise Gonzalez' },
-    { image: laurie, title: 'Independence Week Director', text: 'Laurie Rodriguez' },
-    { image: richie, title: 'PR Co-Director', text: 'Ricardo Cordero' },
-  ];
-
-  const cards1 = cardInfo1.map((card) => <MemberCard name={card.text} position={card.title} fileName={card.image} />);
-
-  const cardInfo2 = [
-    { image: gely, title: 'PR Co-Director', text: 'Gelybeth Rodriguez' },
-    { image: jeff, title: 'Social Media Manager', text: 'Jeff Fondeuro' },
-    { image: nick, title: 'Graphic Designer', text: 'Nicholas Suriel' },
-  ];
-
-  const cards2 = cardInfo2.map((card) => <MemberCard name={card.text} position={card.title} fileName={card.image} />);
-
-  /*
 interface CardType {
   name: string;
   photo: string;
@@ -47,7 +16,6 @@ interface CardType {
 
 const storageRef = storage.ref();
 const membersRef = database.ref('members');
-console.log(membersRef);
 
 const useCards = () => {
   const [cardInfo, setCardInfo] = useState<Array<CardType>>([]);
@@ -105,7 +73,7 @@ export const AboutPage: React.FC<Props> = ({}) => {
   const cards = cardInfo.map((card) => (
     <MemberCard key={card.url} name={card.name} position={card.role} fileName={card.url} />
   ));
-  */
+
   return (
     <Container fluid>
       <DescriptionContainer>
@@ -121,17 +89,9 @@ export const AboutPage: React.FC<Props> = ({}) => {
       </DescriptionContainer>
       <MemberContainer>
         <Title>Executive Board</Title>
-        <ParentAffiliation>
-          <StyledCard>
-            <Icon src={valentina} />
-            <StyledTitle>
-              <b>Valentina Litang</b>
-            </StyledTitle>
-            <StyledTitle>President</StyledTitle>
-          </StyledCard>
-        </ParentAffiliation>
-        <Affiliations1>{cards1}</Affiliations1>
-        <Affiliations2>{cards2}</Affiliations2>
+        <ParentAffiliation>{cards.slice(0, 2)}</ParentAffiliation>
+        <Affiliations2>{cards.slice(2, 5)}</Affiliations2>
+        <Affiliations2>{cards.slice(5)}</Affiliations2>
       </MemberContainer>
     </Container>
   );
@@ -165,7 +125,7 @@ const Title = styled.div`
   font-variant: small-caps;
   font-weight: 700;
   padding: 4%;
-  margin-bottom: -2%;
+  margin-bottom: 1%;
   text-align: center;
   background: -webkit-linear-gradient(0.5turn, #ce1126, #002d62);
   -webkit-background-clip: text;
@@ -173,45 +133,13 @@ const Title = styled.div`
 `;
 
 const ParentAffiliation = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 30px 0px 50px 30px;
-`;
-
-const Affiliations1 = styled.div`
-  margin: 20px 0px 0px 70px;
+  margin: 0 0 100px 0;
   display: grid;
-  grid-template-columns: repeat(4, 280px);
-  justify-content: center;
-`;
-const Affiliations2 = styled.div`
-  margin: 20px 0px 0px 70px;
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(2, 200px);
+  column-gap: 100px;
   justify-content: center;
 `;
 
-const StyledCard = styled.div`
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-`;
-const Icon = styled.img`
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-right: 30px;
-`;
-
-const StyledTitle = styled.h1`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 450;
-  line-height: 10px;
-  padding: 30px 30px 0px 0px;
-  text-align: center;
+const Affiliations2 = styled(ParentAffiliation)`
+  grid-template-columns: repeat(3, 200px);
 `;
