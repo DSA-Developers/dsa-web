@@ -1,37 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About Page renders 1`] = `
-.c9 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  width: 400px;
-}
-
-.c9:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.c10 {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-.c11 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 450;
-  line-height: 26.4px;
-  padding: 3%;
-  padding-right: 100px;
-  text-align: center;
-}
-
 .c0 {
   padding: 20px 400px 50px 400px;
   background-color: #f8f9fb;
@@ -61,7 +30,7 @@ exports[`About Page renders 1`] = `
   font-variant: small-caps;
   font-weight: 700;
   padding: 4%;
-  margin-bottom: -2%;
+  margin-bottom: 1%;
   text-align: center;
   background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
   -webkit-background-clip: text;
@@ -69,31 +38,11 @@ exports[`About Page renders 1`] = `
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 30px 0px 50px 30px;
-}
-
-.c8 {
-  margin: 20px 0px 0px 70px;
+  margin: 0 0 100px 0;
   display: grid;
-  grid-template-columns: repeat(4,280px);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c12 {
-  margin: 20px 0px 0px 70px;
-  display: grid;
-  grid-template-columns: repeat(3,300px);
+  grid-template-columns: repeat(2,200px);
+  -webkit-column-gap: 100px;
+  column-gap: 100px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -101,33 +50,7 @@ exports[`About Page renders 1`] = `
 }
 
 .c5 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-}
-
-.c5:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.c6 {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-right: 30px;
-}
-
-.c7 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 450;
-  line-height: 10px;
-  padding: 30px 30px 0px 0px;
-  text-align: center;
+  grid-template-columns: repeat(3,200px);
 }
 
 <div
@@ -157,253 +80,13 @@ exports[`About Page renders 1`] = `
     </div>
     <div
       className="c4"
-    >
-      <div
-        className="c5"
-      >
-        <img
-          className="c6"
-          src="Valentina.png"
-        />
-        <h1
-          className="c7"
-        >
-          <b>
-            Valentina Litang
-          </b>
-        </h1>
-        <h1
-          className="c7"
-        >
-          President
-        </h1>
-      </div>
-    </div>
+    />
     <div
-      className="c8"
-    >
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Francis.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Francis Rivas
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            Vice-President
-          </h1>
-        </div>
-      </div>
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Elise.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Elise Gonzalez
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            Treasurer
-          </h1>
-        </div>
-      </div>
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Laurie.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Laurie Rodriguez
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            Independence Week Director
-          </h1>
-        </div>
-      </div>
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Richie.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Ricardo Cordero
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            PR Co-Director
-          </h1>
-        </div>
-      </div>
-    </div>
+      className="c4 c5"
+    />
     <div
-      className="c12"
-    >
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Gely.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Gelybeth Rodriguez
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            PR Co-Director
-          </h1>
-        </div>
-      </div>
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Jeff.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Jeff Fondeuro
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            Social Media Manager
-          </h1>
-        </div>
-      </div>
-      <div
-        className="c9"
-      >
-        <img
-          className="c10"
-          src="Nick.jpg"
-        />
-        <div
-          className="card-title h5"
-          style={
-            Object {
-              "fontSize": "22px",
-              "padding": "25px 120px 25px 0px",
-              "textAlign": "center",
-            }
-          }
-        >
-          <h1
-            className="c11"
-          >
-            <b>
-              Nicholas Suriel
-            </b>
-          </h1>
-          <h1
-            className="c11"
-          >
-            Graphic Designer
-          </h1>
-        </div>
-      </div>
-    </div>
+      className="c4 c5"
+    />
   </div>
 </div>
 `;

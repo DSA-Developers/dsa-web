@@ -10,7 +10,7 @@ interface Props {
 
 const StyledCard = styled.div`
   transition: transform 0.2s;
-  width: 400px;
+  width: 200px;
   &:hover {
     transform: scale(1.1);
   }
@@ -29,7 +29,6 @@ const StyledTitle = styled.h1`
   font-weight: 450;
   line-height: 26.4px;
   padding: 3%;
-  padding-right: 100px;
   text-align: center;
 `;
 
@@ -37,7 +36,7 @@ export const MemberCard: React.FC<Props> = ({ name, position, fileName }) => {
   return (
     <StyledCard>
       <Icon src={fileName} />
-      <Card.Title style={{ padding: '25px 120px 25px 0px', fontSize: '22px', textAlign: 'center' }}>
+      <Card.Title style={{ fontSize: '22px', textAlign: 'center' }}>
         <StyledTitle>
           <b>{name}</b>
         </StyledTitle>

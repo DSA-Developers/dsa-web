@@ -54,7 +54,9 @@ export const HomePage: React.FC<Props> = ({}) => {
     { link: 'https://www.ufhsa.com/venezuela', photo: VENSALogo, text: 'Venezuelan Student Association' },
   ];
 
-  const clubs = clubInfo.map((club) => <OrganizationIcon link={club.link} photo={club.photo} text={club.text} />);
+  const clubs = clubInfo.map((club) => (
+    <OrganizationIcon key={club.link} link={club.link} photo={club.photo} text={club.text} />
+  ));
 
   const resourceInfo = [
     { link: 'https://www.ufhsa.com/campus-resources', photo: UFlogo, text: 'Campus Resources' },
@@ -63,7 +65,7 @@ export const HomePage: React.FC<Props> = ({}) => {
   ];
 
   const resources = resourceInfo.map((club) => (
-    <OrganizationIcon link={club.link} photo={club.photo} text={club.text} />
+    <OrganizationIcon key={club.link} link={club.link} photo={club.photo} text={club.text} />
   ));
 
   return (
