@@ -156,7 +156,7 @@ const Title = styled.div`
   padding: 4%;
   margin-bottom: -2%;
   text-align: center;
-  background: -webkit-linear-gradient(0.5turn, #ce1126, #002d62);
+  background: -webkit-linear-gradient(0.5turn, #9c4c5c, #002d62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -259,9 +259,9 @@ const ParentAffiliation = styled.div`
 const Affiliations = styled.div`
   margin: 25px;
   display: grid;
-  grid-template-columns: repeat(6, 200px);
+  grid-template-columns: repeat(6, 250px);
   box-sizing: border-box;
-  width: 1150px;
+  width: 1400px;
   height: 10%;
 `;
 const Resources = styled.div`
