@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
+import { Title } from '../components/Title';
 
 import { storage } from '../firebase';
 
