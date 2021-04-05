@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { Title } from '../components/Title';
-
 import { storage } from '../firebase';
+import Gallery,{ PhotoClickHandler, PhotoProps } from 'react-photo-gallery';
+import { render } from '@testing-library/react';
+import { ExpandedPhoto } from '../components/ExpandedPhoto'
 
 interface Props {}
 
@@ -30,17 +32,29 @@ const usePhotos = () => {
   return photos;
 };
 
+
 export const GalleryPage: React.FC<Props> = ({}) => {
   const photosURLs = usePhotos();
 
-  const photos = photosURLs.map((url) => <img key={url} src={url} />);
+  const photos = photosURLs.map((url) => ({src: url, height: 7, width: 10}));
+
+  const [expandedView, setView] = useState(false);
+
+  function handleClick(e: React.MouseEvent, photos: {})
+  {
+    console.log(e);
+    console.log(photos);
+    setView(true);
+  }
 
   return (
+    <>{(expandedView) ? <ExpandedPhoto /> : <></>}
     <Container>
       <CenterRow>
-        <h1>Photo Gallery Page</h1>
-        {/* {photos} */}
+        <Title>Photo Gallery Page</Title>
+        <Gallery photos={photos} onClick={handleClick} />
+        <Title></Title>
       </CenterRow>
-    </Container>
+    </Container></>
   );
 };
