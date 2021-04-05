@@ -14,8 +14,8 @@ exports[`Home Page renders 1`] = `
 }
 
 .c16 {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 25px;
 }
 
@@ -23,7 +23,6 @@ exports[`Home Page renders 1`] = `
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 22px;
   font-style: normal;
-  font-variant: small-caps;
   font-weight: 450;
   line-height: 26.4px;
   padding: 5%;
@@ -173,9 +172,9 @@ exports[`Home Page renders 1`] = `
 .c14 {
   margin: 25px;
   display: grid;
-  grid-template-columns: repeat(6,200px);
+  grid-template-columns: repeat(6,250px);
   box-sizing: border-box;
-  width: 1150px;
+  width: 1400px;
   height: 10%;
 }
 

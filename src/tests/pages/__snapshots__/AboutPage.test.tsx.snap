@@ -2,250 +2,91 @@
 
 exports[`About Page renders 1`] = `
 .c0 {
-  bottom: 0;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.c1 {
-  padding: 20px 400px 20px 400px;
+  padding: 20px 400px 50px 400px;
   background-color: #f8f9fb;
-  width: 100vw;
   textalign: 'center';
 }
 
+.c3 {
+  background-color: #fff;
+  margin: -30px 0px 60px 0px;
+}
+
 .c2 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 350;
+  line-height: 40px;
+  padding: 2% 3%;
+  text-align: center;
+}
+
+.c1 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 700;
   padding: 4%;
-  margin-bottom: -2%;
+  margin-bottom: 1%;
   text-align: center;
   background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.c3 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 350;
-  line-height: 60px;
-  padding: 5% 10%;
-  text-align: center;
+.c4 {
+  margin: 0 0 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2,200px);
+  -webkit-column-gap: 100px;
+  column-gap: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c4 {
-  font-size: 2rem padding:10vh 0 10vh 0;
-  margin: 0 color:#4287f5;
+.c5 {
+  grid-template-columns: repeat(3,200px);
 }
 
 <div
-  className="c0"
+  className="container-fluid"
 >
   <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
+      className="c1"
     >
       About us
     </div>
     <h1
-      className="c3"
+      className="c2"
     >
       The Dominican Student Association was first established at the University of Florida in 2000. We are a welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the lives of not only Dominican people but as many people as possible. DSA strives to create a community of Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
     </h1>
   </div>
   <div
-    className="container"
+    className="c3"
   >
     <div
-      className="c4 card-deck"
+      className="c1"
     >
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Valentina.png"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Valentina Litang
-          </div>
-          <p
-            className="card-text"
-          >
-            President
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Francis.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Francis Rivas
-          </div>
-          <p
-            className="card-text"
-          >
-            Vice-President
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Elise.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Elise Gonzalez
-          </div>
-          <p
-            className="card-text"
-          >
-            Treasurer
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Laurie.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Laurie Rodriguez
-          </div>
-          <p
-            className="card-text"
-          >
-            Independence Week Director
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Richie.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Ricardo Cordero
-          </div>
-          <p
-            className="card-text"
-          >
-            PR Co-Director
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Gely.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Gelybeth Rodriguez
-          </div>
-          <p
-            className="card-text"
-          >
-            PR Co-Director
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Jeff.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Jeff Fondeuro
-          </div>
-          <p
-            className="card-text"
-          >
-            Social Media Manager
-          </p>
-        </div>
-      </div>
-      <div
-        className="card bg-danger text-light border-primary"
-      >
-        <img
-          className="card-img-top"
-          src="Nick.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <div
-            className="card-title h5"
-          >
-            Nicholas Suriel
-          </div>
-          <p
-            className="card-text"
-          >
-            Graphic Designer
-          </p>
-        </div>
-      </div>
+      Executive Board
     </div>
+    <div
+      className="c4"
+    />
+    <div
+      className="c4 c5"
+    />
+    <div
+      className="c4 c5"
+    />
   </div>
 </div>
 `;

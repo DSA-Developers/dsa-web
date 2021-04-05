@@ -27,10 +27,13 @@ const StyledLink = styled(Nav.Item)`
   margin: 0 1em 0 0;
   text-transform: uppercase;
 `;
+const Title = styled.div`
+  font-weight: 500;
+`;
 
 export const Navigation: React.FC<Props> = ({}) => {
   return (
-    <StyledNavbar className="navbar border-bottom pl-5 pr-5">
+    <StyledNavbar className="navbar border-bottom pl-5 pr-5 py-0">
       <Navbar.Brand className="align-items-center" href="/home">
         <img src={Logo} width="80" height="80" className="d-inline-block align-top" alt="DSA Logo" />
         <StyledTitle>
@@ -40,22 +43,22 @@ export const Navigation: React.FC<Props> = ({}) => {
       <StyledNav className="ml-auto">
         <StyledLink>
           <Nav.Link as={Link} to="/home">
-            Home
+            <Title>Home</Title>
           </Nav.Link>
         </StyledLink>
         <StyledLink>
           <Nav.Link as={Link} to="/about">
-            About
+            <Title>About</Title>
           </Nav.Link>
         </StyledLink>
         <StyledLink>
           <Nav.Link as={Link} to="/gallery">
-            Gallery
+            <Title>Gallery</Title>
           </Nav.Link>
         </StyledLink>
         <StyledLink>
           <Nav.Link as={Link} to="/contact">
-            Contact
+            <Title>Contact</Title>
           </Nav.Link>
         </StyledLink>
       </StyledNav>

@@ -1,54 +1,82 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
-import { CenterRow } from '../components/CenterRow';
-import { FullWidth } from '../components/FullWidth';
-import { Card, CardDeck } from 'react-bootstrap';
 import { MemberCard } from '../components/MemberCard';
-import { DescriptionContainer } from '../components/DescriptionContainer';
-import { Title } from '../components/Title';
-import { Description } from '../components/Description';
-import valentina from '../assets/Valentina.png';
-import richie from '../assets/Richie.jpg';
-import nick from '../assets/Nick.jpg';
-import laurie from '../assets/Laurie.jpg';
-import jeff from '../assets/Jeff.jpg';
-import gely from '../assets/Gely.jpg';
-import francis from '../assets/Francis.jpg';
-import elise from '../assets/Elise.jpg';
+
+import { database, storage } from '../firebase';
 
 interface Props {}
 
-const Hierarchy = styled(CardDeck)`
-  font-size: 2rem
-  padding: 10vh 0 10vh 0;
-  margin: 0
-  color: #4287f5
-`;
+interface CardType {
+  name: string;
+  photo: string;
+  role: string;
+  url: string;
+}
 
-const Cards = styled(Card)`
-  background: #4287f5
-  text: white
-  width: 18rem
-`;
+const storageRef = storage.ref();
+const membersRef = database.ref('members');
+
+const useCards = () => {
+  const [cardInfo, setCardInfo] = useState<Array<CardType>>([]);
+
+  const fetchMemberInfo = async () => {
+    let info: Array<CardType> = [];
+    let keysNoURL: Array<number> = [];
+
+    const snapshot = await membersRef.get();
+    snapshot.forEach((member: any) => {
+      if (!member.val().url) {
+        keysNoURL.push(member.key);
+      }
+      let memberInfo: CardType = {
+        name: member.val().name,
+        role: member.val().role,
+        photo: member.val().photo,
+        url: '' || member.val().url,
+      };
+      info = [...info, memberInfo];
+    });
+
+    if (keysNoURL.length !== 0) {
+      await fetchPhotos(info, keysNoURL);
+    }
+
+    setCardInfo(info);
+  };
+
+  const fetchPhotos = async (info: Array<CardType>, keys: Array<number>) => {
+    for (const index of keys) {
+      const member = info[index - 1];
+      const url = await storageRef.child('members/' + member.photo).getDownloadURL();
+      info[index - 1] = { ...member, url: url };
+      membersRef.child(`${index}`).set({
+        name: member.name,
+        role: member.role,
+        photo: member.photo,
+        url: url,
+      });
+    }
+    return info;
+  };
+
+  useEffect(() => {
+    fetchMemberInfo();
+  }, []);
+
+  return cardInfo;
+};
 
 export const AboutPage: React.FC<Props> = ({}) => {
-  const cardInfo = [
-    { image: valentina, title: 'President', text: 'Valentina Litang' },
-    { image: francis, title: 'Vice-President', text: 'Francis Rivas' },
-    { image: elise, title: 'Treasurer', text: 'Elise Gonzalez' },
-    { image: laurie, title: 'Independence Week Director', text: 'Laurie Rodriguez' },
-    { image: richie, title: 'PR Co-Director', text: 'Ricardo Cordero' },
-    { image: gely, title: 'PR Co-Director', text: 'Gelybeth Rodriguez' },
-    { image: jeff, title: 'Social Media Manager', text: 'Jeff Fondeuro' },
-    { image: nick, title: 'Graphic Designer', text: 'Nicholas Suriel' },
-  ];
+  const cardInfo = useCards();
 
-  const cards = cardInfo.map((card) => <MemberCard name={card.text} position={card.title} fileName={card.image} />);
+  const cards = cardInfo.map((card) => (
+    <MemberCard key={card.url} name={card.name} position={card.role} fileName={card.url} />
+  ));
 
   return (
-    <FullWidth>
-      <DescriptionContainer> 
+    <Container fluid>
+      <DescriptionContainer>
         <Title>About us</Title>
         <Description>
           The Dominican Student Association was first established at the University of Florida in 2000. We are a
@@ -58,10 +86,60 @@ export const AboutPage: React.FC<Props> = ({}) => {
           semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as
           the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
         </Description>
-      </DescriptionContainer>  
-      <Container>
-        <Hierarchy>{cards}</Hierarchy>
-      </Container>
-    </FullWidth>
+      </DescriptionContainer>
+      <MemberContainer>
+        <Title>Executive Board</Title>
+        <ParentAffiliation>{cards.slice(0, 2)}</ParentAffiliation>
+        <Affiliations2>{cards.slice(2, 5)}</Affiliations2>
+        <Affiliations2>{cards.slice(5)}</Affiliations2>
+      </MemberContainer>
+    </Container>
   );
 };
+
+const DescriptionContainer = styled.div`
+  padding: 20px 400px 50px 400px;
+  background-color: #f8f9fb;
+  textalign: 'center';
+`;
+const MemberContainer = styled.div`
+  background-color: #fff;
+  margin: -30px 0px 60px 0px;
+`;
+
+const Description = styled.h1`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 350;
+  line-height: 40px;
+  padding: 2% 3%;
+  text-align: center;
+`;
+
+const Title = styled.div`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding: 4%;
+  margin-bottom: 1%;
+  text-align: center;
+  background: -webkit-linear-gradient(0.5turn, #ce1126, #002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+const ParentAffiliation = styled.div`
+  margin: 0 0 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  column-gap: 100px;
+  justify-content: center;
+`;
+
+const Affiliations2 = styled(ParentAffiliation)`
+  grid-template-columns: repeat(3, 200px);
+`;

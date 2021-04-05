@@ -16,8 +16,8 @@ const StyledCard = styled.div`
   }
 `;
 const Icon = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 25px;
 `;
 
@@ -25,7 +25,6 @@ const StyledTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
-  font-variant: small-caps;
   font-weight: 450;
   line-height: 26.4px;
   padding: 5%;

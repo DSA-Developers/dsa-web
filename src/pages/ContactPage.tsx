@@ -8,8 +8,16 @@ import Newsletter from '../assets/Newsletter.jpg';
 
 interface Props {}
 
-const Header = styled.h1`
-  font-size: 4rem;
+const Header = styled.div`
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  padding-bottom: 40px;
+  background: -webkit-linear-gradient(0.5turn, #9c4c5c, #002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const MailingList = styled(Jumbotron)`
