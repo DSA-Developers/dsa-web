@@ -10,6 +10,7 @@ interface Props {
 
 const StyledCard = styled.div`
   transition: transform 0.2s;
+  width: 300px;
 
   &:hover {
     transform: scale(1.1);
@@ -19,6 +20,7 @@ const Icon = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 25px;
+  margin-right: 100px;
 `;
 
 const StyledTitle = styled.h1`
