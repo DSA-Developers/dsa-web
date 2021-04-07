@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import { FullWidth } from '../components/FullWidth';
-import Newsletter from '../assets/Newsletter.jpg';
+import Newsletter from '../assets/DSACarousel.jpg';
 
 interface Props {}
 
@@ -15,9 +15,7 @@ const Header = styled.div`
   font-variant: small-caps;
   font-weight: 700;
   padding-bottom: 40px;
-  background: -webkit-linear-gradient(0.5turn, #9c4c5c, #002d62);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 `;
 
 const MailingList = styled(Jumbotron)`
@@ -31,8 +29,8 @@ export const ContactPage: React.FC<Props> = ({}) => {
   return (
     <FullWidth>
       <MailingList fluid style={{backgroundImage: `url(${Newsletter})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} >
-        <Container style={{backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: '20px 20px 20px 20px'}}>
-          <Header style={{color: 'white'}}>Mailing List</Header>
+        <Container style={{backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px 20px 20px 20px'}}>
+          <Header>Mailing List</Header>
           <p style={{color:'white'}}>Join our mailing list to stay up to date!</p>
           <Button variant="light" size="lg" href="http://eepurl.com/gRikBb">
             Subscribe

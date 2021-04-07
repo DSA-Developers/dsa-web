@@ -5,7 +5,9 @@ import { Title } from '../components/Title';
 import { storage } from '../firebase';
 import Gallery,{ PhotoClickHandler, PhotoProps } from 'react-photo-gallery';
 import { render } from '@testing-library/react';
-import { ExpandedPhoto } from '../components/ExpandedPhoto'
+import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
+import { SRLWrapper } from 'simple-react-lightbox';
 
 interface Props {}
 
@@ -38,23 +40,23 @@ export const GalleryPage: React.FC<Props> = ({}) => {
 
   const photos = photosURLs.map((url) => ({src: url, height: 7, width: 10}));
 
-  const [expandedView, setView] = useState(false);
-
-  function handleClick(e: React.MouseEvent, photos: {})
-  {
-    console.log(e);
-    console.log(photos);
-    setView(true);
-  }
-
   return (
-    <>{(expandedView) ? <ExpandedPhoto /> : <></>}
+    <>
     <Container>
       <CenterRow>
-        <Title>Photo Gallery Page</Title>
-        <Gallery photos={photos} onClick={handleClick} />
+        <Title>Photo Gallery</Title>
+        <SRLWrapper><Gallery photos={photos} /></SRLWrapper>
         <Title></Title>
       </CenterRow>
     </Container></>
   );
 };
+
+const Expand = styled.div`
+    background-color: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+`
