@@ -26,6 +26,7 @@ import SLLogo from '../assets/SaborLatinoLogo.png';
 import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
 import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { OrganizationIcon } from '../components/OrganizationIcon';
+import SocialMediaFeed from '../components/SocialMediaFeed';
 import Button from 'react-bootstrap/Button';
 import { DescriptionContainer } from '../components/DescriptionContainer';
 import { Title } from '../components/Title';
@@ -104,25 +105,31 @@ export const HomePage: React.FC<Props> = ({}) => {
         </Body>
 
         <StyledCard>
-          <a href="https://www.facebook.com/DSAatUF" title="Facebook">
+          <a href="https://www.facebook.com/DSAatUF" target="_blank" title="Facebook">
             <Icon src={FacebookLogo}></Icon>
           </a>
         </StyledCard>
 
         <StyledCard>
-          <a href="https://www.instagram.com/uf.dsa/" title="Instagram">
+          <a href="https://www.instagram.com/uf.dsa/" target="_blank" title="Instagram">
             <Icon src={InstagramLogo}></Icon>
           </a>
         </StyledCard>
 
         <StyledCard>
-          <a href="https://groupme.com/join_group/53205471/hXrFzndj" title="GroupMe">
+          <a href="https://groupme.com/join_group/53205471/hXrFzndj" target="_blank" title="GroupMe">
             <Icon src={GroupMeLogo}></Icon>
           </a>
         </StyledCard>
       </SocialMedia>
 
-      <ParentContainer>
+      <MediaContainer>
+        <Title>Social Media Feed</Title>
+        <br />
+        <SocialMediaFeed />
+      </MediaContainer>
+
+      <ParentContainer style={{ backgroundColor: '#fff' }}>
         <Title>Parent Organization</Title>
         <br />
         <ParentAffiliation>
@@ -143,7 +150,7 @@ export const HomePage: React.FC<Props> = ({}) => {
         <Affiliations>{clubs}</Affiliations>
       </ParentContainer>
 
-      <ParentContainer style={{ backgroundColor: '#fff' }}>
+      <ParentContainer style={{ backgroundColor: '#f8f9fb', marginBottom: '0px' }}>
         <Title>General Resources</Title>
         <br />
         <Resources>{resources}</Resources>
@@ -204,6 +211,13 @@ const ParentContainer = styled.div`
   justify-content: center;
   display: grid;
   margin: 50px 0px;
+`;
+
+const MediaContainer = styled.div`
+  padding: 20px 200px 50px 200px;
+  background-color: #f8f9fb;
+  width: 100%;
+  justify-content: center;
 `;
 
 const CarouselContainer = styled.div`

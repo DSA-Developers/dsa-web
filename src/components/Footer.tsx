@@ -76,13 +76,13 @@ export const Footer: React.FC<Props> = ({}) => {
         <StyledCol>
           <Header>Connect</Header>
           <SocialMedia>
-            <a href="https://www.facebook.com/DSAatUF">
+            <a href="https://www.facebook.com/DSAatUF" target="_blank">
               <Logo src={logoFb}></Logo>
             </a>
-            <a href="https://www.instagram.com/uf.dsa/">
+            <a href="https://www.instagram.com/uf.dsa/" target="_blank">
               <Logo src={logoInst}></Logo>
             </a>
-            <a href="https://groupme.com/join_group/53205471/hXrFzndj">
+            <a href="https://groupme.com/join_group/53205471/hXrFzndj" target="_blank">
               <Logo src={logoGroup}></Logo>
             </a>
           </SocialMedia>

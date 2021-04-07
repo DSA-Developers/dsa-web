@@ -135,6 +135,7 @@ exports[`Navigation Footer renders 1`] = `
       >
         <a
           href="https://www.facebook.com/DSAatUF"
+          target="_blank"
         >
           <img
             className="c7"
@@ -143,6 +144,7 @@ exports[`Navigation Footer renders 1`] = `
         </a>
         <a
           href="https://www.instagram.com/uf.dsa/"
+          target="_blank"
         >
           <img
             className="c7"
@@ -151,6 +153,7 @@ exports[`Navigation Footer renders 1`] = `
         </a>
         <a
           href="https://groupme.com/join_group/53205471/hXrFzndj"
+          target="_blank"
         >
           <img
             className="c7"
