@@ -28,6 +28,9 @@ import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { OrganizationIcon } from '../components/OrganizationIcon';
 import SocialMediaFeed from '../components/SocialMediaFeed';
 import Button from 'react-bootstrap/Button';
+import { DescriptionContainer } from '../components/DescriptionContainer';
+import { Title } from '../components/Title';
+import { Description } from '../components/Description';
 
 interface Props {}
 
@@ -156,19 +159,6 @@ export const HomePage: React.FC<Props> = ({}) => {
   );
 };
 
-const Title = styled.div`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
-  padding: 4%;
-  margin-bottom: -2%;
-  text-align: center;
-  background: -webkit-linear-gradient(0.5turn, #9c4c5c, #002d62);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
 const ParentTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 22px;
@@ -177,17 +167,6 @@ const ParentTitle = styled.h1`
   font-weight: 600;
   line-height: 26.4px;
   padding: 5%;
-  text-align: center;
-`;
-
-const Description = styled.h1`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 350;
-  line-height: 60px;
-  padding: 5% 10%;
   text-align: center;
 `;
 
@@ -239,13 +218,6 @@ const MediaContainer = styled.div`
   background-color: #f8f9fb;
   width: 100%;
   justify-content: center;
-`;
-
-const DescriptionContainer = styled.div`
-  padding: 20px 400px 20px 400px;
-  background-color: #f8f9fb;
-  width: 100vw;
-  textalign: 'center';
 `;
 
 const CarouselContainer = styled.div`

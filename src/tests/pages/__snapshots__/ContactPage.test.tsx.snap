@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact Page renders 1`] = `
-.c1 {
+.c0 {
+  bottom: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c2 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
@@ -13,7 +21,7 @@ exports[`Contact Page renders 1`] = `
   -webkit-text-fill-color: transparent;
 }
 
-.c0 {
+.c1 {
   padding: 20vh 0 20vh 0;
   font-size: 2rem;
   color: #343a40;
@@ -21,29 +29,56 @@ exports[`Contact Page renders 1`] = `
 }
 
 <div
-  className="c0 jumbotron"
+  className="c0"
 >
   <div
-    className="container"
+    className="c1 jumbotron jumbotron-fluid"
+    style={
+      Object {
+        "backgroundImage": "url(Newsletter.jpg)",
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+      }
+    }
   >
     <div
-      className="c1"
+      className="container"
+      style={
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.7)",
+          "padding": "20px 20px 20px 20px",
+        }
+      }
     >
-      Mailing List
+      <div
+        className="c2"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        Mailing List
+      </div>
+      <p
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        Join our mailing list to stay up to date!
+      </p>
+      <a
+        className="btn btn-light btn-lg"
+        href="http://eepurl.com/gRikBb"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Subscribe
+      </a>
     </div>
-    <p>
-      Join our mailing list to stay up to date!
-    </p>
-    <br />
-    <a
-      className="btn btn-info btn-lg"
-      href="http://eepurl.com/gRikBb"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      target="_blank"
-    >
-      Subscribe
-    </a>
   </div>
 </div>
 `;
