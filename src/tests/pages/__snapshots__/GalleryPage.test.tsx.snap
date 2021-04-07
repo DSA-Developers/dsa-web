@@ -35,10 +35,12 @@ exports[`Gallery Page renders 1`] = `
     <div
       className="c1"
     >
-      Photo Gallery Page
+      Photo Gallery
     </div>
     <div>
-       
+      <div>
+         
+      </div>
     </div>
     <div
       className="c1"

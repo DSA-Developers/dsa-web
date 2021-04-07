@@ -16,9 +16,7 @@ exports[`Contact Page renders 1`] = `
   font-variant: small-caps;
   font-weight: 700;
   padding-bottom: 40px;
-  background: -webkit-linear-gradient(0.5turn,#9c4c5c,#002d62);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .c1 {
@@ -35,7 +33,7 @@ exports[`Contact Page renders 1`] = `
     className="c1 jumbotron jumbotron-fluid"
     style={
       Object {
-        "backgroundImage": "url(Newsletter.jpg)",
+        "backgroundImage": "url(DSACarousel.jpg)",
         "backgroundPosition": "center",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
@@ -46,18 +44,13 @@ exports[`Contact Page renders 1`] = `
       className="container"
       style={
         Object {
-          "backgroundColor": "rgba(0, 0, 0, 0.7)",
+          "backgroundColor": "rgba(0, 0, 0, 0.5)",
           "padding": "20px 20px 20px 20px",
         }
       }
     >
       <div
         className="c2"
-        style={
-          Object {
-            "color": "white",
-          }
-        }
       >
         Mailing List
       </div>
