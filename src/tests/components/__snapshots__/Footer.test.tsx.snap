@@ -74,6 +74,15 @@ exports[`Navigation Footer renders 1`] = `
   color: rgba(0,0,0,0.7);
 }
 
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -250px 100px 0px 0px;
+  padding: 10vh 20% 10vh 20%;
+}
+
 <div
   className="c0 bg-light border-top text-secondary"
 >
@@ -177,6 +186,30 @@ exports[`Navigation Footer renders 1`] = `
         : dsaatuf@gmail.com
       </p>
     </div>
+  </div>
+  <div
+    className="c1 c8 row"
+  >
+    <img
+      src="Dev_Logo.png"
+      style={
+        Object {
+          "height": "auto",
+          "width": "8%",
+        }
+      }
+    />
+    <p
+      style={
+        Object {
+          "fontSize": "25px",
+        }
+      }
+    >
+      <em>
+         Made with ♥ by DSA Developers
+      </em>
+    </p>
   </div>
 </div>
 `;

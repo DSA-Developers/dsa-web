@@ -98,7 +98,7 @@ export const AboutPage: React.FC<Props> = ({}) => {
 };
 
 const DescriptionContainer = styled.div`
-  padding: 20px 400px 50px 400px;
+  padding: 20px 400px 100px 400px;
   background-color: #f8f9fb;
   textalign: 'center';
 `;
@@ -109,12 +109,12 @@ const MemberContainer = styled.div`
 
 const Description = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-variant: normal;
   font-weight: 350;
   line-height: 40px;
-  padding: 2% 3%;
+  padding: 0% 3%;
   text-align: center;
 `;
 

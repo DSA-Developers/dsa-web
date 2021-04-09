@@ -124,7 +124,7 @@ export const HomePage: React.FC<Props> = ({}) => {
       </SocialMedia>
 
       <MediaContainer>
-        <Title>Social Media Feed</Title>
+        <Title>Check us out on Instagram!</Title>
         <br />
         <SocialMediaFeed />
       </MediaContainer>
@@ -135,9 +135,8 @@ export const HomePage: React.FC<Props> = ({}) => {
         <ParentAffiliation>
           <StyledCard>
             <a href="https://www.ufhsa.com/" target="_blank" style={{ color: '#000' }}>
-              <img src={HSALogo} />
-
-              <Card.Title style={{ paddingTop: '20px', textAlign: 'center', fontSize: '26px' }}>
+              <img src={HSALogo} style={{ paddingLeft: '30px' }} />
+              <Card.Title style={{ paddingTop: '20px' }}>
                 <ParentTitle>Hispanic Student Association</ParentTitle>
               </Card.Title>
             </a>
@@ -161,7 +160,7 @@ export const HomePage: React.FC<Props> = ({}) => {
 
 const ParentTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 27px;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 600;
@@ -186,7 +185,7 @@ const ButtonText = styled.h1`
 
 const StyledCard = styled.div`
   transition: transform 0.2s;
-  max-width: 200px;
+  max-width: 250px;
   &:hover {
     transform: scale(1.1);
   }
@@ -247,16 +246,19 @@ const ParentAffiliation = styled.div`
 const Affiliations = styled.div`
   margin: 25px;
   display: grid;
-  grid-template-columns: repeat(6, 250px);
+  grid-template-columns: repeat(6, 140px);
   box-sizing: border-box;
   width: 1400px;
   height: 10%;
+  column-gap: 100px;
+  text-align: center;
 `;
 const Resources = styled.div`
-  margin: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  width: 520px;
+  grid-template-columns: repeat(3, 140px);
+  margin-right: 70px;
+  column-gap: 100px;
+  text-align: center;
 `;
 
 const CarouselImage = styled.img`

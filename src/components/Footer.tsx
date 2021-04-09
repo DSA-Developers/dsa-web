@@ -8,6 +8,7 @@ import { FullWidth } from './FullWidth';
 import logoFb from '../assets/facebook.svg';
 import logoInst from '../assets/instagram.svg';
 import logoGroup from '../assets/groupme.svg';
+import DevLogo from '../assets/Dev_Logo.png';
 
 interface Props {}
 
@@ -52,6 +53,12 @@ const SiteLink = styled(Nav.Link)`
   padding: 0 0 0.5em 0;
 `;
 
+const Credits = styled(CenterRow)`
+  align-items: center;
+  margin: -250px 100px 0px 0px;
+  padding: 10vh 20% 10vh 20%;
+`;
+
 export const Footer: React.FC<Props> = ({}) => {
   return (
     <FullWidth className="bg-light border-top text-secondary">
@@ -94,6 +101,12 @@ export const Footer: React.FC<Props> = ({}) => {
           </p>
         </StyledCol>
       </StyledRow>
+      <Credits>
+        <img src={DevLogo} style={{ width: '8%', height: 'auto' }} />
+        <p style={{ fontSize: '25px' }}>
+          <em>&ensp;Made with ♥ by DSA Developers</em>
+        </p>
+      </Credits>
     </FullWidth>
   );
 };
