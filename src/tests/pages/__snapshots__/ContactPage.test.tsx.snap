@@ -9,14 +9,14 @@ exports[`Contact Page renders 1`] = `
   height: fit-content;
 }
 
-.c2 {
+.c3 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 700;
-  padding-bottom: 40px;
   color: white;
+  text-align: center;
 }
 
 .c1 {
@@ -24,33 +24,47 @@ exports[`Contact Page renders 1`] = `
   font-size: 2rem;
   color: #343a40;
   margin: 0;
+  background-image: url(DRflag.jpg);
+  background-position: center;
+  background-size: 3840px 2600px;
+  background-repeat: no-repeat;
+}
+
+.c4 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%,0%);
+  -webkit-transform: translate(-50%,0%);
+  -ms-transform: translate(-50%,0%);
+  transform: translate(-50%,0%);
+}
+
+.c2 {
+  background-color: #002d62;
+  padding: 25px 75px;
+  border-radius: 100px;
+  margin-bottom: 60px;
+  height: 350px;
 }
 
 <div
   className="c0"
 >
   <div
-    className="c1 jumbotron jumbotron-fluid"
-    style={
-      Object {
-        "backgroundImage": "url(DSACarousel.jpg)",
-        "backgroundPosition": "center",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
-      }
-    }
+    className="c1 jumbotron"
   >
     <div
-      className="container"
-      style={
-        Object {
-          "backgroundColor": "rgba(0, 0, 0, 0.5)",
-          "padding": "20px 20px 20px 20px",
-        }
-      }
+      className="c2 container"
     >
       <div
-        className="c2"
+        className="c3"
       >
         Mailing List
       </div>
@@ -58,16 +72,19 @@ exports[`Contact Page renders 1`] = `
         style={
           Object {
             "color": "white",
+            "marginTop": "40px",
+            "textAlign": "center",
           }
         }
       >
-        Join our mailing list to stay up to date!
+        Subscribe to stay up to date with the latest club news!
       </p>
       <a
-        className="btn btn-light btn-lg"
+        className="c4 btn btn-danger btn-lg"
         href="http://eepurl.com/gRikBb"
         onClick={[Function]}
         onKeyDown={[Function]}
+        target="_blank"
       >
         Subscribe
       </a>
