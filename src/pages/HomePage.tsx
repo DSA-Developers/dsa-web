@@ -73,7 +73,7 @@ export const HomePage: React.FC<Props> = ({}) => {
   ));
 
   return (
-    <Container fluid style={{ width: '100%' }}>
+    <Container fluid>
       <CarouselContainer>
         <Carousel>
           <Carousel.Item interval={3500}>
@@ -221,6 +221,7 @@ const MediaContainer = styled.div`
 
 const CarouselContainer = styled.div`
   padding: 0px 0px 0px 0px;
+  width: 100%;
   margin-bottom: -40px;
   justify-content: center;
   display: flex;
@@ -229,7 +230,7 @@ const CarouselContainer = styled.div`
 const SocialMedia = styled.div`
   padding: 20px 0px 20px 0px;
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   margin: 50px -13px;
   display: flex;
@@ -246,9 +247,9 @@ const ParentAffiliation = styled.div`
 const Affiliations = styled.div`
   margin: 25px;
   display: grid;
-  grid-template-columns: repeat(6, 140px);
+  grid-template-columns: repeat(3, 140px);
   box-sizing: border-box;
-  width: 1400px;
+  width: 100%;
   height: 10%;
   column-gap: 100px;
   text-align: center;
@@ -262,6 +263,6 @@ const Resources = styled.div`
 `;
 
 const CarouselImage = styled.img`
-  width: 100vw;
+  width: 99.25vw;
   height: auto;
 `;

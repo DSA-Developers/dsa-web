@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 class SocialMediaFeed extends React.Component<any, any> {
-  componentWillMount() {
+  componentDidMount() {
     let script = document.createElement('script');
     script.setAttribute('src', 'https://www.powr.io/powr.js?platform=react');
     script.src = 'https://www.powr.io/powr.js?platform=react';

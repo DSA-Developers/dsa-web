@@ -15,6 +15,7 @@ interface Props {}
 const StyledRow = styled(CenterRow)`
   height: fit-content;
   align-items: start;
+  margin: 0;
   padding: 10vh 20% 10vh 20%;
 `;
 
@@ -55,13 +56,30 @@ const SiteLink = styled(Nav.Link)`
 
 const Credits = styled(CenterRow)`
   align-items: center;
-  margin: -250px 100px 0px 0px;
-  padding: 10vh 20% 10vh 20%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+`;
+
+const DevelopedBy = styled.p`
+  position: relative;
+  font-size: 25px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    bottom: -20%;
+    display: block;
+    width: 60px;
+    height: 55px;
+    background-image: url(${DevLogo});
+    background-size: contain;
+  }
 `;
 
 export const Footer: React.FC<Props> = ({}) => {
   return (
-    <FullWidth className="bg-light border-top text-secondary">
+    <FullWidth className="bg-light border-top text-secondary" style={{ position: 'relative' }}>
       <StyledRow>
         <StyledCol>
           <Header>Site Map</Header>
@@ -102,10 +120,10 @@ export const Footer: React.FC<Props> = ({}) => {
         </StyledCol>
       </StyledRow>
       <Credits>
-        <img src={DevLogo} style={{ width: '8%', height: 'auto' }} />
-        <p style={{ fontSize: '25px' }}>
+        {/* <img src={DevLogo} style={{ width: '8%', height: 'auto' }} /> */}
+        <DevelopedBy>
           <em>&ensp;Made with ♥ by DSA Developers</em>
-        </p>
+        </DevelopedBy>
       </Credits>
     </FullWidth>
   );

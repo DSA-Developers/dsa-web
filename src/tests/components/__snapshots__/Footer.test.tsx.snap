@@ -28,6 +28,7 @@ exports[`Navigation Footer renders 1`] = `
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  margin: 0;
   padding: 10vh 20% 10vh 20%;
 }
 
@@ -79,12 +80,35 @@ exports[`Navigation Footer renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -250px 100px 0px 0px;
-  padding: 10vh 20% 10vh 20%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.c9 {
+  position: relative;
+  font-size: 25px;
+}
+
+.c9:before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -20%;
+  display: block;
+  width: 60px;
+  height: 55px;
+  background-image: url(Dev_Logo.png);
+  background-size: contain;
 }
 
 <div
   className="c0 bg-light border-top text-secondary"
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
 >
   <div
     className="c1 c2 row"
@@ -190,21 +214,8 @@ exports[`Navigation Footer renders 1`] = `
   <div
     className="c1 c8 row"
   >
-    <img
-      src="Dev_Logo.png"
-      style={
-        Object {
-          "height": "auto",
-          "width": "8%",
-        }
-      }
-    />
     <p
-      style={
-        Object {
-          "fontSize": "25px",
-        }
-      }
+      className="c9"
     >
       <em>
          Made with ♥ by DSA Developers
