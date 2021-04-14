@@ -3,10 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { Title } from '../components/Title';
 import { storage } from '../firebase';
-import Gallery,{ PhotoClickHandler, PhotoProps } from 'react-photo-gallery';
-import { render } from '@testing-library/react';
-import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
+import Gallery from 'react-photo-gallery';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 interface Props {}
@@ -51,12 +48,3 @@ export const GalleryPage: React.FC<Props> = ({}) => {
     </Container></>
   );
 };
-
-const Expand = styled.div`
-    background-color: rgba(255,255,255,0.5);
-    width: 100vw;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    left: 0;
-`
