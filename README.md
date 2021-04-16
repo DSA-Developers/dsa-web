@@ -16,9 +16,12 @@ to install the required dependencies. This project uses the following:
 <ul>
   <li><a href="https://github.com/neptunian/react-photo-gallery"> React Photo Gallery </a></li>
   <li><a href="https://simple-react-lightbox.dev/"> Simple React Lightbox </a></li>
-  <li><a href="https://enzymejs.github.io/enzyme/"> Emzyme </a></li>
+  <li><a href="https://enzymejs.github.io/enzyme/"> Enzyme </a></li>
   <li><a href="https://github.com/styled-components/styled-components"> Styled Components </a></li>
   <li><a href="https://github.com/react-bootstrap/react-bootstrap"> React Bootstrap </a></li>
+  <li><a href="https://firebase.google.com/"> Firebase </a></li>
+  <li><a href="https://www.npmjs.com/package/react-router-dom"> React Router Dom </a></li>
+  <li><a href="https://jestjs.io/"> Jest </a></li>
 </ul>
 
 ### Run the development server
@@ -32,7 +35,7 @@ Testing can be done with
 ````
 yarn test
 ````
-Make sure to run all tests (by pressing the ```a``` key ) and update them (pressing the ```u``` key after the inital tests are run) before commiting code.
+Make sure to run all tests (by pressing the ```a``` key ) and update them (pressing the ```u``` key after the inital tests are run) before commiting code. Tests utilize Jest and Enzyme.
 # About the devs
 Developed by Americos Perez, Matthew Iglesias, Julia Nguyen, and Noah Meininger.
 <img src="src/assets/Dev_Logo.png"></img>
