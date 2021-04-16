@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Container from 'react-bootstrap/Container';
-import { Title } from '../components/Title';
-import { MemberCard } from '../components/MemberCard';
-
 import { database, storage } from '../firebase';
+import styled from 'styled-components';
 
-interface Props {}
+import { MainContainer, Section, WhiteSection, Description } from '../components/Containers';
+import Title from '../components/Title';
+import MemberCard from '../components/MemberCard';
+
 
 interface CardType {
   name: string;
@@ -68,7 +67,7 @@ const useCards = () => {
   return cardInfo;
 };
 
-export const AboutPage: React.FC<Props> = ({}) => {
+const AboutPage: React.FC = ({}) => {
   const cardInfo = useCards();
 
   const cards = cardInfo.map((card) => (
@@ -76,51 +75,38 @@ export const AboutPage: React.FC<Props> = ({}) => {
   ));
 
   return (
-    <Container fluid>
-      <DescriptionContainer>
+    <MainContainer fluid>
+      <Section>
         <Title>About Us</Title>
-        <Description>
+        <StyledDescription>
           The Dominican Student Association was first established at the University of Florida in 2000. We are a
           welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the
           lives of not only Dominican people but as many people as possible. DSA strives to create a community of
           Dominicans at the university. DSA hosts monthly General Body Meetings and social events, and during the Spring
           semester, a full week is dedicated to celebrating Dominican Independence. DSA also partakes in drives such as
           the holiday toy drive for kids in Haina, Dominican Republic and dance workshops with GatorSalsa.
-        </Description>
-      </DescriptionContainer>
-      <MemberContainer>
+        </StyledDescription>
+      </Section>
+      <WhiteSection>
         <Title>Executive Board</Title>
         <ParentAffiliation>{cards.slice(0, 2)}</ParentAffiliation>
         <Affiliations2>{cards.slice(2, 5)}</Affiliations2>
         <Affiliations2>{cards.slice(5)}</Affiliations2>
-      </MemberContainer>
-    </Container>
+      </WhiteSection>
+    </MainContainer>
   );
 };
 
-const DescriptionContainer = styled.div`
-  padding: 20px 400px 100px 400px;
-  background-color: #f8f9fb;
-  textalign: 'center';
-`;
-const MemberContainer = styled.div`
-  background-color: #fff;
-  margin: -30px 0px 60px 0px;
-`;
+export default AboutPage;
 
-const Description = styled.h1`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+const StyledDescription = styled(Description)`
   font-size: 25px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 350;
   line-height: 40px;
   padding: 0% 3%;
-  text-align: center;
 `;
 
 const ParentAffiliation = styled.div`
-  margin: 0 0 100px 0;
+  margin: 50px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 200px);
   column-gap: 100px;

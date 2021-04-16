@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { ContactPage } from '../../pages/ContactPage';
+import ContactPage from '../../pages/ContactPage';
 
 test('Contact Page renders', () => {
   const props = {};

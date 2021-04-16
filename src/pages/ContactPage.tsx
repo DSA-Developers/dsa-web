@@ -3,10 +3,30 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-import { FullWidth } from '../components/FullWidth';
+
+import { FullWidth } from '../components/Containers';
+
 import Newsletter from '../assets/DRflag.jpg';
 
-interface Props {}
+const ContactPage: React.FC = ({}) => {
+  return (
+    <FullWidth>
+      <MailingList>
+        <StyledContainer>
+          <Header>Mailing List</Header>
+          <p style={{ color: 'white', textAlign: 'center', marginTop: '40px', fontWeight: 100 }}>
+            Subscribe to stay up to date with the latest club news!
+          </p>
+          <StyledButton variant="danger" size="lg" href="http://eepurl.com/gRikBb" target="_blank">
+            Subscribe
+          </StyledButton>
+        </StyledContainer>
+      </MailingList>
+    </FullWidth>
+  );
+};
+
+export default ContactPage;
 
 const Header = styled.div`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
@@ -46,21 +66,3 @@ const StyledContainer = styled(Container)`
   margin-bottom: 60px;
   height: 350px;
 `;
-
-export const ContactPage: React.FC<Props> = ({}) => {
-  return (
-    <FullWidth>
-      <MailingList>
-        <StyledContainer>
-          <Header>Mailing List</Header>
-          <p style={{ color: 'white', textAlign: 'center', marginTop: '40px', fontWeight: 100 }}>
-            Subscribe to stay up to date with the latest club news!
-          </p>
-          <StyledButton variant="danger" size="lg" href="http://eepurl.com/gRikBb" target="_blank">
-            Subscribe
-          </StyledButton>
-        </StyledContainer>
-      </MailingList>
-    </FullWidth>
-  );
-};

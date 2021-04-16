@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { HomePage } from '../../pages/HomePage';
+import HomePage from '../../pages/HomePage';
 
 test('Home Page renders', () => {
   const props = {};

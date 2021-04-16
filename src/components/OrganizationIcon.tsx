@@ -8,6 +8,21 @@ interface Props {
   text: string;
 }
 
+const OrganizationIcon: React.FC<Props> = ({ link, photo, text }) => {
+  return (
+    <StyledCard>
+      <a href={link} target="_blank" style={{ color: '#000' }}>
+        <Icon src={photo} />
+        <Card.Title style={{ fontSize: '22px', textAlign: 'center', marginTop: '10px' }}>
+          <StyledTitle>{text}</StyledTitle>
+        </Card.Title>
+      </a>
+    </StyledCard>
+  );
+};
+
+export default OrganizationIcon;
+
 const StyledCard = styled.div`
   transition: transform 0.2s;
   width: 150px;
@@ -31,16 +46,3 @@ const StyledTitle = styled.h1`
   line-height: 26.4px;
   text-align: center;
 `;
-
-export const OrganizationIcon: React.FC<Props> = ({ link, photo, text }) => {
-  return (
-    <StyledCard>
-      <a href={link} target="_blank" style={{ color: '#000' }}>
-        <Icon src={photo} />
-        <Card.Title style={{ fontSize: '22px', textAlign: 'center', marginTop: '10px' }}>
-          <StyledTitle>{text}</StyledTitle>
-        </Card.Title>
-      </a>
-    </StyledCard>
-  );
-};

@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { AboutPage } from '../../pages/AboutPage';
+import AboutPage from '../../pages/AboutPage';
 
 test('About Page renders', () => {
   const props = {};
