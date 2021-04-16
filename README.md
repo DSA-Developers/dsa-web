@@ -1,7 +1,8 @@
 # Overview
 This document details how to modify, use and deploy the DSA website. The goal of the DSA website is to provide users with information regarding club events, club members, contact information, and related photos.
 # <a href="https://dsa-web.herokuapp.com/"> Live Deployment </a>
-\
+
+
 # Getting Started
 ### Clone this repository 
 This command can be used to clone the project
@@ -37,7 +38,8 @@ Testing can be done with
 yarn test
 ````
 Make sure to run all tests (by pressing the ```a``` key ) and update them (pressing the ```u``` key after the inital tests are run) before commiting code. Tests utilize Jest and Enzyme.
-\
+
+
 # About the devs
 <img src="src/assets/Dev_Logo.png" width="70" height="auto" style="float: left;"></img>
 Made with ♥ by Americos Perez, Matthew Iglesias, Julia Nguyen, and Noah Meininger.
