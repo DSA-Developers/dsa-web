@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { CenterRow } from '../components/CenterRow';
 import { Title } from '../components/Title';
@@ -31,20 +32,27 @@ const usePhotos = () => {
   return photos;
 };
 
-
 export const GalleryPage: React.FC<Props> = ({}) => {
   const photosURLs = usePhotos();
 
-  const photos = photosURLs.map((url) => ({src: url, height: 7, width: 10}));
+  const photos = photosURLs.map((url) => ({ src: url, height: 7, width: 10 }));
 
   return (
     <>
-    <Container>
-      <CenterRow>
-        <Title>Photo Gallery</Title>
-        <SRLWrapper><Gallery photos={photos} /></SRLWrapper>
-        <Title></Title>
-      </CenterRow>
-    </Container></>
+      <StyledContainer fluid>
+        <CenterRow>
+          <Title>Photo Gallery</Title>
+          <SRLWrapper>
+            <Gallery photos={photos} />
+          </SRLWrapper>
+          <Title></Title>
+        </CenterRow>
+      </StyledContainer>
+    </>
   );
 };
+
+const StyledContainer = styled(Container)`
+  background-color: #f8f9fb;
+  padding: 0 10% 0 10%;
+`;

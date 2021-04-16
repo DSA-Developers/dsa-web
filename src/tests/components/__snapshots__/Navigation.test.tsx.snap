@@ -4,7 +4,7 @@ exports[`Navigation Navigation bar renders 1`] = `
 .c1 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   margin: 0 0 0 0.5em;
   font-size: 3rem;
 }
@@ -23,7 +23,7 @@ exports[`Navigation Navigation bar renders 1`] = `
 }
 
 .c4 {
-  font-weight: 500;
+  font-weight: 100;
 }
 
 <nav
@@ -43,10 +43,7 @@ exports[`Navigation Navigation bar renders 1`] = `
     <span
       className="c1 navbar-text"
     >
-      <b>
-        DSA
-      </b>
-       @ UF
+      DSA @ UF
     </span>
   </a>
   <div

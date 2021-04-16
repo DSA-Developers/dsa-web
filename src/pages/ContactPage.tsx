@@ -12,8 +12,7 @@ const Header = styled.div`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
+  font-weight: 100;
   color: white;
   text-align: center;
 `;
@@ -32,8 +31,7 @@ const StyledButton = styled(Button)`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 30px;
   margin-top: 40px;
   position: absolute;
@@ -55,7 +53,7 @@ export const ContactPage: React.FC<Props> = ({}) => {
       <MailingList>
         <StyledContainer>
           <Header>Mailing List</Header>
-          <p style={{ color: 'white', textAlign: 'center', marginTop: '40px' }}>
+          <p style={{ color: 'white', textAlign: 'center', marginTop: '40px', fontWeight: 100 }}>
             Subscribe to stay up to date with the latest club news!
           </p>
           <StyledButton variant="danger" size="lg" href="http://eepurl.com/gRikBb" target="_blank">

@@ -10,17 +10,17 @@ interface Props {
 
 const StyledCard = styled.div`
   transition: transform 0.2s;
-  width: 300px;
+  width: 150px;
 
   &:hover {
     transform: scale(1.1);
+    text-decoration: none;
   }
 `;
 const Icon = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 25px;
-  margin-right: 100px;
 `;
 
 const StyledTitle = styled.h1`
@@ -29,7 +29,6 @@ const StyledTitle = styled.h1`
   font-style: normal;
   font-weight: 450;
   line-height: 26.4px;
-  padding: 5%;
   text-align: center;
 `;
 
@@ -38,7 +37,7 @@ export const OrganizationIcon: React.FC<Props> = ({ link, photo, text }) => {
     <StyledCard>
       <a href={link} target="_blank" style={{ color: '#000' }}>
         <Icon src={photo} />
-        <Card.Title style={{ padding: '25px 100px 25px 0px', fontSize: '22px', textAlign: 'center' }}>
+        <Card.Title style={{ fontSize: '22px', textAlign: 'center', marginTop: '10px' }}>
           <StyledTitle>{text}</StyledTitle>
         </Card.Title>
       </a>

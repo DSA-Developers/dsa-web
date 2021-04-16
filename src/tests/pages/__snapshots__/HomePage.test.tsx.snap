@@ -1,58 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Page renders 1`] = `
-.c16 {
+.c14 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  width: 300px;
+  width: 150px;
 }
 
-.c16:hover {
+.c14:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c17 {
+.c15 {
   width: 150px;
   height: 150px;
   border-radius: 25px;
-  margin-right: 100px;
 }
 
-.c18 {
+.c16 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 450;
   line-height: 26.4px;
-  padding: 5%;
   text-align: center;
 }
 
-.c2 {
-  padding: 20px 400px 20px 400px;
+.c3 {
+  padding: 5% 20% 5% 20%;
   background-color: #f8f9fb;
   width: 100%;
-  textalign: 'center';
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c3 {
+.c4 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
-  padding: 4%;
-  margin-bottom: -2%;
+  font-weight: 400;
   text-align: center;
   background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
-.c4 {
+.c5 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 35px;
   font-style: normal;
@@ -63,43 +77,54 @@ exports[`Home Page renders 1`] = `
   text-align: center;
 }
 
-.c14 {
+.c0 {
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  background: white;
+}
+
+.c12 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 27px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 26.4px;
   padding: 5%;
   text-align: center;
 }
 
-.c7 Button.[disabled] {
-  background-color: #17a2b8;
-}
-
 .c8 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 
-.c9 {
+.c11 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
   max-width: 250px;
+  margin-bottom: 50px;
 }
 
-.c9:hover {
+.c11:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c6 {
+.c9 {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.c1 {
+  padding: 0px 0px 0px 0px;
+  width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -108,28 +133,25 @@ exports[`Home Page renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 40px 20px 0px;
 }
 
-.c10 {
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
-}
-
-.c12 {
-  padding: 20px 0px 20px 0px;
-  background-color: #f8f9fb;
-  width: 100%;
+.c7 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  display: grid;
-  margin: 50px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  grid-template-columns: repeat(3,150px);
+  grid-gap: 30px;
 }
 
-.c11 {
+.c10 {
   padding: 20px 200px 50px 200px;
   background-color: #f8f9fb;
   width: 100%;
@@ -139,80 +161,35 @@ exports[`Home Page renders 1`] = `
   justify-content: center;
 }
 
-.c0 {
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  margin-bottom: -40px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding: 20px 0px 20px 0px;
-  background-color: #fff;
-  width: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 50px -13px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-template-columns: repeat(3,150px);
-  grid-gap: 30px;
-}
-
 .c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 15px;
-}
-
-.c15 {
-  margin: 25px;
+  margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat(3,140px);
-  box-sizing: border-box;
-  width: 100%;
-  height: 10%;
+  grid-template-columns: repeat(3,150px);
   -webkit-column-gap: 100px;
   column-gap: 100px;
+  row-gap: 100px;
   text-align: center;
 }
 
-.c19 {
+.c17 {
   display: grid;
-  grid-template-columns: repeat(3,140px);
-  margin-right: 70px;
+  grid-template-columns: repeat(3,150px);
   -webkit-column-gap: 100px;
   column-gap: 100px;
+  row-gap: 100px;
   text-align: center;
 }
 
-.c1 {
-  width: 99.25vw;
+.c2 {
+  width: 100vw;
   height: auto;
 }
 
 <div
-  className="container-fluid"
+  className="c0 container-fluid"
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
       className="carousel slide"
@@ -245,7 +222,7 @@ exports[`Home Page renders 1`] = `
           interval={3500}
         >
           <img
-            className="c1"
+            className="c2 d-block mw-100"
             src="DSACarousel.jpg"
           />
         </div>
@@ -254,7 +231,7 @@ exports[`Home Page renders 1`] = `
           interval={3500}
         >
           <img
-            className="c1"
+            className="c2 d-block mw-100"
             src="DSACarousel2.jpg"
           />
         </div>
@@ -263,7 +240,7 @@ exports[`Home Page renders 1`] = `
           interval={3500}
         >
           <img
-            className="c1"
+            className="c2 d-block mw-100"
             src="DSACarousel3.jpg"
           />
         </div>
@@ -305,39 +282,24 @@ exports[`Home Page renders 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       Welcome to the Dominican Student Association at UF!
     </div>
     <h1
-      className="c4"
+      className="c5"
     >
       ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or follow us on Instagram or Facebook for event information, memes, and friendship!
     </h1>
   </div>
   <div
-    className="c5"
+    className="c3 c6 c7"
   >
-    <p
-      className="c6"
-    >
-      <button
-        className="c7 btn btn-info"
-        disabled={true}
-        type="button"
-      >
-        <h1
-          className="c8"
-        >
-          Join Now
-        </h1>
-      </button>
-    </p>
     <div
-      className="c9"
+      className="c8"
     >
       <a
         href="https://www.facebook.com/DSAatUF"
@@ -345,13 +307,13 @@ exports[`Home Page renders 1`] = `
         title="Facebook"
       >
         <img
-          className="c10"
+          className="c9"
           src="facebook.svg"
         />
       </a>
     </div>
     <div
-      className="c9"
+      className="c8"
     >
       <a
         href="https://www.instagram.com/uf.dsa/"
@@ -359,13 +321,13 @@ exports[`Home Page renders 1`] = `
         title="Instagram"
       >
         <img
-          className="c10"
+          className="c9"
           src="instagram.svg"
         />
       </a>
     </div>
     <div
-      className="c9"
+      className="c8"
     >
       <a
         href="https://groupme.com/join_group/53205471/hXrFzndj"
@@ -373,17 +335,17 @@ exports[`Home Page renders 1`] = `
         title="GroupMe"
       >
         <img
-          className="c10"
+          className="c9"
           src="groupme.svg"
         />
       </a>
     </div>
   </div>
   <div
-    className="c11"
+    className="c10"
   >
     <div
-      className="c3"
+      className="c4"
     >
       Check us out on Instagram!
     </div>
@@ -394,72 +356,53 @@ exports[`Home Page renders 1`] = `
     />
   </div>
   <div
-    className="c12"
-    style={
-      Object {
-        "backgroundColor": "#fff",
-      }
-    }
+    className="c3 c6"
   >
     <div
-      className="c3"
+      className="c4"
     >
       Parent Organization
     </div>
     <br />
     <div
-      className="c13"
+      className="c11"
     >
-      <div
-        className="c9"
-      >
-        <a
-          href="https://www.ufhsa.com/"
-          style={
-            Object {
-              "color": "#000",
-            }
+      <a
+        href="https://www.ufhsa.com/"
+        style={
+          Object {
+            "color": "#000",
           }
-          target="_blank"
+        }
+        target="_blank"
+      >
+        <img
+          src="HispanicStudentLogo.png"
+        />
+        <div
+          className="card-title h5"
         >
-          <img
-            src="HispanicStudentLogo.png"
-            style={
-              Object {
-                "paddingLeft": "30px",
-              }
-            }
-          />
-          <div
-            className="card-title h5"
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
+          <h1
+            className="c12"
           >
-            <h1
-              className="c14"
-            >
-              Hispanic Student Association
-            </h1>
-          </div>
-        </a>
-      </div>
+            Hispanic Student Association
+          </h1>
+        </div>
+      </a>
     </div>
     <br />
     <div
-      className="c3"
+      className="c4"
     >
       <h1>
         In Association With:
       </h1>
     </div>
     <div
-      className="c15"
+      className="c13"
     >
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/argentina"
@@ -471,7 +414,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="ArgentineStudentsLogo.png"
           />
           <div
@@ -479,13 +422,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Argentine Student Association
             </h1>
@@ -493,7 +436,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/tango"
@@ -505,7 +448,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="ArgentineTango.png"
           />
           <div
@@ -513,13 +456,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Argentine Tango Club
             </h1>
@@ -527,7 +470,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/cuba"
@@ -539,7 +482,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="CubanAmericanLogo.png"
           />
           <div
@@ -547,13 +490,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Cuban American Student Association
             </h1>
@@ -561,7 +504,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/centralamerica"
@@ -573,7 +516,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="CentralAmericanLogo.png"
           />
           <div
@@ -581,13 +524,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Central American Latino Organization
             </h1>
@@ -595,7 +538,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/salsa"
@@ -607,7 +550,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="GatorSalsaLogo.png"
           />
           <div
@@ -615,13 +558,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Gator Salsa Club
             </h1>
@@ -629,7 +572,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/hispanic-communicators"
@@ -641,7 +584,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="HispanicCommunicatorsLogo.png"
           />
           <div
@@ -649,13 +592,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Hispanic Communicators Association
             </h1>
@@ -663,7 +606,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/mexico"
@@ -675,7 +618,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="MexicanStudentLogo.png"
           />
           <div
@@ -683,13 +626,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Mexican-American Student Association
             </h1>
@@ -697,7 +640,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/peru"
@@ -709,7 +652,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="PeruvianAmericanLogo.png"
           />
           <div
@@ -717,13 +660,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Peruvian American Student Society
             </h1>
@@ -731,7 +674,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/colombia"
@@ -743,7 +686,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="PorColombiaLogo.png"
           />
           <div
@@ -751,13 +694,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Por Colombia
             </h1>
@@ -765,7 +708,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/sabor-latino"
@@ -777,7 +720,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="SaborLatinoLogo.png"
           />
           <div
@@ -785,13 +728,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Sabor Latino
             </h1>
@@ -799,7 +742,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/puertorico"
@@ -811,7 +754,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="UnionDeEstudiantesLogo.png"
           />
           <div
@@ -819,13 +762,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               La Union de Estudiantes Puertorriqueños Activos
             </h1>
@@ -833,7 +776,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/venezuela"
@@ -845,7 +788,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="VenezuelanStudentLogo.png"
           />
           <div
@@ -853,13 +796,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Venezuelan Student Association
             </h1>
@@ -869,25 +812,19 @@ exports[`Home Page renders 1`] = `
     </div>
   </div>
   <div
-    className="c12"
-    style={
-      Object {
-        "backgroundColor": "#f8f9fb",
-        "marginBottom": "0px",
-      }
-    }
+    className="c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       General Resources
     </div>
     <br />
     <div
-      className="c19"
+      className="c17"
     >
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/campus-resources"
@@ -899,7 +836,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="UF logo.png"
           />
           <div
@@ -907,13 +844,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Campus Resources
             </h1>
@@ -921,7 +858,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/hsa-resources"
@@ -933,7 +870,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="HSA Logo.png"
           />
           <div
@@ -941,13 +878,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               HSA Resources
             </h1>
@@ -955,7 +892,7 @@ exports[`Home Page renders 1`] = `
         </a>
       </div>
       <div
-        className="c16"
+        className="c14"
       >
         <a
           href="https://www.ufhsa.com/mental-health-resources"
@@ -967,7 +904,7 @@ exports[`Home Page renders 1`] = `
           target="_blank"
         >
           <img
-            className="c17"
+            className="c15"
             src="GatorWell.jpg"
           />
           <div
@@ -975,13 +912,13 @@ exports[`Home Page renders 1`] = `
             style={
               Object {
                 "fontSize": "22px",
-                "padding": "25px 100px 25px 0px",
+                "marginTop": "10px",
                 "textAlign": "center",
               }
             }
           >
             <h1
-              className="c18"
+              className="c16"
             >
               Mental Health
             </h1>

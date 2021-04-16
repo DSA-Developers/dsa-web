@@ -10,7 +10,7 @@ interface Props {}
 const StyledTitle = styled(Navbar.Text)`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   margin: 0 0 0 0.5em;
   font-size: 3rem;
 `;
@@ -28,7 +28,7 @@ const StyledLink = styled(Nav.Item)`
   text-transform: uppercase;
 `;
 const Title = styled.div`
-  font-weight: 500;
+  font-weight: 100;
 `;
 
 export const Navigation: React.FC<Props> = ({}) => {
@@ -37,7 +37,7 @@ export const Navigation: React.FC<Props> = ({}) => {
       <Navbar.Brand className="align-items-center" href="/home">
         <img src={Logo} width="80" height="80" className="d-inline-block align-top" alt="DSA Logo" />
         <StyledTitle>
-          <b>DSA</b> @ UF
+          DSA @ UF
         </StyledTitle>
       </Navbar.Brand>
       <StyledNav className="ml-auto">

@@ -35,21 +35,24 @@ const SocialMedia = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 `;
 
 const Header = styled.h1`
   font-size: 2.5rem;
   margin: 0 0 0.5em 0;
+  font-weight: 100;
   text-transform: uppercase;
 `;
 
 const SiteLink = styled(Nav.Link)`
   font-size: 1.5rem;
+  font-weight: 100;
   color: rgba(0, 0, 0, 0.5);
   :hover {
     color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
   }
   padding: 0 0 0.5em 0;
 `;
@@ -64,6 +67,7 @@ const Credits = styled(CenterRow)`
 const DevelopedBy = styled.p`
   position: relative;
   font-size: 25px;
+  font-weight: 100;
   &:before {
     content: "";
     position: absolute;
@@ -115,7 +119,7 @@ export const Footer: React.FC<Props> = ({}) => {
         <StyledCol>
           <Header>Contact Us</Header>
           <p>
-            <b>Email</b>: dsaatuf@gmail.com
+            Email: dsaatuf@gmail.com
           </p>
         </StyledCol>
       </StyledRow>
