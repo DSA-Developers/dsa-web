@@ -55,24 +55,28 @@ exports[`Navigation Footer renders 1`] = `
 }
 
 .c7 {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .c4 {
   font-size: 2.5rem;
   margin: 0 0 0.5em 0;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
 .c5 {
   font-size: 1.5rem;
+  font-weight: 100;
   color: rgba(0,0,0,0.5);
   padding: 0 0 0.5em 0;
 }
 
 .c5:hover {
   color: rgba(0,0,0,0.7);
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c8 {
@@ -88,6 +92,7 @@ exports[`Navigation Footer renders 1`] = `
 .c9 {
   position: relative;
   font-size: 25px;
+  font-weight: 100;
 }
 
 .c9:before {
@@ -204,10 +209,7 @@ exports[`Navigation Footer renders 1`] = `
         Contact Us
       </h1>
       <p>
-        <b>
-          Email
-        </b>
-        : dsaatuf@gmail.com
+        Email: dsaatuf@gmail.com
       </p>
     </div>
   </div>

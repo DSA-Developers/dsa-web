@@ -27,8 +27,7 @@ import UEPALogo from '../assets/UnionDeEstudiantesLogo.png';
 import VENSALogo from '../assets/VenezuelanStudentLogo.png';
 import { OrganizationIcon } from '../components/OrganizationIcon';
 import SocialMediaFeed from '../components/SocialMediaFeed';
-import Button from 'react-bootstrap/Button';
-import { DescriptionContainer } from '../components/DescriptionContainer';
+import { Section } from '../components/Section';
 import { Title } from '../components/Title';
 import { Description } from '../components/Description';
 
@@ -73,54 +72,45 @@ export const HomePage: React.FC<Props> = ({}) => {
   ));
 
   return (
-    <Container fluid>
+    <MainContainer fluid>
       <CarouselContainer>
         <Carousel>
           <Carousel.Item interval={3500}>
-            <CarouselImage src={CarouselImg1} />
+            <CarouselImage className="d-block mw-100" src={CarouselImg1} />
           </Carousel.Item>
           <Carousel.Item interval={3500}>
-            <CarouselImage src={CarouselImg2} />
+            <CarouselImage className="d-block mw-100" src={CarouselImg2} />
           </Carousel.Item>
           <Carousel.Item interval={3500}>
-            <CarouselImage src={CarouselImg3} />
+            <CarouselImage className="d-block mw-100" src={CarouselImg3} />
           </Carousel.Item>
         </Carousel>
       </CarouselContainer>
 
-      <DescriptionContainer>
+      <Section>
         <Title>Welcome to the Dominican Student Association at UF!</Title>
-
         <Description>
           ¡¿Que lo que?! Welcome to the Dominican Student Association at the University of Florida! Join our GroupMe or
           follow us on Instagram or Facebook for event information, memes, and friendship!
         </Description>
-      </DescriptionContainer>
+      </Section>
 
       <SocialMedia>
-        <Body>
-          <StyledButton variant="info" disabled>
-            <ButtonText>Join Now</ButtonText>
-          </StyledButton>
-        </Body>
-
-        <StyledCard>
+        <MediaLogo>
           <a href="https://www.facebook.com/DSAatUF" target="_blank" title="Facebook">
             <Icon src={FacebookLogo}></Icon>
           </a>
-        </StyledCard>
-
-        <StyledCard>
+        </MediaLogo>
+        <MediaLogo>
           <a href="https://www.instagram.com/uf.dsa/" target="_blank" title="Instagram">
             <Icon src={InstagramLogo}></Icon>
           </a>
-        </StyledCard>
-
-        <StyledCard>
+        </MediaLogo>
+        <MediaLogo>
           <a href="https://groupme.com/join_group/53205471/hXrFzndj" target="_blank" title="GroupMe">
             <Icon src={GroupMeLogo}></Icon>
           </a>
-        </StyledCard>
+        </MediaLogo>
       </SocialMedia>
 
       <MediaContainer>
@@ -129,58 +119,54 @@ export const HomePage: React.FC<Props> = ({}) => {
         <SocialMediaFeed />
       </MediaContainer>
 
-      <ParentContainer style={{ backgroundColor: '#fff' }}>
+      <WhiteSection>
         <Title>Parent Organization</Title>
         <br />
-        <ParentAffiliation>
-          <StyledCard>
-            <a href="https://www.ufhsa.com/" target="_blank" style={{ color: '#000' }}>
-              <img src={HSALogo} style={{ paddingLeft: '30px' }} />
-              <Card.Title style={{ paddingTop: '20px' }}>
-                <ParentTitle>Hispanic Student Association</ParentTitle>
-              </Card.Title>
-            </a>
-          </StyledCard>
-        </ParentAffiliation>
+        <StyledCard>
+          <a href="https://www.ufhsa.com/" target="_blank" style={{ color: '#000' }}>
+            <img src={HSALogo} />
+            <Card.Title>
+              <ParentTitle>Hispanic Student Association</ParentTitle>
+            </Card.Title>
+          </a>
+        </StyledCard>
         <br />
         <Title>
           <h1>In Association With:</h1>
         </Title>
         <Affiliations>{clubs}</Affiliations>
-      </ParentContainer>
+      </WhiteSection>
 
-      <ParentContainer style={{ backgroundColor: '#f8f9fb', marginBottom: '0px' }}>
+      <Section>
         <Title>General Resources</Title>
         <br />
         <Resources>{resources}</Resources>
-      </ParentContainer>
-    </Container>
+      </Section>
+    </MainContainer>
   );
 };
+
+const MainContainer = styled(Container)`
+  margin: 0;
+  padding: 0;
+`;
+
+const WhiteSection = styled(Section)`
+  background: white;
+`;
 
 const ParentTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 27px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 26.4px;
   padding: 5%;
   text-align: center;
 `;
 
-const StyledButton = styled(Button)`
-  Button.[disabled] {
-    background-color: #17a2b8;
-  }
-`;
-
-const ButtonText = styled.h1`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
+const MediaLogo = styled.div`
+  transition: transform 0.2s;
 `;
 
 const StyledCard = styled.div`
@@ -189,12 +175,7 @@ const StyledCard = styled.div`
   &:hover {
     transform: scale(1.1);
   }
-`;
-
-const Body = styled.p`
-  justify-content: center;
-  display: flex;
-  padding: 20px 40px 20px 0px;
+  margin-bottom: 50px;
 `;
 
 const Icon = styled.img`
@@ -203,13 +184,19 @@ const Icon = styled.img`
   border-radius: 25px;
 `;
 
-const ParentContainer = styled.div`
-  padding: 20px 0px 20px 0px;
-  background-color: #f8f9fb;
+const CarouselContainer = styled.div`
+  padding: 0px 0px 0px 0px;
   width: 100%;
   justify-content: center;
-  display: grid;
-  margin: 50px 0px;
+  display: flex;
+`;
+
+const SocialMedia = styled(WhiteSection)`
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 30px;
 `;
 
 const MediaContainer = styled.div`
@@ -219,50 +206,24 @@ const MediaContainer = styled.div`
   justify-content: center;
 `;
 
-const CarouselContainer = styled.div`
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  margin-bottom: -40px;
-  justify-content: center;
-  display: flex;
-`;
-
-const SocialMedia = styled.div`
-  padding: 20px 0px 20px 0px;
-  background-color: #fff;
-  width: 100%;
-  justify-content: center;
-  margin: 50px -13px;
-  display: flex;
-  grid-template-columns: repeat(3, 150px);
-  grid-gap: 30px;
-`;
-
-const ParentAffiliation = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-`;
-
 const Affiliations = styled.div`
-  margin: 25px;
+  margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat(3, 140px);
-  box-sizing: border-box;
-  width: 100%;
-  height: 10%;
+  grid-template-columns: repeat(3, 150px);
   column-gap: 100px;
+  row-gap: 100px;
   text-align: center;
 `;
+
 const Resources = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 140px);
-  margin-right: 70px;
+  grid-template-columns: repeat(3, 150px);
   column-gap: 100px;
+  row-gap: 100px;
   text-align: center;
 `;
 
 const CarouselImage = styled.img`
-  width: 99.25vw;
+  width: 100vw;
   height: auto;
 `;

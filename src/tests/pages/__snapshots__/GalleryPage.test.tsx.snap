@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gallery Page renders 1`] = `
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,28 +12,31 @@ exports[`Gallery Page renders 1`] = `
   justify-content: center;
 }
 
-.c1 {
+.c2 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
-  padding: 4%;
-  margin-bottom: -2%;
+  font-weight: 400;
   text-align: center;
   background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.c0 {
+  background-color: #f8f9fb;
+  padding: 0 10% 0 10%;
 }
 
 <div
-  className="container"
+  className="c0 container-fluid"
 >
   <div
-    className="c0 row"
+    className="c1 row"
   >
     <div
-      className="c1"
+      className="c2"
     >
       Photo Gallery
     </div>
@@ -43,7 +46,7 @@ exports[`Gallery Page renders 1`] = `
       </div>
     </div>
     <div
-      className="c1"
+      className="c2"
     />
   </div>
 </div>

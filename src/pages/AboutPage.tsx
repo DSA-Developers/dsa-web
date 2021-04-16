@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import { Title } from '../components/Title';
 import { MemberCard } from '../components/MemberCard';
 
 import { database, storage } from '../firebase';
@@ -77,7 +78,7 @@ export const AboutPage: React.FC<Props> = ({}) => {
   return (
     <Container fluid>
       <DescriptionContainer>
-        <Title>About us</Title>
+        <Title>About Us</Title>
         <Description>
           The Dominican Student Association was first established at the University of Florida in 2000. We are a
           welcoming club for all those interested in the Dominican Republic and who wish to make a difference in the
@@ -116,20 +117,6 @@ const Description = styled.h1`
   line-height: 40px;
   padding: 0% 3%;
   text-align: center;
-`;
-
-const Title = styled.div`
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
-  padding: 4%;
-  margin-bottom: 1%;
-  text-align: center;
-  background: -webkit-linear-gradient(0.5turn, #ce1126, #002d62);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 `;
 
 const ParentAffiliation = styled.div`

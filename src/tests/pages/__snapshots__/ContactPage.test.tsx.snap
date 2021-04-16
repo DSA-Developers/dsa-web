@@ -13,8 +13,7 @@ exports[`Contact Page renders 1`] = `
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 700;
+  font-weight: 100;
   color: white;
   text-align: center;
 }
@@ -34,8 +33,7 @@ exports[`Contact Page renders 1`] = `
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 30px;
   margin-top: 40px;
   position: absolute;
@@ -72,6 +70,7 @@ exports[`Contact Page renders 1`] = `
         style={
           Object {
             "color": "white",
+            "fontWeight": 100,
             "marginTop": "40px",
             "textAlign": "center",
           }
