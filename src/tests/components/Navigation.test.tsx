@@ -2,7 +2,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { shallow } from 'enzyme';
 import Nav from 'react-bootstrap/Nav';
-import { Navigation } from '../../components/Navigation';
+import Navigation from '../../components/Navigation';
 
 describe('Navigation', () => {
   const wrapper = shallow(<Navigation />);

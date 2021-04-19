@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { GalleryPage } from '../../pages/GalleryPage';
+import GalleryPage from '../../pages/GalleryPage';
 
 test('Gallery Page renders', () => {
   const props = {};

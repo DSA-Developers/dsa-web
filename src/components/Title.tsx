@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Title = styled.div`
+const Title = styled.div`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 50px;
   font-style: normal;
@@ -11,3 +11,5 @@ export const Title = styled.div`
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 `;
+
+export default Title;

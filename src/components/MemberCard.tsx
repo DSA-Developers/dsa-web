@@ -1,12 +1,28 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import styled from 'styled-components';
+import Card from 'react-bootstrap/Card';
 
 interface Props {
   name: string;
   position: string;
   fileName: string;
 }
+
+const MemberCard: React.FC<Props> = ({ name, position, fileName }) => {
+  return (
+    <StyledCard>
+      <Icon src={fileName} />
+      <Card.Title style={{ fontSize: '22px', textAlign: 'center' }}>
+        <StyledTitle>
+          <b>{name}</b>
+        </StyledTitle>
+        <StyledTitle>{position}</StyledTitle>
+      </Card.Title>
+    </StyledCard>
+  );
+};
+
+export default MemberCard;
 
 const StyledCard = styled.div`
   transition: transform 0.2s;
@@ -25,23 +41,8 @@ const StyledTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
-  font-variant: small-caps;
-  font-weight: 450;
+  font-weight: 500;
   line-height: 26.4px;
   padding: 3%;
   text-align: center;
 `;
-
-export const MemberCard: React.FC<Props> = ({ name, position, fileName }) => {
-  return (
-    <StyledCard>
-      <Icon src={fileName} />
-      <Card.Title style={{ fontSize: '22px', textAlign: 'center' }}>
-        <StyledTitle>
-          <b>{name}</b>
-        </StyledTitle>
-        <StyledTitle>{position}</StyledTitle>
-      </Card.Title>
-    </StyledCard>
-  );
-};

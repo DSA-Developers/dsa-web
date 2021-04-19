@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation Footer renders 1`] = `
+.c0 {
+  bottom: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10,17 +18,6 @@ exports[`Navigation Footer renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c0 {
-  bottom: 0;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.c2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -32,7 +29,7 @@ exports[`Navigation Footer renders 1`] = `
   padding: 10vh 20% 10vh 20%;
 }
 
-.c3 {
+.c2 {
   font-size: 1.5rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -48,38 +45,54 @@ exports[`Navigation Footer renders 1`] = `
   height: fit-content;
 }
 
-.c6 {
+.c5 {
   display: grid;
   grid-template-columns: repeat(3,60px);
-  gap: 20px;
+  gap: 10px;
 }
 
-.c7 {
+.c6 {
   width: 50px;
   height: 50px;
 }
 
-.c4 {
+.c6:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.c3 {
   font-size: 2.5rem;
   margin: 0 0 0.5em 0;
   font-weight: 100;
   text-transform: uppercase;
 }
 
-.c5 {
+.c4 {
   font-size: 1.5rem;
   font-weight: 100;
   color: rgba(0,0,0,0.5);
   padding: 0 0 0.5em 0;
 }
 
-.c5:hover {
+.c4:hover {
   color: rgba(0,0,0,0.7);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 {
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -89,14 +102,14 @@ exports[`Navigation Footer renders 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c8 {
   position: relative;
   font-size: 25px;
   font-weight: 100;
 }
 
-.c9:before {
-  content: "";
+.c8:before {
+  content: '';
   position: absolute;
   left: -60px;
   bottom: -20%;
@@ -116,13 +129,13 @@ exports[`Navigation Footer renders 1`] = `
   }
 >
   <div
-    className="c1 c2 row"
+    className="c1 row"
   >
     <div
-      className="c3 col"
+      className="c2 col"
     >
       <h1
-        className="c4"
+        className="c3"
       >
         Site Map
       </h1>
@@ -131,28 +144,28 @@ exports[`Navigation Footer renders 1`] = `
         onKeyDown={[Function]}
       >
         <a
-          className="c5"
+          className="c4"
           href="/home"
           onClick={[Function]}
         >
           Home
         </a>
         <a
-          className="c5"
+          className="c4"
           href="/about"
           onClick={[Function]}
         >
           About
         </a>
         <a
-          className="c5"
+          className="c4"
           href="/gallery"
           onClick={[Function]}
         >
           Gallery
         </a>
         <a
-          className="c5"
+          className="c4"
           href="/contact"
           onClick={[Function]}
         >
@@ -161,22 +174,22 @@ exports[`Navigation Footer renders 1`] = `
       </div>
     </div>
     <div
-      className="c3 col"
+      className="c2 col"
     >
       <h1
-        className="c4"
+        className="c3"
       >
         Connect
       </h1>
       <div
-        className="c6"
+        className="c5"
       >
         <a
           href="https://www.facebook.com/DSAatUF"
           target="_blank"
         >
           <img
-            className="c7"
+            className="c6"
             src="facebook.svg"
           />
         </a>
@@ -185,7 +198,7 @@ exports[`Navigation Footer renders 1`] = `
           target="_blank"
         >
           <img
-            className="c7"
+            className="c6"
             src="instagram.svg"
           />
         </a>
@@ -194,17 +207,17 @@ exports[`Navigation Footer renders 1`] = `
           target="_blank"
         >
           <img
-            className="c7"
+            className="c6"
             src="groupme.svg"
           />
         </a>
       </div>
     </div>
     <div
-      className="c3 col"
+      className="c2 col"
     >
       <h1
-        className="c4"
+        className="c3"
       >
         Contact Us
       </h1>
@@ -214,10 +227,10 @@ exports[`Navigation Footer renders 1`] = `
     </div>
   </div>
   <div
-    className="c1 c8 row"
+    className="c7 row"
   >
     <p
-      className="c9"
+      className="c8"
     >
       <em>
          Made with ♥ by DSA Developers

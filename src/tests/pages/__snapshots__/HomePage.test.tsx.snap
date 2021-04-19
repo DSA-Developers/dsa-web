@@ -1,6 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Page renders 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  padding: 5% 20% 5% 20%;
+  background-color: #f8f9fb;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  background: white;
+}
+
+.c5 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 60px;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.c4 {
+  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
 .c14 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
@@ -31,61 +86,6 @@ exports[`Home Page renders 1`] = `
   text-align: center;
 }
 
-.c3 {
-  padding: 5% 20% 5% 20%;
-  background-color: #f8f9fb;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  background: -webkit-linear-gradient(0.5turn,#ce1126,#002d62);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-}
-
-.c5 {
-  font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
-  font-size: 35px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 350;
-  line-height: 60px;
-  padding: 5% 10%;
-  text-align: center;
-}
-
-.c0 {
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  background: white;
-}
-
 .c12 {
   font-family: Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
   font-size: 27px;
@@ -94,12 +94,6 @@ exports[`Home Page renders 1`] = `
   line-height: 26.4px;
   padding: 5%;
   text-align: center;
-}
-
-.c8 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
 }
 
 .c11 {
@@ -114,6 +108,24 @@ exports[`Home Page renders 1`] = `
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.c13 {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3,150px);
+  -webkit-column-gap: 100px;
+  column-gap: 100px;
+  row-gap: 100px;
+  text-align: center;
+}
+
+.c8:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .c9 {
@@ -152,23 +164,13 @@ exports[`Home Page renders 1`] = `
 }
 
 .c10 {
-  padding: 20px 200px 50px 200px;
+  padding: 5% 200px 5% 200px;
   background-color: #f8f9fb;
   width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c13 {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: repeat(3,150px);
-  -webkit-column-gap: 100px;
-  column-gap: 100px;
-  row-gap: 100px;
-  text-align: center;
 }
 
 .c17 {
