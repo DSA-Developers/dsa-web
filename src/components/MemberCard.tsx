@@ -35,7 +35,11 @@ const Icon = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 100px;
-`;
+  box-shadow: 0 0 2pt 2pt grey;
+  &:hover {
+    box-shadow: 0 0 4pt 3pt cornflowerblue;
+  }
+  `;
 
 const StyledTitle = styled.h1`
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;

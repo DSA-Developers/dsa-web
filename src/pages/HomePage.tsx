@@ -118,7 +118,7 @@ const SocialMedia = styled(WhiteSection)`
   display: flex;
   flex-direction: row;
   grid-template-columns: repeat(3, 150px);
-  grid-gap: 30px;
+  grid-gap: 50px;
 `;
 
 const MediaContainer = styled.div`
@@ -128,9 +128,10 @@ const MediaContainer = styled.div`
   justify-content: center;
 `;
 const Resources = styled.div`
+  padding-top: 3%;
   display: grid;
   grid-template-columns: repeat(3, 150px);
-  column-gap: 100px;
+  column-gap: 125px;
   row-gap: 100px;
   text-align: center;
 `;

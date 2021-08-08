@@ -89,9 +89,9 @@ const AboutPage: React.FC = ({}) => {
       </Section>
       <WhiteSection>
         <Title>Executive Board</Title>
-        <ParentAffiliation>{cards.slice(0, 2)}</ParentAffiliation>
-        <Affiliations2>{cards.slice(2, 5)}</Affiliations2>
-        <Affiliations2>{cards.slice(5)}</Affiliations2>
+        <TopMembers>{cards.slice(0, 2)}</TopMembers>
+        <BottomMembers>{cards.slice(2, 6)}</BottomMembers>
+        <BottomMembers>{cards.slice(6)}</BottomMembers>
       </WhiteSection>
     </MainContainer>
   );
@@ -105,7 +105,7 @@ const StyledDescription = styled(Description)`
   padding: 0% 3%;
 `;
 
-const ParentAffiliation = styled.div`
+const TopMembers = styled.div`
   margin: 50px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 200px);
@@ -113,6 +113,6 @@ const ParentAffiliation = styled.div`
   justify-content: center;
 `;
 
-const Affiliations2 = styled(ParentAffiliation)`
-  grid-template-columns: repeat(3, 200px);
+const BottomMembers = styled(TopMembers)`
+  grid-template-columns: repeat(4, 200px);
 `;

@@ -30,7 +30,7 @@ const usePhotos = () => {
 const GalleryPage: React.FC = ({}) => {
   const photosURLs = usePhotos();
 
-  const photos = photosURLs.map((url) => ({ src: url, height: 7, width: 10 }));
+  const photos = photosURLs.map((url) => ({ src: url, height: 15, width: 25}));
 
   return (
     <MainContainer fluid>
