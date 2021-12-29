@@ -160,7 +160,7 @@ exports[`Home Page renders 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   grid-template-columns: repeat(3,150px);
-  grid-gap: 30px;
+  grid-gap: 50px;
 }
 
 .c10 {
@@ -174,10 +174,11 @@ exports[`Home Page renders 1`] = `
 }
 
 .c17 {
+  padding-top: 3%;
   display: grid;
   grid-template-columns: repeat(3,150px);
-  -webkit-column-gap: 100px;
-  column-gap: 100px;
+  -webkit-column-gap: 125px;
+  column-gap: 125px;
   row-gap: 100px;
   text-align: center;
 }
