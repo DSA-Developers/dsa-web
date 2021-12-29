@@ -10,7 +10,7 @@ const Navigation: React.FC = ({}) => {
   return (
     <StyledNavbar className="navbar border-bottom pl-5 pr-5 py-0">
       <Navbar.Brand className="align-items-center" href="/home">
-        <img src={Logo} width="80" height="80" className="d-inline-block align-top" alt="DSA Logo" />
+        <img src={Logo} width="100" height="100" className="d-inline-block align-top" alt="DSA Logo" />
         <StyledTitle>DSA @ UF</StyledTitle>
       </Navbar.Brand>
       <StyledNav className="ml-auto">
